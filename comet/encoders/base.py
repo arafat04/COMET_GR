@@ -18,7 +18,7 @@ Encoder Model base
 """
 import abc
 from typing import Dict, List, Optional, Tuple
-
+import inspect # by me
 import torch
 import torch.nn as nn
 from tokenizers import Encoding
@@ -167,13 +167,30 @@ class Encoder(nn.Module, metaclass=abc.ABCMeta):
             Dict[str, torch.Tensor]: dict with 'input_ids', 'attention_mask',
                 'subword_mask'
         """
+        
         encoder_input = self.tokenizer(
             sample,
             truncation=True,
             max_length=self.max_positions - 2,
+            return_offsets_mapping=True,  # Required for word_ids -- updated by me
         )
-        input_ids, offsets, label_ids = [], [], []
+        #print("================COMET.comet.endcoders.base.subword_tokenize====================")
+         # Get the caller's function name and file location
+        caller_frame = inspect.stack()[1]
+        caller_function = caller_frame.function
+        caller_file = caller_frame.filename
+    
+        # Print caller details
+        #print(f"subword_tokenize called by: {caller_function} (from {caller_file})")
+        #print("sample: ", sample)
+        #print("encoder_input: ", encoder_input)
+
+        #print("====================================")
+        input_ids, offsets, label_ids, word_ids_batch = [], [], [], [] # word_ids_batch - added by me
+        #print("len(sample): ", len(sample))
         for i in range(len(sample)):
+            #print("the value of i is: ", i)
+            #print("encoder_input[i],  ", encoder_input[i], " annotations[i]: ",annotations[i])
             tokenized_text, sent_annot = encoder_input[i], annotations[i]
             input_ids.append(tokenized_text.ids)
             label_ids.append(
@@ -181,6 +198,12 @@ class Encoder(nn.Module, metaclass=abc.ABCMeta):
             )
             offsets.append(tokenized_text.offsets)
 
+            # Get word_ids for the i-th example - updated by me
+            word_ids_i = encoder_input.word_ids(batch_index=i)
+            word_ids_batch.append(word_ids_i)
+        #print("===================================")
+        #print("word_ids_batch: ", word_ids_batch)
+        #print("+++++++++++++++++++++++++++++++++++")
         attention_mask = [[1 for _ in seq] for seq in input_ids]
         max_length = max([len(l) for l in input_ids])
         input_ids = self.pad_list(input_ids, max_length, self.tokenizer.pad_token_id)
@@ -191,6 +214,7 @@ class Encoder(nn.Module, metaclass=abc.ABCMeta):
             "label_ids": torch.tensor(label_ids),
             "attention_mask": torch.tensor(attention_mask),
             "offsets": offsets,  # Used during inference
+            "word_ids": word_ids_batch,  # List[List[Optional[int]]] - added by me
         }
 
     def prepare_sample(
@@ -210,10 +234,19 @@ class Encoder(nn.Module, metaclass=abc.ABCMeta):
             Dict[str, torch.Tensor]: dict with 'input_ids', 'attention_mask' and
                 'subword_mask' if word_level_training=True
         """
+        # # Get the caller's function name and file location
+        # caller_frame = inspect.stack()[1]
+        # caller_function = caller_frame.function
+        # caller_file = caller_frame.filename
+    
+        # # Print caller details
+        # print(f"prepare_sample in comet.models.encoder.base called by: {caller_function} (from {caller_file})")
         if word_level:
             if annotations is None:
                 annotations = [[]] * len(sample)
-            return self.subword_tokenize(sample, annotations)
+            result = self.subword_tokenize(sample, annotations)
+            #print("check if word_ids is there: ", result)
+            return result
         else:
             tokenizer_output = self.tokenizer(
                 sample,
@@ -222,6 +255,8 @@ class Encoder(nn.Module, metaclass=abc.ABCMeta):
                 truncation=True,
                 max_length=self.max_positions - 2,
             )
+            #print("======tokenizer_output========")
+            #print(tokenizer_output)
             return tokenizer_output
 
     def pad_list(
