@@ -172,7 +172,6 @@ class Encoder(nn.Module, metaclass=abc.ABCMeta):
             truncation=True,
             max_length=self.max_positions - 2,
             return_offsets_mapping=True,  # Required for word_ids
-
         )
         input_ids, offsets, label_ids = [], [], []
         for i in range(len(sample)):
