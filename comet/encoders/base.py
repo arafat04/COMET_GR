@@ -184,7 +184,7 @@ class Encoder(nn.Module, metaclass=abc.ABCMeta):
             # Get word_ids for the i-th example
             word_ids_i = encoder_input.word_ids(batch_index=i)
             word_ids_batch.append(word_ids_i)
-            
+        
         attention_mask = [[1 for _ in seq] for seq in input_ids]
         max_length = max([len(l) for l in input_ids])
         input_ids = self.pad_list(input_ids, max_length, self.tokenizer.pad_token_id)
@@ -195,6 +195,8 @@ class Encoder(nn.Module, metaclass=abc.ABCMeta):
             "label_ids": torch.tensor(label_ids),
             "attention_mask": torch.tensor(attention_mask),
             "offsets": offsets,  # Used during inference
+            "word_ids": word_ids_batch,  # List[List[Optional[int]]] - added by me
+
         }
 
     def prepare_sample(
