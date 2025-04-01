@@ -406,6 +406,16 @@ class UnifiedMetric(CometModel):
         #input_sequences have the List of list containing word_ids for all the MT sentences.
         model_inputs = self.concat_inputs(input_sequences, unified_input)
         if stage == "predict":
+            #return an additional dictionary containing ```words_id (word_ids),``` the MT sentences
+            #and the tokenized MT sentences, though the ```word_ids```
+            all_inputs = model_inputs["inputs"]
+            MT_dict = {
+                "word_ids": model_inputs["word_ids"],
+                "mt_sentences": inputs["mt"],
+                "mt_sentences_tokenized": input_sequences_mt
+            }
+            updated = all_inputs + (MT_dict,)
+            model_inputs["inputs"] = updated
             return model_inputs["inputs"]
 
         scores = [float(s) for s in inputs["score"]]
