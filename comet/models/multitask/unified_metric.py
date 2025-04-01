@@ -359,6 +359,7 @@ class UnifiedMetric(CometModel):
             )
             model_inputs["inputs"] = (src_input, ref_input, full_input)
             model_inputs["mt_length"] = input_sequences[0]["attention_mask"].sum(dim=1)
+            model_inputs["word_ids"] = input_sequences[0]["word_ids"] # adding the word_ids key
             return model_inputs
 
         # Otherwise we will have one single input sequence that concatenates the MT
@@ -389,7 +390,9 @@ class UnifiedMetric(CometModel):
         input_sequences = [
             self.encoder.prepare_sample(inputs["mt"], self.word_level, None),
         ]
-
+        # independent copy of input_sequences to get the MT input_sequences separately
+        input_sequences_mt = input_sequences.copy()  
+        
         src_input, ref_input = False, False
         if ("src" in inputs) and ("src" in self.hparams.input_segments):
             input_sequences.append(self.encoder.prepare_sample(inputs["src"]))
@@ -400,6 +403,7 @@ class UnifiedMetric(CometModel):
             ref_input = True
 
         unified_input = src_input and ref_input
+        #input_sequences have the List of list containing word_ids for all the MT sentences.
         model_inputs = self.concat_inputs(input_sequences, unified_input)
         if stage == "predict":
             return model_inputs["inputs"]
