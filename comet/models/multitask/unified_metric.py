@@ -888,7 +888,7 @@ class UnifiedMetric(CometModel):
             for span in error_spans:
                 sentence_output.append(
                     {
-                        "text": corrected_span[count]['text'],,
+                        "text": corrected_span[count]['text'],
                         "confidence": torch.concat(span["confidence"]).mean().item(),
                         "severity": span["severity"],
                         "start": word_level_error_span[count]['start'],
