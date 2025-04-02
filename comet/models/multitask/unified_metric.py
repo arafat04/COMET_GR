@@ -23,6 +23,7 @@ Unified Metric
     Inspired on [UniTE](https://arxiv.org/pdf/2204.13346.pdf)
 """
 from collections import OrderedDict
+from collections import defaultdict
 from typing import Dict, List, Optional, Tuple, Union
 
 import pandas as pd
@@ -163,7 +164,7 @@ class UnifiedMetric(CometModel):
 
         # This is None by default and we will use argmax during decoding yet, to control over
         # precision and recall we can set it to another value.
-        self.decoding_threshold = None
+        self.decoding_threshold = .5
         self.init_losses()
 
     def set_input_weights_spans(self, weights: torch.Tensor):
@@ -723,7 +724,7 @@ class UnifiedMetric(CometModel):
             word_level_prob.append(token_predictions)
         return word_level_prob, all_tokenized_sentences
 
-    def correct_span(
+    def word_level_error_span(
         self,
         track_spans: List[int],
         mt_offsets: List[Tuple[int, int]],
@@ -755,14 +756,15 @@ class UnifiedMetric(CometModel):
         set_to_check_multiple_subwords = set()
         index = 0
         for item in track_spans:
+            print("item in track_spans: ", item)
             if item == -1:
                 if start == True:
                     start = False
                     text = ""
-                    print(words_in_span)
                     for item in words_in_span:
+                        print("item: ", item)
                         text += f" {Tokenized_Words[item]}"
-                    print(text)
+                    
                     word_span = defaultdict()
                     word_span['text'] = text.strip()
                     word_span['start'] = mapping[words_in_span[0]]['offsets'][0]
@@ -776,6 +778,7 @@ class UnifiedMetric(CometModel):
                 if word not in set_to_check_multiple_subwords:
                     set_to_check_multiple_subwords.add(word)
                     words_in_span.append(word)
+                    print("word: ", word)
                     
         return all_word_spans
 
@@ -875,7 +878,7 @@ class UnifiedMetric(CometModel):
                     track_spans.append(-1)
                 #we also need to make sure to give negative index value if a label is ok and not in span
                 elif label == "O" and not in_span:
-                    track_token_to_words.append(-1)
+                    track_spans.append(-1)
                 count_index = count_index + 1
                 
             #get word level error span
@@ -884,17 +887,18 @@ class UnifiedMetric(CometModel):
             )
             
             sentence_output = []
-            count = 0
+            count = 0 # to access the spans in the word_level_error_span
             for span in error_spans:
                 sentence_output.append(
                     {
-                        "text": corrected_span[count]['text'],
+                        "text": word_level_error_span[count]['text'],
                         "confidence": torch.concat(span["confidence"]).mean().item(),
                         "severity": span["severity"],
                         "start": word_level_error_span[count]['start'],
                         "end": word_level_error_span[count]['end'],
                     }
                 )
+                count += 1
             decoded_output.append(sentence_output)
         return decoded_output, word_level_prob
 
