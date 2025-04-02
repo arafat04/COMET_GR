@@ -763,9 +763,7 @@ class UnifiedMetric(CometModel):
                     start = False
                     text = ""
                     for item in words_in_span:
-                        if item != None:
-                            print("item: ", item)
-                            text += f" {Tokenized_Words[item]}"
+                        text += f" {Tokenized_Words[item]}"
 
                     word_span = defaultdict()
                     word_span['text'] = text.strip()
@@ -775,10 +773,9 @@ class UnifiedMetric(CometModel):
                     index += 1
                     words_in_span= []
             else:
-                
+                start = True
                 word = word_ids[item]
-                if word not in set_to_check_multiple_subwords and word != None:
-                    start = True
+                if word not in set_to_check_multiple_subwords:
                     set_to_check_multiple_subwords.add(word)
                     words_in_span.append(word)
                     print("word: ", word)
