@@ -916,8 +916,9 @@ class UnifiedMetric(CometModel):
         Returns:
             Prediction: Model Prediction
         """
+
         if len(batch) == 4: # after adding word_ids, the batch length will increase by 1
-            predictions = [self.forward(**input_seq) for input_seq in batch]
+            predictions = [self.forward(**input_seq) for input_seq in batch[:-1]] #exclude the MT_dict
             # Final score is the average of the 3 scores!
             avg_scores = torch.stack([pred.score for pred in predictions], dim=0).mean(
                 dim=0
