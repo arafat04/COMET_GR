@@ -659,6 +659,7 @@ class UnifiedMetric(CometModel):
                 input_ids[i, :seq_len], subword_probs[i][:seq_len], mt_offsets[i]
             ):
                 if self.decoding_threshold:
+                    print("the decoding_threshold is: ", self.decoding_threshold)
                     if torch.sum(probs[1:]) > self.decoding_threshold:
                         probability, label_value = torch.topk(probs[1:], 1)
                         label_value += 1  # offset from removing label 0
