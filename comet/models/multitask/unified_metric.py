@@ -779,7 +779,7 @@ class UnifiedMetric(CometModel):
                     set_to_check_multiple_subwords.add(word)
                     words_in_span.append(word)
                     print("word: ", word)
-                    
+        print("all_word_spans: ", all_word_spans)       
         return all_word_spans
 
     
@@ -833,7 +833,11 @@ class UnifiedMetric(CometModel):
                 if subword == None: #when the subword is None, it must not included in a span
                     track_spans.append(-1)
                     count_index = count_index + 1
+                    # if we see a None, we close the span if there are subwords in the span already
+                    if in_span:
+                        error_spans.append(span)
                     continue
+                    
                 if self.decoding_threshold:
                     if torch.sum(probs[1:]) > self.decoding_threshold:
                         probability, label_value = torch.topk(probs[1:], 1)
@@ -894,6 +898,7 @@ class UnifiedMetric(CometModel):
             
             sentence_output = []
             count = 0 # to access the spans in the word_level_error_span
+            print("error_spans: ", error_spans)
             for span in error_spans:                
                 sentence_output.append(
                     {
