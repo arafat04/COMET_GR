@@ -647,28 +647,182 @@ class UnifiedMetric(CometModel):
             value (int): number of runs per sample.
         """
         raise NotImplementedError("MCD not implemented for this model!")
+        
+    def word_level_prob(
+        self,
+        subword_probs: torch.Tensor,
+        MT_DICT: Dict
+    ) -> List[List[Dict[str, float]]]:
+        """ Returns word level probability score
+        """
+        tokenizer = self.encoder.tokenizer
+    
+        ## run over the mt sentences in the dict MT_DICT
+        word_level_prob = []
+        all_tokenized_sentences = []
+        for index, item in enumerate(MT_DICT["word_ids"]):
+            mt_sentence = MT_DICT["mt_sentences"][index]
+            # Tokenize the MT sentence to get subword-to-token alignment
+            tokenized = self.encoder.tokenizer(
+                    mt_sentence,
+                    return_offsets_mapping=True,
+                    return_tensors="pt",
+                    truncation=True,
+                            
+            )
+        
+            subword_ids = item
+            token_probs = {}
+            for idx, prob in enumerate(subword_probs[index]):
+                #take only the length of the MT sentence
+                if idx >= len(subword_ids):
+                    break
+                subword_idx = subword_ids[idx]
+                if subword_idx is None:  # Skip special tokens
+                    continue
+                if subword_idx not in token_probs:
+                    token_probs[subword_idx] = []
+                token_probs[subword_idx].append(prob.cpu().numpy())
+      
+            # Aggregate probabilities (average for each class)
+            token_level_probs = []
+            for token_idx in sorted(token_probs.keys()):
+                # Stack subword probabilities for this token
+                subword_probs_for_token = torch.stack([torch.tensor(p) for p in token_probs[token_idx]])
+        
+                # Compute mean across subwords (dim=0 → average over subwords, per class)
+                mean_probs = torch.mean(subword_probs_for_token, dim=0)
+        
+                token_level_probs.append(mean_probs.numpy())
 
+            tokens = tokenizer.convert_ids_to_tokens(tokenized["input_ids"][0])
+            # Group tokens by their word ID
+            word_to_tokens = {}
+            for idx, word_id in enumerate(subword_ids):
+                if word_id is None:
+                    continue  # Skip special tokens like [CLS], [SEP]
+                if word_id not in word_to_tokens:
+                    word_to_tokens[word_id] = []
+                word_to_tokens[word_id].append(tokens[idx])
+    
+            # Reconstruct original words from grouped tokens
+            word_mapping = []
+            for word_id in sorted(word_to_tokens.keys()):
+                tokens = word_to_tokens[word_id]
+                # Merge subwords into a single string (handles ## prefixes)
+                word = tokenizer.convert_tokens_to_string(tokens).strip()
+                word_mapping.append(word)
+
+            all_tokenized_sentences.append(word_mapping)
+            # Map words to probabilities
+            token_predictions = [
+                    {"word": token, "probabilities": probs.tolist()}
+                    for token, probs in zip(word_mapping, token_level_probs)
+            ]
+    
+            word_level_prob.append(token_predictions)
+        return word_level_prob, all_tokenized_sentences
+
+    def correct_span(
+        self,
+        track_spans: List[int],
+        mt_offsets: List[Tuple[int, int]],
+        word_ids: Dict,
+        Tokenized_Words: List[List[str]]
+    )-> List[Dict]:
+        # mapping of a word_id to its subwords, mt_offset
+        mapping = {}
+   
+        for index, item in enumerate(word_ids):
+            if item is None:
+                continue
+        
+            if item in mapping:
+                # Append to existing lists
+                mapping[item]['subwords'].append(index)
+                last_offset = mt_offsets[index][1]
+                mapping[item]['offsets'][1] = last_offset
+            else:
+                # Initialize new entry
+                mapping[item] = {
+                    'subwords': [index],
+                    'offsets': list(mt_offsets[index])
+                }
+        # subwords to its word          
+        start = False
+        words_in_span = [] 
+        all_word_spans = defaultdict()
+        set_to_check_multiple_subwords = set()
+        index = 0
+        for item in track_spans:
+            if item == -1:
+                if start == True:
+                    start = False
+                    text = ""
+                    print(words_in_span)
+                    for item in words_in_span:
+                        text += f" {Tokenized_Words[item]}"
+                    print(text)
+                    word_span = defaultdict()
+                    word_span['text'] = text.strip()
+                    word_span['start'] = mapping[words_in_span[0]]['offsets'][0]
+                    word_span['end'] = mapping[words_in_span[-1]]['offsets'][1]
+                    all_word_spans[index] = word_span
+                    index += 1
+                    words_in_span= []
+            else:
+                start = True
+                word = word_ids[item]
+                if word not in set_to_check_multiple_subwords:
+                    set_to_check_multiple_subwords.add(word)
+                    words_in_span.append(word)
+                    
+        return all_word_spans
+
+    
     def decode(
         self,
         subword_probs: torch.Tensor,
         input_ids: torch.Tensor,
         mt_offsets: torch.Tensor,
-    ) -> List[Dict]:
+        MT_dict:Dict[
+        str,
+        Union[
+            List[List[Optional[int]]],  # word_ids
+            List[str],  # mt_sentences
+            List[Dict[
+                str,
+                Union[
+                    torch.Tensor,  # input_ids/label_ids/attention_mask
+                    List[List[Tuple[int, int]]],  # offsets
+                    List[List[Optional[int]]]  # word_ids
+                    ]]
+                ]
+            ]
+        ] 
+    ) -> tuple[list[dict], list[dict]]:
         """Decode error spans from subwords.
 
         Args:
             subword_probs (torch.Tensor): probabilities of each label for each subword.
             input_ids (torch.Tensor): input ids from the model.
             mt_offsets (torch.Tensor): subword offsets.
-
+            MT_dict: A dictionary that contains words_id mapping to all MT sentences,
+            raw MT sentences and tokenized mt sentences
         Return:
             List with of dictionaries with text, start, end, severity and a
             confidence score which is the average of the probs for that label.
         """
         decoded_output = []
+        #get the probabilities for every words in the MT sentence and 
+        #
+        word_level_prob, all_tokenized_sentences = self.word_level_prob(subword_probs,MT_dict)
+        
         for i in range(len(mt_offsets)):
             seq_len = len(mt_offsets[i])
             error_spans, in_span, span = [], False, {}
+            track_spans = [] # to get word level spans
+            count_index = 0 #for mapping between index and spans
             for token_id, probs, token_offset in zip(
                 input_ids[i, :seq_len], subword_probs[i][:seq_len], mt_offsets[i]
             ):
@@ -704,32 +858,45 @@ class UnifiedMetric(CometModel):
                     span["confidence"] = [
                         probability,
                     ]
-
+                    span["check severity"] = [label.split("-")[1]] # to check if the severity is working correctly
+                    track_spans.append(count_index)
                 # Inside an annotation span
                 elif label.startswith("I") and in_span:
                     span["tokens"].append(token_id)
                     span["confidence"].append(probability)
                     # Update offset end
                     span["offset"][1] = token_offset[1]
-
+                    span["check severity"].append(label.split("-")[1])
+                    track_spans.append(count_index)
                 # annotation span finished.
                 elif label == "O" and in_span:
                     error_spans.append(span)
                     in_span, span = False, {}
-
+                    track_spans.append(-1)
+                #we also need to make sure to give negative index value if a label is ok and not in span
+                elif label == "O" and not in_span:
+                    track_token_to_words.append(-1)
+                count_index = count_index + 1
+                
+            #get word level error span
+            word_level_error_span = self.word_level_error_span(
+                track_spans,mt_offsets[i],MT_dict["word_ids"][i],all_tokenized_sentences[i]
+            )
+            
             sentence_output = []
+            count = 0
             for span in error_spans:
                 sentence_output.append(
                     {
-                        "text": self.encoder.tokenizer.decode(span["tokens"]),
+                        "text": corrected_span[count]['text'],,
                         "confidence": torch.concat(span["confidence"]).mean().item(),
                         "severity": span["severity"],
-                        "start": span["offset"][0],
-                        "end": span["offset"][1],
+                        "start": word_level_error_span[count]['start'],
+                        "end": word_level_error_span[count]['end'],
                     }
                 )
             decoded_output.append(sentence_output)
-        return decoded_output
+        return decoded_output, word_level_prob
 
     def predict_step(
         self,
@@ -749,7 +916,7 @@ class UnifiedMetric(CometModel):
         Returns:
             Prediction: Model Prediction
         """
-        if len(batch) == 3:
+        if len(batch) == 4: # after adding word_ids, the batch length will increase by 1
             predictions = [self.forward(**input_seq) for input_seq in batch]
             # Final score is the average of the 3 scores!
             avg_scores = torch.stack([pred.score for pred in predictions], dim=0).mean(
@@ -772,10 +939,13 @@ class UnifiedMetric(CometModel):
                     for w, o in zip(self.input_weights_spans, predictions)
                 ]
                 subword_probs = torch.sum(torch.stack(subword_probs), dim=0)
-                error_spans = self.decode(
-                    subword_probs, batch[0]["input_ids"], batch[0]["mt_offsets"]
+                MT_dict = batch[-1].copy() # contains the dictionary with word_ids, 
+                #mt_sentences,mt_sentences_tokenized
+                error_spans, word_level_prob = self.decode(
+                    subword_probs, batch[0]["input_ids"], batch[0]["mt_offsets"], MT_dict
                 )
                 batch_prediction.metadata["error_spans"] = error_spans
+                batch_prediction.metadata["word_level_probability"]=word_level_prob
 
         else:
             model_output = self.forward(**batch[0])
