@@ -749,15 +749,16 @@ class UnifiedMetric(CometModel):
                     'subwords': [index],
                     'offsets': list(mt_offsets[index])
                 }
+        print("mapping: ", mapping)
         # subwords to its word          
         start = False
         words_in_span = [] 
         all_word_spans = defaultdict()
         set_to_check_multiple_subwords = set()
         index = 0
-        print("Tokenized_Words: ", Tokenized_Words)
+        #print("Tokenized_Words: ", Tokenized_Words)
         for item in track_spans:
-            print("item in track_spans: ", item)
+            #print("item in track_spans: ", item)
             if item == -1:
                 if start == True:
                     start = False
@@ -816,7 +817,7 @@ class UnifiedMetric(CometModel):
             List with of dictionaries with text, start, end, severity and a
             confidence score which is the average of the probs for that label.
         """
-        print("word_ids: ", MT_dict["word_ids"])
+        #print("word_ids: ", MT_dict["word_ids"])
         decoded_output = []
         #get the probabilities for every words in the MT sentence and 
         #
@@ -890,7 +891,7 @@ class UnifiedMetric(CometModel):
                 elif label == "O" and not in_span:
                     track_spans.append(-1)
                 count_index = count_index + 1
-            print("track_spans: ", track_spans) 
+            #print("track_spans: ", track_spans) 
             #get word level error span
             word_level_error_span = self.word_level_error_span(
                 track_spans,mt_offsets[i],MT_dict["word_ids"][i],all_tokenized_sentences[i]
@@ -898,7 +899,7 @@ class UnifiedMetric(CometModel):
             
             sentence_output = []
             count = 0 # to access the spans in the word_level_error_span
-            print("error_spans: ", error_spans)
+            #print("error_spans: ", error_spans)
             for span in error_spans:                
                 sentence_output.append(
                     {
