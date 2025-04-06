@@ -733,7 +733,7 @@ class UnifiedMetric(CometModel):
     )-> List[Dict]:
         # mapping of a word_id to its subwords, mt_offset
         mapping = {}
-   
+        print("mt offsets: ", mt_offsets)
         for index, item in enumerate(word_ids):
             if item is None:
                 continue
@@ -756,7 +756,7 @@ class UnifiedMetric(CometModel):
         all_word_spans = defaultdict()
         set_to_check_multiple_subwords = set()
         index = 0
-        #print("Tokenized_Words: ", Tokenized_Words)
+        print("Tokenized_Words: ", Tokenized_Words)
         for item in track_spans:
             #print("item in track_spans: ", item)
             if item == -1:
@@ -768,15 +768,18 @@ class UnifiedMetric(CometModel):
 
                     word_span = defaultdict()
                     word_span['text'] = text.strip()
+                    print("text is: ", text)
                     word_span['start'] = mapping[words_in_span[0]]['offsets'][0]
                     word_span['end'] = mapping[words_in_span[-1]]['offsets'][1]
                     all_word_spans[index] = word_span
                     index += 1
                     words_in_span= []
             else:
-                start = True
+                
                 word = word_ids[item]
+                print("index number is: ", item)
                 if word not in set_to_check_multiple_subwords:
+                    start = True
                     set_to_check_multiple_subwords.add(word)
                     words_in_span.append(word)
                     print("word: ", word)
@@ -817,7 +820,7 @@ class UnifiedMetric(CometModel):
             List with of dictionaries with text, start, end, severity and a
             confidence score which is the average of the probs for that label.
         """
-        #print("word_ids: ", MT_dict["word_ids"])
+        print("word_ids: ", MT_dict["word_ids"])
         decoded_output = []
         #get the probabilities for every words in the MT sentence and 
         #
@@ -891,7 +894,7 @@ class UnifiedMetric(CometModel):
                 elif label == "O" and not in_span:
                     track_spans.append(-1)
                 count_index = count_index + 1
-            #print("track_spans: ", track_spans) 
+            print("track_spans: ", track_spans) 
             #get word level error span
             word_level_error_span = self.word_level_error_span(
                 track_spans,mt_offsets[i],MT_dict["word_ids"][i],all_tokenized_sentences[i]
@@ -899,7 +902,7 @@ class UnifiedMetric(CometModel):
             
             sentence_output = []
             count = 0 # to access the spans in the word_level_error_span
-            #print("error_spans: ", error_spans)
+            print("error_spans: ", error_spans)
             for span in error_spans:                
                 sentence_output.append(
                     {
