@@ -1,0 +1,8 @@
+from: too many arguments
+from: too many arguments
+from: too many arguments
+from: too many arguments
+import-im6.q16: unable to open X server `' @ error/import.c/ImportImageCommand/346.
+import-im6.q16: unable to open X server `' @ error/import.c/ImportImageCommand/346.
+/var/spool/pbs/mom_priv/jobs/9460475.pbs-m1.metacentrum.cz.SC: line 8: syntax error near unexpected token `('
+/var/spool/pbs/mom_priv/jobs/9460475.pbs-m1.metacentrum.cz.SC: line 8: `class CustomXCOMET(UnifiedMetric):'

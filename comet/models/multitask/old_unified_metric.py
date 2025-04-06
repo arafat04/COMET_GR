@@ -359,8 +359,6 @@ class UnifiedMetric(CometModel):
             )
             model_inputs["inputs"] = (src_input, ref_input, full_input)
             model_inputs["mt_length"] = input_sequences[0]["attention_mask"].sum(dim=1)
-            
-            model_inputs["word_ids"] = input_sequences[0]["word_ids"] #updated by me
             return model_inputs
 
         # Otherwise we will have one single input sequence that concatenates the MT
@@ -387,12 +385,11 @@ class UnifiedMetric(CometModel):
             Union[Tuple[Dict[str, torch.Tensor]], Dict[str, torch.Tensor]]: Model input
                 and targets.
         """
-        print("===============input sequences  unified_metric++++++++++++++++++++++==========================")
         inputs = {k: [d[k] for d in sample] for k in sample[0]}
         input_sequences = [
             self.encoder.prepare_sample(inputs["mt"], self.word_level, None),
         ]
-        print("input input_sequences: ", input_sequences)
+
         src_input, ref_input = False, False
         if ("src" in inputs) and ("src" in self.hparams.input_segments):
             input_sequences.append(self.encoder.prepare_sample(inputs["src"]))
@@ -401,18 +398,11 @@ class UnifiedMetric(CometModel):
         if ("ref" in inputs) and ("ref" in self.hparams.input_segments):
             input_sequences.append(self.encoder.prepare_sample(inputs["ref"]))
             ref_input = True
-        print("input input_sequences: ", input_sequences)
-        print("===============input sequences  unified_metric++++++++++++++++++++++==========================")
+
         unified_input = src_input and ref_input
         model_inputs = self.concat_inputs(input_sequences, unified_input)
         if stage == "predict":
-            # print("inside comet.models.unified_metric.prepare_sample function =====")
-            # print("model_inputs[inputs]: ",model_inputs["inputs"])
-            # print("++++++++++++++++++++++++++++++++++++++++")
-            # return model_inputs["inputs"]
-            return [model_inputs["inputs"], model_inputs["word_ids"]] #updated by me
-            
-            
+            return model_inputs["inputs"]
 
         scores = [float(s) for s in inputs["score"]]
         targets = Target(score=torch.tensor(scores, dtype=torch.float))

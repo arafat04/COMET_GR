@@ -24,6 +24,7 @@ import os
 import sys
 import warnings
 from typing import Dict, List, Optional, Tuple, Union
+import inspect 
 
 import numpy as np
 import pytorch_lightning as ptl
@@ -203,6 +204,14 @@ class CometModel(ptl.LightningModule, metaclass=abc.ABCMeta):
         Returns:
             Model inputs and (optionally) training labels/targets.
         """
+        # Get the caller's function name and file location
+        caller_frame = inspect.stack()[1]
+        caller_function = caller_frame.function
+        caller_file = caller_frame.filename
+    
+        # Print caller details
+        print(f"prepare_sample in base.py called by: {caller_function} (from {caller_file})")
+        print("sample in prepare_sample in base: ", sample)
         pass
 
     @abc.abstractmethod
