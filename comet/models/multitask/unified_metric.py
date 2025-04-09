@@ -164,7 +164,7 @@ class UnifiedMetric(CometModel):
 
         # This is None by default and we will use argmax during decoding yet, to control over
         # precision and recall we can set it to another value.
-        self.decoding_threshold = .5
+        self.decoding_threshold = None
         self.init_losses()
 
     def set_input_weights_spans(self, weights: torch.Tensor):
@@ -372,6 +372,7 @@ class UnifiedMetric(CometModel):
                 )[0],
             )
             model_inputs["mt_length"] = input_sequences[0]["attention_mask"].sum(dim=1)
+            model_inputs["word_ids"] = input_sequences[0]["word_ids"] # adding the word_ids key
         return model_inputs
 
     def prepare_sample(
@@ -724,50 +725,6 @@ class UnifiedMetric(CometModel):
             word_level_prob.append(token_predictions)
         return word_level_prob, all_tokenized_sentences
 
-    def word_level_error_span(
-        self,
-        track_spans: List[int],
-        mt_offsets: List[Tuple[int, int]],
-        word_ids: Dict,
-        Tokenized_Words: List[List[str]]
-    )-> List[Dict]:
-    
-        # subwords to its word          
-        start = False
-        words_in_span = [] 
-        all_word_spans = defaultdict()
-        set_to_check_multiple_subwords = set()
-        index = 0
-        print("Tokenized_Words: ", Tokenized_Words)
-        for item in track_spans:
-            #print("item in track_spans: ", item)
-            if item == -1:
-                if start == True:
-                    start = False
-                    text = ""
-                    for item in words_in_span:
-                        text += f" {Tokenized_Words[item]}"
-
-                    word_span = defaultdict()
-                    word_span['text'] = text.strip()
-                    print("text is: ", text)
-                    word_span['start'] = mapping[words_in_span[0]]['offsets'][0]
-                    word_span['end'] = mapping[words_in_span[-1]]['offsets'][1]
-                    all_word_spans[index] = word_span
-                    index += 1
-                    words_in_span= []
-            else:
-                
-                word = word_ids[item]
-                print("index number is: ", item)
-                if word not in set_to_check_multiple_subwords:
-                    start = True
-                    set_to_check_multiple_subwords.add(word)
-                    words_in_span.append(word)
-                    print("word: ", word)
-        print("all_word_spans: ", all_word_spans)       
-        return all_word_spans
-
     def mapping(
         self,
         mt_offsets: List[Tuple[int, int]],
@@ -775,7 +732,6 @@ class UnifiedMetric(CometModel):
     ):
         # mapping of a word_id to its subwords, mt_offset
         mapping = {}
-        #print("mt offsets: ", mt_offsets)
         for index, item in enumerate(word_ids):
             if item is None:
                 continue
@@ -791,7 +747,6 @@ class UnifiedMetric(CometModel):
                     'subwords': [index],
                     'offsets': list(mt_offsets[index])
                 }
-        print("mapping: ", mapping)
         return mapping
     def decode(
         self,
@@ -826,131 +781,104 @@ class UnifiedMetric(CometModel):
             List with of dictionaries with text, start, end, severity and a
             confidence score which is the average of the probs for that label.
         """
-        print("word_ids: ", MT_dict["word_ids"])
         decoded_output = []
+        
         #get the probabilities for every words in the MT sentence and 
-        #
         word_level_prob, all_tokenized_sentences = self.word_level_prob(subword_probs,MT_dict)
+        severity_ranking = {
+            "minor":1,
+            "major":2,
+            "critical":3,
+        }
         for i in range(len(mt_offsets)):
-            #print("mapping: ", mapping)
             mapping = self.mapping(mt_offsets[i],MT_dict["word_ids"][i])
-
             seq_len = len(mt_offsets[i])
             error_spans, in_span, span = [], False, {}
+            error_words_list = []
             track_spans = [] # to get word level spans
             count_index = 0 #for mapping between index and spans
-            print("input ids at ith location: ", input_ids[i])
             for word, subwords in mapping.items():
-                print("word: ", word, " and subwords: ", subwords)
-                for subword in subwords["subwords"]:
-                    # token_id = input_ids[]
-                    # probs    =
-                    
-            # for token_id, probs, token_offset, subword in zip(
-            #     input_ids[i, :seq_len], subword_probs[i][:seq_len], mt_offsets[i], MT_dict["word_ids"][i]
-            # ):
-            #     if subword == None: #when the subword is None, it must not included in a span
-            #         track_spans.append(-1)
-            #         count_index = count_index + 1
-            #         # if we see a None, we close the span if there are subwords in the span already
-            #         if in_span:
-            #             error_spans.append(span)
-            #         continue
-                    
-            #     if self.decoding_threshold:
-            #         if torch.sum(probs[1:]) > self.decoding_threshold:
-            #             probability, label_value = torch.topk(probs[1:], 1)
-            #             label_value += 1  # offset from removing label 0
-            #         else:
-            #             # This is just to ensure same format but at this point
-            #             # we will only look at label 0 and its prob
-            #             probability, label_value = torch.topk(probs[0], 1)
-            #     else:
-            #         probability, label_value = torch.topk(probs, 1)
-            #     # Some torch versions topk returns a shape 1 tensor with only
-            #     # a item inside
-            #     label_value = (
-            #         label_value.item()
-            #         if label_value.dim() < 1
-            #         else label_value[0].item()
-            #     )
-            #     label = self.label_encoder.ids_to_label.get(label_value)
-            #     # Label set:
-            #     # O I-minor I-major
-            #     # Begin of annotation span
+                # Label set:
+                # O I-minor I-major
+                # Begin of annotation span
+                error_word = False
                 
-            #     if label.startswith("I") and not in_span:
-            #         in_span = True
-            #         span["tokens"] = [
-            #             token_id,
-            #         ]
-            #         span["severity"] = label.split("-")[1]
-            #         span["offset"] = list(token_offset)
-            #         span["confidence"] = [
-            #             probability,
-            #         ]
-            #         span["check severity"] = [label.split("-")[1]] # to check if the severity is 
-            #         #working    correctly
-            #         track_spans.append(count_index)
-            #     # Inside an annotation span
-            #     elif label.startswith("I") and in_span:
-            #         span["tokens"].append(token_id)
-            #         span["confidence"].append(probability)
-            #         # Update offset end
-            #         span["offset"][1] = token_offset[1]
-            #         span["check severity"].append(label.split("-")[1])
-            #         track_spans.append(count_index)
-            #     # annotation span finished.
-            #     elif label == "O" and in_span:
-            #         error_spans.append(span)
-            #         in_span, span = False, {}
-            #         track_spans.append(-1)
-            #     #we also need to make sure to give negative index value if a label is ok and not in span
-            #     elif label == "O" and not in_span:
-            #         track_spans.append(-1)
-            #     count_index = count_index + 1
-            # print("track_spans: ", track_spans) 
-
-            # sentence_output = []
-            # for span in error_spans:
-            #     # # Collect unique word indices for the span
-            #     # unique_word_indices = sorted(set(span["word_indices"]) - {None})  # Remove None safely
-
-            #     # # Extract words belonging to this specific span
-            #     # span_words = [tokenized_words[idx] for idx in unique_word_indices]
-
-            #     sentence_output.append(
-            #         {
-            #             print("tokens in span[tokens]: ", span["tokens"])
-            #             print("text for the tokens: ", self.encoder.tokenizer.decode(span["tokens"]))
-            #             "text": self.encoder.tokenizer.decode(span["tokens"]),
-            #             "confidence": torch.concat(span["confidence"]).mean().item(),
-            #             "severity": span["severity"],
-            #             "start": span["offset"][0],
-            #             "end": span["offset"][1],
-            #             "check severity": span["check severity"]
-            #         }
-            #     )
-            # #get word level error span
-            # word_level_error_span = self.word_level_error_span(
-            #     track_spans,mt_offsets[i],MT_dict["word_ids"][i],all_tokenized_sentences[i]
-            # )
-            # print("sentence output from xcomet: ", sentence_output)
-            # sentence_output_word_level = []
-            # count = 0 # to access the spans in the word_level_error_span
-            # print("error_spans: ", error_spans)
-            # for error_span in sentence_output:
-            #     sentence_output_word_level.append({
-            #         "text": word_level_error_span[count]['text'],
-            #         "confidence": error_span['confidence'],
-            #         "severity": error_span["severity"],
-            #         "start": word_level_error_span[count]['start'],
-            #         "end": word_level_error_span[count]['end'],
-            #     })
-            #     count += 1
-            # decoded_output.append(sentence_output_word_level)
+                for subword in subwords["subwords"]:
+                    token_id = input_ids[i, subword]
+                    probs    = subword_probs[i][subword]
+                    if self.decoding_threshold:
+                        if torch.sum(probs[1:]) > self.decoding_threshold:
+                            probability, label_value = torch.topk(probs[1:], 1)
+                            label_value += 1  # offset from removing label 0
+                        else:
+                            # This is just to ensure same format but at this point
+                            # we will only look at label 0 and its prob
+                            probability, label_value = torch.topk(probs[0], 1)
+                    else:
+                        probability, label_value = torch.topk(probs, 1)
+                    # Some torch versions topk returns a shape 1 tensor with only
+                    # a item inside
+                    label_value = (
+                        label_value.item()
+                        if label_value.dim() < 1
+                        else label_value[0].item()
+                    )
+                    label = self.label_encoder.ids_to_label.get(label_value)
+                    if label.startswith("I") and not in_span:
+                        in_span = True
+                        error_word = True
+                        error_words_list.append(all_tokenized_sentences[i][word])
+                        span["offset"] = mapping[word]['offsets']
+                        span["severity"] = label.split("-")[1]
+                        span["confidence"] = [
+                            probability,
+                        ]
+                        span["check severity"] = [label.split("-")[1]] # to check if the severity is 
+                   
+                    # Inside an annotation span and a new word
+                    elif label.startswith("I") and in_span and error_word == False:
+                        error_word = True
+                        error_words_list.append(all_tokenized_sentences[i][word])
+                        span["confidence"].append(probability)
+                        span["offset"][1] = mapping[word]['offsets'][1]
+                        span["check severity"].append(label.split("-")[1])
+                     # Inside an annotation span
+                    elif label.startswith("I") and in_span:
+                        span["confidence"].append(probability)
+                        span["offset"][1] = mapping[word]['offsets'][1]
+                        span["check severity"].append(label.split("-")[1])
+                    # annotation span finished.
+                if (in_span and error_word == False) or (in_span and word == list(mapping.keys())[-1]):
+                    span["words"] = error_words_list
+                    error_spans.append(span)
+                    in_span, span = False, {}
+                    error_words_list = []
+                    error_word = False
+                
+           
+            sentence_output = []
+            for span in error_spans:
+                #take the highest severity for a span
+                severity_dict = defaultdict()
+                for sev in span["check severity"]:
+                    if sev in severity_ranking:
+                        severity_dict[sev] = severity_ranking[sev]
+                max_severity = max(severity_dict, key=lambda k: severity_dict[k])
+                
+                sentence_output.append(
+                    {
+                        "text": span["words"],
+                        "confidence": torch.concat(span["confidence"]).mean().item(),
+                        "severity": max_severity,
+                        "start": span["offset"][0],
+                        "end": span["offset"][1],
+                        "check severity": span["check severity"]
+                    }
+                )
+           
+            decoded_output.append(sentence_output)
         return decoded_output, word_level_prob
-        return [{}], [{}]
+    
 
     def predict_step(
         self,
@@ -999,8 +927,8 @@ class UnifiedMetric(CometModel):
                 error_spans, word_level_prob = self.decode(
                     subword_probs, batch[0]["input_ids"], batch[0]["mt_offsets"], MT_dict
                 )
-                # batch_prediction.metadata["error_spans"] = error_spans
-                # batch_prediction.metadata["word_level_probability"]=word_level_prob
+                batch_prediction.metadata["error_spans"] = error_spans
+                batch_prediction.metadata["word_level_probability"]=word_level_prob
 
         else:
             model_output = self.forward(**batch[0])
@@ -1012,11 +940,13 @@ class UnifiedMetric(CometModel):
                 subword_probs = nn.functional.softmax(model_output.logits, dim=2)[
                     :, :seq_len, :
                 ]
-                error_spans = self.decode(
-                    subword_probs, batch[0]["input_ids"], batch[0]["mt_offsets"]
+                MT_dict = batch[-1].copy() # contains the dictionary with word_ids, 
+                error_spans, word_level_prob = self.decode(
+                    subword_probs, batch[0]["input_ids"], batch[0]["mt_offsets"], MT_dict
                 )
                 batch_prediction = Prediction(
                     scores=model_output.score,
-                    metadata=Prediction(error_spans=error_spans),
+                    metadata=Prediction(error_spans=error_spans), 
                 )
+                batch_prediction.metadata["word_level_probability"]=word_level_prob
         return batch_prediction
