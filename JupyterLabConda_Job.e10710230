@@ -1,0 +1,364 @@
+..+.+.....+....+......+...+..+............+.......+...+........+...+.+........+...+...+.+..............+.+........+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*....+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*....+...............+..+....+............+..+............+...............+...............+.+..............+......+..........+.....+....+........+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+.+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*........+....+..+...+...+...+.......+.....+.......+..+...+.......+...+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*.+..+...+......+...+.+..............+......+.+........+...+...+.+..............+......+...+..........+........+....+......+.....+...+............+.........+......+.......+.....+.......+........+.+...........+.+...+.........+........+.......+......+.....+....+..+.+.....+.......+..+..........+........+.............+...+.....+.......+............+..+.+.....+.......+...........+..........+...........+..........+......+..+...+...+.+...+.....+.+.....+......+...+...+.......+..+...+.......+......+........+.........+.......+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+-----
+[W 2025-05-01 22:24:36.670 ServerApp] ServerApp.password config is deprecated in 2.0. Use PasswordIdentityProvider.hashed_password.
+[I 2025-05-01 22:24:37.960 ServerApp] jupyter_lsp | extension was successfully linked.
+[I 2025-05-01 22:24:37.967 ServerApp] jupyter_server_mathjax | extension was successfully linked.
+[I 2025-05-01 22:24:37.972 ServerApp] jupyter_server_terminals | extension was successfully linked.
+[I 2025-05-01 22:24:37.978 ServerApp] jupyterlab | extension was successfully linked.
+[I 2025-05-01 22:24:37.979 ServerApp] jupyterlab_git | extension was successfully linked.
+[I 2025-05-01 22:24:37.979 ServerApp] nbdime | extension was successfully linked.
+[I 2025-05-01 22:24:43.158 ServerApp] notebook_shim | extension was successfully linked.
+[I 2025-05-01 22:24:43.451 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2025-05-01 22:24:43.453 ServerApp] jupyter_lsp | extension was successfully loaded.
+[I 2025-05-01 22:24:43.454 ServerApp] jupyter_server_mathjax | extension was successfully loaded.
+[I 2025-05-01 22:24:43.456 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[I 2025-05-01 22:24:43.530 LabApp] JupyterLab extension loaded from /storage/brno2/home/rahmang/envs/xcomet/lib/python3.11/site-packages/jupyterlab
+[I 2025-05-01 22:24:43.531 LabApp] JupyterLab application directory is /auto/brno2/home/rahmang/envs/xcomet/share/jupyter/lab
+[I 2025-05-01 22:24:43.534 LabApp] Extension Manager is 'pypi'.
+[I 2025-05-01 22:24:44.456 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2025-05-01 22:24:44.459 ServerApp] jupyterlab_git | extension was successfully loaded.
+[I 2025-05-01 22:24:45.522 ServerApp] nbdime | extension was successfully loaded.
+[I 2025-05-01 22:24:45.523 ServerApp] Serving notebooks from local directory: /auto/brno2/home/rahmang
+[I 2025-05-01 22:24:45.523 ServerApp] Jupyter Server 2.15.0 is running at:
+[I 2025-05-01 22:24:45.523 ServerApp] https://localhost:8888/lab
+[I 2025-05-01 22:24:45.523 ServerApp]     https://127.0.0.1:8888/lab
+[I 2025-05-01 22:24:45.523 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 2025-05-01 22:24:45.639 ServerApp] Skipped non-installed server(s): bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyright, python-language-server, python-lsp-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
+[I 2025-05-01 22:24:51.375 ServerApp] 302 GET / (@52.167.144.180) 0.38ms
+[I 2025-05-01 22:24:51.482 LabApp] 302 GET /lab? (@52.167.144.180) 0.41ms
+[W 2025-05-01 22:24:52.469 ServerApp] SSL Error on 9 ('46.193.69.68', 37136): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-01 22:24:56.357 ServerApp] SSL Error on 9 ('46.193.69.68', 52784): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[I 2025-05-01 22:24:56.440 ServerApp] 302 GET / (@46.193.69.68) 0.36ms
+[I 2025-05-01 22:24:56.486 LabApp] 302 GET /lab? (@46.193.69.68) 0.34ms
+[W 2025-05-01 22:24:56.978 ServerApp] SSL Error on 13 ('46.193.69.68', 52806): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-01 22:24:56.979 ServerApp] SSL Error on 11 ('46.193.69.68', 52796): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-01 22:24:56.981 ServerApp] SSL Error on 12 ('46.193.69.68', 52802): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[I 2025-05-01 22:25:00.600 ServerApp] User fc857c25a15b47f7be743256b1fc6b56 logged in.
+[I 2025-05-01 22:25:00.601 ServerApp] 302 POST /login?next=%2Flab%3F (fc857c25a15b47f7be743256b1fc6b56@46.193.69.68) 224.53ms
+[W 2025-05-01 22:25:01.583 ServerApp] SSL Error on 15 ('46.193.69.68', 52816): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-01 22:25:01.584 ServerApp] SSL Error on 16 ('46.193.69.68', 52824): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-01 22:25:01.715 ServerApp] SSL Error on 13 ('46.193.69.68', 52836): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-01 22:25:04.761 ServerApp] SSL Error on 14 ('46.193.69.68', 52872): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-01 22:25:05.497 LabApp] Could not determine jupyterlab build status without nodejs
+[I 2025-05-01 22:25:09.283 ServerApp] New terminal with automatic name: 1
+[W 2025-05-01 22:25:09.782 ServerApp] SSL Error on 16 ('46.193.69.68', 36692): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[I 2025-05-01 22:25:11.608 ServerApp] Kernel started: a9cd3253-f3f4-418e-8860-567e0e16c30a
+[I 2025-05-01 22:25:11.612 ServerApp] Kernel started: 5f5a20d2-8ab7-4ea1-9b8d-e2f65d605d5f
+[I 2025-05-01 22:25:11.612 ServerApp] Kernel started: 43cae45e-b6c7-4c9d-b3ba-2a3db311ac79
+[I 2025-05-01 22:25:11.618 ServerApp] Kernel started: a49cd7cc-e8fc-4b62-90dd-ce2f0ec73de1
+[W 2025-05-01 22:25:12.486 ServerApp] SSL Error on 28 ('46.193.69.68', 36702): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-01 22:25:12.570 ServerApp] SSL Error on 28 ('46.193.69.68', 36706): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-01 22:25:12.658 ServerApp] SSL Error on 28 ('46.193.69.68', 36722): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-01 22:25:12.789 ServerApp] SSL Error on 28 ('46.193.69.68', 36734): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-01 22:25:12.923 ServerApp] SSL Error on 26 ('46.193.69.68', 36742): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[I 2025-05-01 22:25:15.380 ServerApp] Connecting to kernel a49cd7cc-e8fc-4b62-90dd-ce2f0ec73de1.
+[I 2025-05-01 22:25:15.481 ServerApp] Starting buffering for a49cd7cc-e8fc-4b62-90dd-ce2f0ec73de1:35c5ef0d-3e25-469a-9d02-b8b3c57490c7
+[I 2025-05-01 22:25:15.516 ServerApp] Connecting to kernel a9cd3253-f3f4-418e-8860-567e0e16c30a.
+[I 2025-05-01 22:25:15.624 ServerApp] Connecting to kernel 43cae45e-b6c7-4c9d-b3ba-2a3db311ac79.
+[I 2025-05-01 22:25:15.737 ServerApp] Connecting to kernel a49cd7cc-e8fc-4b62-90dd-ce2f0ec73de1.
+[W 2025-05-01 22:25:15.869 ServerApp] SSL Error on 66 ('46.193.69.68', 55906): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[I 2025-05-01 22:25:15.948 ServerApp] Connecting to kernel 5f5a20d2-8ab7-4ea1-9b8d-e2f65d605d5f.
+[I 2025-05-01 22:25:16.065 ServerApp] Connecting to kernel a49cd7cc-e8fc-4b62-90dd-ce2f0ec73de1.
+[I 2025-05-01 22:27:11.208 ServerApp] Saving file at /xcomet/arafat_comet/COMET_GR/confidence_score_solved_final.ipynb
+[I 2025-05-01 22:29:12.493 ServerApp] Saving file at /xcomet/arafat_comet/COMET_GR/confidence_score_solved_final.ipynb
+[I 2025-05-01 22:31:13.338 ServerApp] Saving file at /xcomet/arafat_comet/COMET_GR/confidence_score_solved_final.ipynb
+[I 2025-05-01 22:33:14.431 ServerApp] Saving file at /xcomet/arafat_comet/COMET_GR/confidence_score_solved_final.ipynb
+[I 2025-05-01 22:35:15.409 ServerApp] Saving file at /xcomet/arafat_comet/COMET_GR/confidence_score_solved_final.ipynb
+[I 2025-05-01 22:36:16.976 ServerApp] 302 GET / (@199.45.154.131) 0.28ms
+[I 2025-05-01 22:36:27.271 ServerApp] 302 GET / (@199.45.154.131) 0.25ms
+[I 2025-05-01 22:36:28.467 ServerApp] Malformed HTTP message from 199.45.154.131: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+[W 2025-05-01 22:36:36.479 ServerApp] SSL Error on 9 ('199.45.154.131', 55940): [SSL: UNSUPPORTED_PROTOCOL] unsupported protocol (_ssl.c:1006)
+[W 2025-05-01 22:36:38.366 ServerApp] SSL Error on 9 ('199.45.154.131', 59572): [SSL: UNSUPPORTED_PROTOCOL] unsupported protocol (_ssl.c:1006)
+[W 2025-05-01 22:36:40.236 ServerApp] SSL Error on 9 ('199.45.154.131', 59602): [SSL: VERSION_TOO_LOW] version too low (_ssl.c:1006)
+[I 2025-05-01 22:36:46.237 LabApp] 302 GET /lab (@199.45.154.131) 0.31ms
+[I 2025-05-01 22:36:47.280 ServerApp] Malformed HTTP message from 199.45.154.131: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+[I 2025-05-01 22:36:58.073 ServerApp] Malformed HTTP message from 199.45.154.131: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+[I 2025-05-01 22:37:05.087 ServerApp] Malformed HTTP message from 199.45.154.131: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+[I 2025-05-01 22:37:16.479 ServerApp] Saving file at /xcomet/arafat_comet/COMET_GR/confidence_score_solved_final.ipynb
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+[I 2025-05-01 22:43:17.542 ServerApp] Saving file at /xcomet/arafat_comet/COMET_GR/confidence_score_solved_final.ipynb
+[W 2025-05-01 22:48:34.922 ServerApp] SSL Error on 9 ('46.193.69.68', 58646): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-01 22:48:34.924 ServerApp] SSL Error on 10 ('46.193.69.68', 58642): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-01 22:48:43.594 ServerApp] SSL Error on 11 ('46.193.69.68', 48636): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-01 22:48:43.604 ServerApp] SSL Error on 13 ('46.193.69.68', 48646): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-01 22:48:43.611 ServerApp] SSL Error on 12 ('46.193.69.68', 48634): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-01 22:48:53.757 ServerApp] SSL Error on 11 ('46.193.69.68', 60304): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-01 22:49:04.931 ServerApp] SSL Error on 11 ('46.193.69.68', 34148): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-01 22:49:04.939 ServerApp] SSL Error on 12 ('46.193.69.68', 34134): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-01 22:49:36.822 ServerApp] SSL Error on 9 ('46.193.69.68', 35836): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-01 22:49:36.830 ServerApp] SSL Error on 10 ('46.193.69.68', 35850): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-01 22:49:46.891 ServerApp] SSL Error on 12 ('46.193.69.68', 41518): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-01 22:49:46.892 ServerApp] SSL Error on 13 ('46.193.69.68', 41508): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-01 22:49:46.896 ServerApp] SSL Error on 11 ('46.193.69.68', 41496): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+[W 2025-05-01 22:50:07.292 ServerApp] SSL Error on 11 ('46.193.69.68', 54786): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-01 22:50:07.413 ServerApp] SSL Error on 11 ('46.193.69.68', 54802): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-01 22:50:38.241 ServerApp] SSL Error on 11 ('46.193.69.68', 48250): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[I 2025-05-01 22:51:21.424 ServerApp] Saving file at /xcomet/arafat_comet/COMET_GR/confidence_score_solved_final.ipynb
+[W 2025-05-01 22:51:21.630 ServerApp] SSL Error on 12 ('46.193.69.68', 43454): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-01 22:51:21.766 ServerApp] SSL Error on 11 ('46.193.69.68', 43460): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+[W 2025-05-01 22:52:18.803 ServerApp] SSL Error on 11 ('46.193.69.68', 42516): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-01 22:53:12.828 ServerApp] SSL Error on 11 ('46.193.69.68', 33726): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[I 2025-05-01 22:53:22.069 ServerApp] Saving file at /xcomet/arafat_comet/COMET_GR/confidence_score_solved_final.ipynb
+[W 2025-05-01 22:53:22.343 ServerApp] SSL Error on 12 ('46.193.69.68', 55016): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-01 22:53:22.363 ServerApp] SSL Error on 13 ('46.193.69.68', 55018): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+[W 2025-05-01 22:54:13.937 ServerApp] SSL Error on 11 ('46.193.69.68', 35900): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-01 22:54:34.846 ServerApp] SSL Error on 11 ('46.193.69.68', 44868): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+[I 2025-05-01 22:55:22.889 ServerApp] Saving file at /xcomet/arafat_comet/COMET_GR/confidence_score_solved_final.ipynb
+[I 2025-05-01 22:59:23.910 ServerApp] Saving file at /xcomet/arafat_comet/COMET_GR/confidence_score_solved_final.ipynb
+[W 2025-05-01 23:10:09.121 ServerApp] SSL Error on 11 ('206.168.34.121', 48934): [SSL: NO_SHARED_CIPHER] no shared cipher (_ssl.c:1006)
+[W 2025-05-01 23:10:13.097 ServerApp] SSL Error on 11 ('206.168.34.121', 49014): [SSL: UNSUPPORTED_PROTOCOL] unsupported protocol (_ssl.c:1006)
+[W 2025-05-01 23:10:21.847 ServerApp] SSL Error on 11 ('206.168.34.121', 57286): [SSL: NO_SHARED_CIPHER] no shared cipher (_ssl.c:1006)
+[W 2025-05-01 23:10:23.107 ServerApp] SSL Error on 11 ('206.168.34.121', 57298): [SSL: BAD_KEY_SHARE] bad key share (_ssl.c:1006)
+[W 2025-05-01 23:18:51.192 ServerApp] SSL Error on 11 ('46.193.69.68', 47118): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-01 23:19:01.292 ServerApp] SSL Error on 11 ('46.193.69.68', 39614): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-01 23:19:11.395 ServerApp] SSL Error on 11 ('46.193.69.68', 45822): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-01 23:19:21.582 ServerApp] SSL Error on 11 ('46.193.69.68', 43256): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-01 23:19:26.187 ServerApp] SSL Error on 9 ('46.193.69.68', 38256): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-01 23:19:31.635 ServerApp] SSL Error on 10 ('46.193.69.68', 38268): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-01 23:19:31.687 ServerApp] SSL Error on 11 ('46.193.69.68', 38272): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-01 23:19:31.734 ServerApp] SSL Error on 12 ('46.193.69.68', 38288): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-01 23:19:41.944 ServerApp] SSL Error on 11 ('46.193.69.68', 45948): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[I 2025-05-01 23:33:25.218 ServerApp] Saving file at /xcomet/arafat_comet/COMET_GR/confidence_score_solved_final.ipynb
+[W 2025-05-01 23:33:25.467 ServerApp] SSL Error on 12 ('46.193.69.68', 47504): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-01 23:33:25.581 ServerApp] SSL Error on 12 ('46.193.69.68', 47510): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-01 23:33:25.633 ServerApp] SSL Error on 11 ('46.193.69.68', 40772): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-01 23:34:55.693 ServerApp] SSL Error on 11 ('46.193.69.68', 53906): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-01 23:34:55.709 ServerApp] SSL Error on 12 ('46.193.69.68', 53898): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[I 2025-05-01 23:34:55.823 ServerApp] Kernel started: db8b280f-4135-4d49-b60d-96d32add741d
+[W 2025-05-01 23:34:56.013 ServerApp] SSL Error on 13 ('46.193.69.68', 53914): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-01 23:34:56.051 ServerApp] SSL Error on 13 ('46.193.69.68', 53930): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-01 23:34:56.073 ServerApp] SSL Error on 15 ('46.193.69.68', 53924): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-01 23:34:56.094 ServerApp] SSL Error on 13 ('46.193.69.68', 53948): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[I 2025-05-01 23:34:58.856 ServerApp] Connecting to kernel db8b280f-4135-4d49-b60d-96d32add741d.
+[I 2025-05-01 23:35:12.789 ServerApp] Starting buffering for db8b280f-4135-4d49-b60d-96d32add741d:24216ea7-09d4-4fb9-8e95-50b1e76f432a
+[I 2025-05-01 23:35:14.447 ServerApp] Starting buffering for a9cd3253-f3f4-418e-8860-567e0e16c30a:635c7799-8a9b-4140-94cb-e2fa27947106
+[I 2025-05-01 23:35:28.406 ServerApp] Starting buffering for 43cae45e-b6c7-4c9d-b3ba-2a3db311ac79:de0c11d0-c4d3-435d-81e9-b0ff124d9b57
+[W 2025-05-01 23:35:43.880 ServerApp] SSL Error on 13 ('46.193.69.68', 59942): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-01 23:35:44.098 ServerApp] SSL Error on 13 ('46.193.69.68', 59950): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[I 2025-05-01 23:35:44.261 ServerApp] Connecting to kernel a9cd3253-f3f4-418e-8860-567e0e16c30a.
+[W 2025-05-01 23:35:44.670 ServerApp] SSL Error on 54 ('46.193.69.68', 59972): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[I 2025-05-01 23:37:44.433 ServerApp] Saving file at /xcomet/arafat_comet/COMET_GR/confidence_score_solved_final.ipynb
+[W 2025-05-01 23:37:44.622 ServerApp] SSL Error on 55 ('46.193.69.68', 52224): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-01 23:37:44.689 ServerApp] SSL Error on 55 ('46.193.69.68', 52226): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[I 2025-05-01 23:39:45.157 ServerApp] Saving file at /xcomet/arafat_comet/COMET_GR/confidence_score_solved_final.ipynb
+[W 2025-05-01 23:39:45.484 ServerApp] SSL Error on 55 ('46.193.69.68', 36364): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-01 23:39:45.590 ServerApp] SSL Error on 54 ('46.193.69.68', 36380): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[I 2025-05-01 23:40:22.145 ServerApp] Saving file at /xcomet/arafat_comet/COMET_GR/confidence_score_solved_final.ipynb
+[W 2025-05-01 23:40:22.387 ServerApp] SSL Error on 55 ('46.193.69.68', 34778): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-01 23:40:22.441 ServerApp] SSL Error on 54 ('46.193.69.68', 34796): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-01 23:40:22.447 ServerApp] SSL Error on 56 ('46.193.69.68', 34792): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+[I 2025-05-01 23:42:23.017 ServerApp] Saving file at /xcomet/arafat_comet/COMET_GR/confidence_score_solved_final.ipynb
+[W 2025-05-01 23:42:23.311 ServerApp] SSL Error on 55 ('46.193.69.68', 43956): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-01 23:42:23.407 ServerApp] SSL Error on 54 ('46.193.69.68', 43966): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-01 23:42:23.408 ServerApp] SSL Error on 56 ('46.193.69.68', 43982): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-01 23:45:22.539 ServerApp] SSL Error on 54 ('46.193.69.68', 37626): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-01 23:45:22.575 ServerApp] SSL Error on 55 ('46.193.69.68', 37638): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-01 23:49:24.915 ServerApp] SSL Error on 9 ('46.193.69.68', 45074): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-01 23:53:20.262 ServerApp] SSL Error on 10 ('46.193.69.68', 46258): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-01 23:53:30.422 ServerApp] SSL Error on 10 ('46.193.69.68', 38312): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-01 23:53:50.755 ServerApp] SSL Error on 10 ('46.193.69.68', 53134): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-01 23:54:10.842 ServerApp] SSL Error on 10 ('46.193.69.68', 59388): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-01 23:54:20.996 ServerApp] SSL Error on 10 ('46.193.69.68', 34454): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-01 23:54:41.218 ServerApp] SSL Error on 10 ('46.193.69.68', 60162): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-01 23:55:21.652 ServerApp] SSL Error on 10 ('46.193.69.68', 32868): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-01 23:55:31.674 ServerApp] SSL Error on 10 ('46.193.69.68', 33686): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-01 23:55:41.736 ServerApp] SSL Error on 10 ('46.193.69.68', 46652): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-01 23:55:52.023 ServerApp] SSL Error on 10 ('46.193.69.68', 58692): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-01 23:56:12.251 ServerApp] SSL Error on 10 ('46.193.69.68', 51654): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-01 23:56:22.542 ServerApp] SSL Error on 10 ('46.193.69.68', 57248): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-01 23:57:13.226 ServerApp] SSL Error on 10 ('46.193.69.68', 41818): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-01 23:57:23.324 ServerApp] SSL Error on 10 ('46.193.69.68', 34986): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-01 23:58:13.866 ServerApp] SSL Error on 10 ('46.193.69.68', 46130): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-01 23:58:23.966 ServerApp] SSL Error on 10 ('46.193.69.68', 52434): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-01 23:58:34.063 ServerApp] SSL Error on 10 ('46.193.69.68', 48304): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-01 23:58:44.175 ServerApp] SSL Error on 10 ('46.193.69.68', 47480): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-01 23:58:54.238 ServerApp] SSL Error on 10 ('46.193.69.68', 58950): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-01 23:58:54.284 ServerApp] SSL Error on 10 ('46.193.69.68', 58962): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-01 23:59:14.489 ServerApp] SSL Error on 10 ('46.193.69.68', 55744): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-01 23:59:24.597 ServerApp] SSL Error on 10 ('46.193.69.68', 60712): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-01 23:59:34.707 ServerApp] SSL Error on 10 ('46.193.69.68', 49350): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-01 23:59:44.803 ServerApp] SSL Error on 10 ('46.193.69.68', 34280): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-01 23:59:51.003 ServerApp] SSL Error on 10 ('46.193.69.68', 56132): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-01 23:59:54.846 ServerApp] SSL Error on 10 ('46.193.69.68', 56136): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-02 00:00:01.209 ServerApp] SSL Error on 10 ('46.193.69.68', 57156): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-02 00:00:05.087 ServerApp] SSL Error on 10 ('46.193.69.68', 57164): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-02 00:00:11.420 ServerApp] SSL Error on 10 ('46.193.69.68', 56816): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-02 00:00:21.623 ServerApp] SSL Error on 10 ('46.193.69.68', 52530): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-02 00:00:25.336 ServerApp] SSL Error on 10 ('46.193.69.68', 52544): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-02 00:00:31.822 ServerApp] SSL Error on 10 ('46.193.69.68', 46664): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-02 00:00:42.037 ServerApp] SSL Error on 10 ('46.193.69.68', 37932): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-02 00:00:52.239 ServerApp] SSL Error on 10 ('46.193.69.68', 50920): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-02 00:01:02.461 ServerApp] SSL Error on 10 ('46.193.69.68', 49634): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-02 00:01:05.706 ServerApp] SSL Error on 10 ('46.193.69.68', 41684): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-02 00:01:12.649 ServerApp] SSL Error on 10 ('46.193.69.68', 41694): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-02 00:01:15.826 ServerApp] SSL Error on 10 ('46.193.69.68', 58854): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-02 00:01:22.867 ServerApp] SSL Error on 10 ('46.193.69.68', 58864): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-02 00:01:33.072 ServerApp] SSL Error on 10 ('46.193.69.68', 36532): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-02 00:01:43.388 ServerApp] SSL Error on 10 ('46.193.69.68', 48866): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-02 00:01:43.488 ServerApp] SSL Error on 54 ('46.193.69.68', 48874): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-02 00:01:46.188 ServerApp] SSL Error on 10 ('46.193.69.68', 56426): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-02 00:02:06.302 ServerApp] SSL Error on 10 ('46.193.69.68', 59338): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-02 00:02:13.861 ServerApp] SSL Error on 10 ('46.193.69.68', 59354): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-02 00:02:16.465 ServerApp] SSL Error on 10 ('46.193.69.68', 50890): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-02 00:02:23.780 ServerApp] SSL Error on 10 ('46.193.69.68', 50904): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-02 00:02:33.931 ServerApp] SSL Error on 10 ('46.193.69.68', 45602): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-02 00:02:33.960 ServerApp] SSL Error on 54 ('46.193.69.68', 45604): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-02 00:02:44.035 ServerApp] SSL Error on 10 ('46.193.69.68', 32842): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-02 00:02:44.131 ServerApp] SSL Error on 54 ('46.193.69.68', 32848): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-02 00:02:54.239 ServerApp] SSL Error on 10 ('46.193.69.68', 48414): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-02 00:02:54.331 ServerApp] SSL Error on 54 ('46.193.69.68', 48420): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-02 00:03:04.452 ServerApp] SSL Error on 10 ('46.193.69.68', 48350): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-02 00:03:04.526 ServerApp] SSL Error on 54 ('46.193.69.68', 48358): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-02 00:03:14.552 ServerApp] SSL Error on 10 ('46.193.69.68', 41206): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-02 00:03:14.691 ServerApp] SSL Error on 10 ('46.193.69.68', 41220): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-02 00:03:34.883 ServerApp] SSL Error on 10 ('46.193.69.68', 59628): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-02 00:03:45.048 ServerApp] SSL Error on 10 ('46.193.69.68', 35760): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-02 00:19:23.888 ServerApp] SSL Error on 9 ('46.193.69.68', 47042): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-02 00:19:44.554 ServerApp] SSL Error on 10 ('46.193.69.68', 46074): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-02 00:20:04.724 ServerApp] SSL Error on 10 ('46.193.69.68', 56546): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-02 00:20:04.874 ServerApp] SSL Error on 10 ('46.193.69.68', 56562): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-02 00:20:14.822 ServerApp] SSL Error on 10 ('46.193.69.68', 54770): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-02 00:20:14.874 ServerApp] SSL Error on 54 ('46.193.69.68', 54774): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-02 00:20:24.973 ServerApp] SSL Error on 10 ('46.193.69.68', 36650): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-02 00:20:25.006 ServerApp] SSL Error on 10 ('46.193.69.68', 36662): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-02 00:20:35.095 ServerApp] SSL Error on 10 ('46.193.69.68', 43630): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-02 00:20:35.177 ServerApp] SSL Error on 54 ('46.193.69.68', 43640): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-02 00:20:45.289 ServerApp] SSL Error on 10 ('46.193.69.68', 43676): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-02 00:20:45.404 ServerApp] SSL Error on 10 ('46.193.69.68', 43686): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-02 00:21:05.451 ServerApp] SSL Error on 10 ('46.193.69.68', 44562): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-02 00:21:05.615 ServerApp] SSL Error on 10 ('46.193.69.68', 44564): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-02 00:21:15.602 ServerApp] SSL Error on 10 ('46.193.69.68', 37664): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-02 00:21:15.709 ServerApp] SSL Error on 54 ('46.193.69.68', 49128): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-02 00:21:25.726 ServerApp] SSL Error on 10 ('46.193.69.68', 44782): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-02 00:21:25.817 ServerApp] SSL Error on 54 ('46.193.69.68', 44794): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-02 00:21:35.936 ServerApp] SSL Error on 10 ('46.193.69.68', 55886): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-02 00:21:36.031 ServerApp] SSL Error on 54 ('46.193.69.68', 55888): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-02 00:21:46.043 ServerApp] SSL Error on 10 ('46.193.69.68', 50226): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-02 00:21:56.113 ServerApp] SSL Error on 10 ('46.193.69.68', 60706): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-02 00:22:06.347 ServerApp] SSL Error on 10 ('46.193.69.68', 45224): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-02 00:22:06.459 ServerApp] SSL Error on 10 ('46.193.69.68', 45234): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-02 00:22:16.576 ServerApp] SSL Error on 10 ('46.193.69.68', 41068): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-02 00:22:16.653 ServerApp] SSL Error on 54 ('46.193.69.68', 41084): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-02 00:22:36.703 ServerApp] SSL Error on 10 ('46.193.69.68', 37330): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-02 00:22:46.877 ServerApp] SSL Error on 10 ('46.193.69.68', 33760): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-02 00:22:46.985 ServerApp] SSL Error on 10 ('46.193.69.68', 33776): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-02 00:22:57.092 ServerApp] SSL Error on 10 ('46.193.69.68', 55046): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-02 00:23:07.133 ServerApp] SSL Error on 10 ('46.193.69.68', 35608): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-02 00:23:07.200 ServerApp] SSL Error on 10 ('46.193.69.68', 35624): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-02 00:23:17.303 ServerApp] SSL Error on 10 ('46.193.69.68', 52882): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-02 00:23:17.345 ServerApp] SSL Error on 54 ('46.193.69.68', 52884): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-02 00:23:17.432 ServerApp] SSL Error on 10 ('46.193.69.68', 52896): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-02 00:23:27.514 ServerApp] SSL Error on 10 ('46.193.69.68', 59930): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-02 00:23:27.540 ServerApp] SSL Error on 54 ('46.193.69.68', 59944): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-02 00:23:37.517 ServerApp] SSL Error on 10 ('46.193.69.68', 48518): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-02 00:23:37.610 ServerApp] SSL Error on 54 ('46.193.69.68', 48528): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-02 00:23:37.722 ServerApp] SSL Error on 10 ('46.193.69.68', 48534): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-02 00:23:47.644 ServerApp] SSL Error on 10 ('46.193.69.68', 43358): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-02 00:23:47.677 ServerApp] SSL Error on 10 ('46.193.69.68', 43368): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-02 00:23:57.826 ServerApp] SSL Error on 54 ('46.193.69.68', 60480): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-02 00:24:07.844 ServerApp] SSL Error on 54 ('46.193.69.68', 55868): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-02 00:24:17.973 ServerApp] SSL Error on 54 ('46.193.69.68', 39848): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-02 00:24:18.026 ServerApp] SSL Error on 54 ('46.193.69.68', 39864): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-02 00:30:48.887 ServerApp] SSL Error on 54 ('57.129.64.237', 35506): [SSL: HTTP_REQUEST] http request (_ssl.c:1006)
+[W 2025-05-02 00:43:59.006 ServerApp] SSL Error on 54 ('46.193.69.68', 33524): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-02 00:44:09.130 ServerApp] SSL Error on 54 ('46.193.69.68', 60136): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-02 00:46:10.467 ServerApp] SSL Error on 54 ('46.193.69.68', 58052): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-02 00:46:20.549 ServerApp] SSL Error on 54 ('46.193.69.68', 59950): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-02 00:46:26.657 ServerApp] SSL Error on 54 ('196.251.91.11', 30762): [SSL] record layer failure (_ssl.c:1006)
+[W 2025-05-02 00:46:30.781 ServerApp] SSL Error on 54 ('46.193.69.68', 36824): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[I 2025-05-02 00:47:49.613 ServerApp] Saving file at /xcomet/arafat_comet/COMET_GR/confidence_score_solved_final.ipynb
+[W 2025-05-02 00:47:49.824 ServerApp] SSL Error on 55 ('46.193.69.68', 38360): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-02 00:47:49.866 ServerApp] SSL Error on 55 ('46.193.69.68', 38372): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-02 00:49:28.812 ServerApp] SSL Error on 9 ('46.193.69.68', 35740): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-02 00:49:32.352 ServerApp] SSL Error on 10 ('46.193.69.68', 35760): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-02 00:49:42.532 ServerApp] SSL Error on 10 ('46.193.69.68', 46478): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-02 00:50:52.957 ServerApp] SSL Error on 10 ('46.193.69.68', 56746): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-02 00:51:03.255 ServerApp] SSL Error on 10 ('46.193.69.68', 34476): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-02 00:51:03.538 ServerApp] SSL Error on 54 ('46.193.69.68', 34486): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-02 00:54:15.071 ServerApp] SSL Error on 54 ('46.193.69.68', 58490): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-02 01:10:34.837 ServerApp] SSL Error on 10 ('46.193.69.68', 42294): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-02 01:10:45.109 ServerApp] SSL Error on 10 ('46.193.69.68', 46534): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-02 01:11:15.424 ServerApp] SSL Error on 10 ('46.193.69.68', 60204): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-02 01:11:25.632 ServerApp] SSL Error on 10 ('46.193.69.68', 38560): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-02 01:11:35.846 ServerApp] SSL Error on 10 ('46.193.69.68', 45272): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-02 01:11:46.045 ServerApp] SSL Error on 10 ('46.193.69.68', 39754): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-02 01:12:06.231 ServerApp] SSL Error on 10 ('46.193.69.68', 60834): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-02 01:12:06.370 ServerApp] SSL Error on 10 ('46.193.69.68', 60838): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-02 01:12:16.366 ServerApp] SSL Error on 10 ('46.193.69.68', 40474): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-02 01:12:16.476 ServerApp] SSL Error on 10 ('46.193.69.68', 40490): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[W 2025-05-02 01:12:46.787 ServerApp] SSL Error on 10 ('46.193.69.68', 59578): [SSL: SSLV3_ALERT_CERTIFICATE_UNKNOWN] ssl/tls alert certificate unknown (_ssl.c:1006)
+[I 2025-05-02 01:14:29.486 ServerApp] Starting buffering for a9cd3253-f3f4-418e-8860-567e0e16c30a:9c44b91a-e1d1-43ce-a6e4-a2f620f97be0
+[I 2025-05-02 01:14:29.487 ServerApp] Starting buffering for 5f5a20d2-8ab7-4ea1-9b8d-e2f65d605d5f:c8bd9ac1-80e4-4cef-a612-c2ba485bdb85
+[I 2025-05-02 01:14:29.494 ServerApp] Starting buffering for a49cd7cc-e8fc-4b62-90dd-ce2f0ec73de1:134d6512-87c9-4f3b-9a58-e63c58f56f87
+[W 2025-05-02 01:40:19.634 ServerApp] SSL Error on 8 ('45.249.246.17', 46248): [SSL: HTTP_REQUEST] http request (_ssl.c:1006)
+[W 2025-05-02 01:40:22.136 ServerApp] SSL Error on 8 ('45.249.246.17', 46712): [SSL] record layer failure (_ssl.c:1006)
+[I 2025-05-02 01:40:31.989 ServerApp] 302 GET / (@45.249.246.17) 0.34ms
+[I 2025-05-02 01:40:33.286 ServerApp] Malformed HTTP message from 45.249.246.17: Malformed HTTP request line
+[W 2025-05-02 01:40:35.394 ServerApp] SSL Error on 8 ('45.249.246.17', 49402): [SSL: NO_SHARED_CIPHER] no shared cipher (_ssl.c:1006)
+[W 2025-05-02 01:40:36.960 ServerApp] SSL Error on 8 ('45.249.246.17', 49766): [SSL: UNSUPPORTED_PROTOCOL] unsupported protocol (_ssl.c:1006)
+[W 2025-05-02 01:40:38.592 ServerApp] SSL Error on 8 ('45.249.246.17', 49992): [SSL: NO_SHARED_CIPHER] no shared cipher (_ssl.c:1006)
+[W 2025-05-02 01:40:39.143 ServerApp] SSL Error on 8 ('45.249.246.17', 50066): [SSL: BAD_KEY_SHARE] bad key share (_ssl.c:1006)
+[I 2025-05-02 01:41:16.079 ServerApp] 302 GET / (@101.36.108.158) 0.37ms
+[I 2025-05-02 01:41:17.795 LabApp] 302 GET /lab?/sitemap.xml (@101.36.108.158) 0.43ms
+[I 2025-05-02 01:41:17.891 LabApp] 302 GET /lab?/robots.txt (@101.36.108.158) 0.30ms
+[I 2025-05-02 01:41:21.291 LabApp] 302 GET /lab? (@101.36.108.158) 0.40ms
+[W 2025-05-02 02:58:08.068 ServerApp] SSL Error on 8 ('121.105.120.206', 62425): [SSL: HTTP_REQUEST] http request (_ssl.c:1006)
+[W 2025-05-02 06:00:11.851 ServerApp] SSL Error on 8 ('205.210.31.82', 60508): [SSL: HTTP_REQUEST] http request (_ssl.c:1006)
+=>> PBS: job killed: walltime 28869 exceeded limit 28800
+[C 2025-05-02 06:25:13.140 ServerApp] received signal 15, stopping
+[I 2025-05-02 06:25:14.153 ServerApp] Shutting down 7 extensions
+[I 2025-05-02 06:25:14.153 ServerApp] Shutting down 5 kernels
+[I 2025-05-02 06:25:14.154 ServerApp] Kernel shutdown: a9cd3253-f3f4-418e-8860-567e0e16c30a
+[I 2025-05-02 06:25:14.154 ServerApp] Kernel shutdown: 5f5a20d2-8ab7-4ea1-9b8d-e2f65d605d5f
+[I 2025-05-02 06:25:14.154 ServerApp] Kernel shutdown: 43cae45e-b6c7-4c9d-b3ba-2a3db311ac79
+[I 2025-05-02 06:25:14.154 ServerApp] Kernel shutdown: db8b280f-4135-4d49-b60d-96d32add741d
+[I 2025-05-02 06:25:14.155 ServerApp] Kernel shutdown: a49cd7cc-e8fc-4b62-90dd-ce2f0ec73de1
+Cgroup memsw limit exceeded: 
