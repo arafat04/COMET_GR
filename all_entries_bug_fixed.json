@@ -330,8 +330,7 @@
         ],
         "relevant_words": [
             "basés",
-            "d'arbre",
-            null
+            "d'arbre"
         ]
     },
     {
@@ -372,7 +371,6 @@
         "relevant_words": [
             "de",
             "la",
-            null,
             "de",
             "la",
             "recherche",
@@ -444,8 +442,7 @@
             "la",
             "sélection",
             "de",
-            "langues.",
-            null
+            "langues."
         ]
     },
     {
@@ -488,9 +485,7 @@
             "a",
             "milliers",
             "de",
-            "terminologies.",
-            null,
-            null
+            "terminologies."
         ]
     },
     {
@@ -663,8 +658,7 @@
             "pour",
             "n'importe",
             "quel",
-            "domaine,",
-            null
+            "domaine,"
         ]
     },
     {
@@ -724,8 +718,7 @@
         "relevant_words": [
             "domination",
             "au",
-            "concurrent.",
-            null
+            "concurrent."
         ]
     },
     {
@@ -962,7 +955,6 @@
             "Ensuite,",
             "nous",
             "pour",
-            null,
             "de",
             "zéro",
             "plan",
@@ -1030,9 +1022,7 @@
             "besoin",
             "de",
             "étiquetées",
-            "intermodales.",
-            null,
-            null
+            "intermodales."
         ]
     },
     {
@@ -1057,7 +1047,6 @@
         "relevant_words": [
             "une",
             "représentation",
-            null,
             "taille",
             "fixe,",
             "de"
@@ -1146,7 +1135,6 @@
             "à",
             "tir",
             "nul",
-            null,
             "de"
         ]
     },
@@ -1362,8 +1350,7 @@
             "sur",
             "des",
             "entités",
-            "d’étalon-or",
-            null
+            "d’étalon-or"
         ]
     },
     {
@@ -1508,11 +1495,9 @@
         ],
         "relevant_words": [
             "limitées",
-            null,
             "par",
             "par",
-            "le",
-            null
+            "le"
         ]
     },
     {
@@ -1617,7 +1602,6 @@
             "MT",
             "textuelle",
             "solide,",
-            null,
             "guidée",
             "le",
             "masquage",
@@ -1660,11 +1644,7 @@
             "multimodale",
             "multilingue",
             "contrastive,",
-            "désambiguïsantes",
-            null,
-            null,
-            null,
-            null
+            "désambiguïsantes"
         ]
     },
     {
@@ -1724,8 +1704,6 @@
         "relevant_words": [
             "forts",
             "MMT",
-            null,
-            null,
             "avec",
             "une",
             "grande",
@@ -1834,8 +1812,7 @@
             "question,",
             "document",
             "avec",
-            "un",
-            null
+            "un"
         ]
     },
     {
@@ -1856,9 +1833,7 @@
         "spans_each_mt": [],
         "relevant_words": [
             "montrons",
-            "l'importance",
-            null,
-            null
+            "l'importance"
         ]
     },
     {
@@ -2009,8 +1984,6 @@
             "Inverse",
             "Cloze",
             "Task,",
-            null,
-            null,
             "basées",
             "sur",
             "les",
@@ -2078,19 +2051,7 @@
             "un",
             "contexte",
             "visuel",
-            "connaissances.",
-            null,
-            null,
-            null,
-            null,
-            null,
-            null,
-            null,
-            null,
-            null,
-            null,
-            null,
-            null
+            "connaissances."
         ]
     },
     {
@@ -2245,7 +2206,6 @@
         ],
         "relevant_words": [
             "Il",
-            null,
             "multimodals."
         ]
     },
@@ -2345,21 +2305,15 @@
         "relevant_words": [
             "réseau",
             "neuronal",
-            null,
             "relatif-MRR",
-            null,
             "relatif-F1",
-            null,
             "récupération",
-            null,
             "la",
             "compréhension",
             "lecture,",
             "sur",
             "une",
             "base",
-            null,
-            null,
             "formation."
         ]
     },
@@ -2444,7 +2398,6 @@
             "les",
             "les",
             "le",
-            null,
             "du",
             "marché."
         ]
@@ -2720,16 +2673,12 @@
             "consciente",
             "du",
             "alimenter",
-            null,
             "de",
             "codeur-décodeur",
             "avec",
             "formée",
             "par",
             "actuelle",
-            null,
-            null,
-            null,
             "concaténé"
         ]
     },
@@ -2780,8 +2729,6 @@
         "relevant_words": [
             "améliorée",
             "traduction",
-            null,
-            null,
             "phrase",
             "actuelle,",
             "en",
@@ -2848,11 +2795,9 @@
             "peine",
             "des",
             "peines,",
-            null,
             "conformité",
             "réduction",
-            "contexte.",
-            null
+            "contexte."
         ]
     },
     {
@@ -2966,25 +2911,17 @@
         ],
         "relevant_words": [
             "avec",
-            null,
-            null,
             "moyenne",
             "ensembles",
-            null,
-            null,
             "intersentiels,",
             "à",
-            null,
             "conception",
             "de",
             "la",
             "vanille",
             "à",
             "conscients",
-            null,
-            "contexte.",
-            null,
-            null
+            "contexte."
         ]
     },
     {
@@ -3095,8 +3032,7 @@
             "AZee,",
             "de",
             "langage",
-            "gestuel",
-            null
+            "gestuel"
         ]
     },
     {
@@ -3300,7 +3236,6 @@
         "relevant_words": [
             "Ceux-ci",
             "en",
-            null,
             "2"
         ]
     },
@@ -3398,8 +3333,6 @@
         ],
         "relevant_words": [
             "d'avenir,",
-            null,
-            null,
             "signataires"
         ]
     },
@@ -3443,7 +3376,6 @@
             "notes",
             "structurées",
             "françaises",
-            null,
             "automatique"
         ]
     },
@@ -3615,8 +3547,7 @@
             }
         ],
         "relevant_words": [
-            "d'identification",
-            null
+            "d'identification"
         ]
     },
     {
@@ -3880,8 +3811,7 @@
             "codeur-décodeur",
             "tenant",
             "compte",
-            "MT.",
-            null
+            "MT."
         ]
     },
     {
@@ -3914,19 +3844,11 @@
         "spans_each_mt": [],
         "relevant_words": [
             "Combiner",
-            null,
-            null,
-            null,
-            null,
             "les",
             "données",
             "éditeurs",
-            null,
-            null,
-            null,
             "créer",
             "des",
-            null,
             "pour",
             "la",
             "traduction",
@@ -3974,8 +3896,7 @@
             "plupart",
             "des",
             "informations",
-            "de",
-            null
+            "de"
         ]
     },
     {
@@ -3997,7 +3918,6 @@
         "spans_each_mt": [],
         "relevant_words": [
             "Les",
-            null,
             "automatique",
             "laissent",
             "penser",
@@ -4089,11 +4009,7 @@
             "de",
             "traduction",
             "étendus",
-            "disponibles",
-            null,
-            null,
-            null,
-            null
+            "disponibles"
         ]
     },
     {
@@ -4152,12 +4068,7 @@
             "en",
             "incorporant",
             "domaine,",
-            null,
             "améliore",
-            null,
-            null,
-            null,
-            null,
             "des"
         ]
     },
@@ -4344,8 +4255,7 @@
             "social",
             "dans",
             "les",
-            "linguistiques",
-            null
+            "linguistiques"
         ]
     },
     {
@@ -4360,9 +4270,6 @@
             "aggravé",
             "lorsque",
             "la",
-            null,
-            null,
-            null,
             "linguistique",
             "se",
             "produit",
@@ -4410,13 +4317,9 @@
         ],
         "relevant_words": [
             "l’implication",
-            null,
-            null,
-            null,
             "d’évaluation",
             "pour",
             "linguistiques",
-            null,
             "situons",
             "un",
             "de",
@@ -4523,11 +4426,8 @@
             "cibles",
             "de",
             "préjugés",
-            null,
             "sexe,",
-            "traiter",
-            null,
-            null
+            "traiter"
         ]
     },
     {
@@ -4582,8 +4482,7 @@
             "la",
             "formation",
             "linguistiques",
-            "et",
-            null
+            "et"
         ]
     },
     {
@@ -4659,7 +4558,6 @@
         "relevant_words": [
             "d'estimations",
             "conventionnelles",
-            null,
             "entrave",
             "phrases",
             "existants."
@@ -4821,8 +4719,6 @@
             "formés",
             "plus",
             "offrant",
-            null,
-            null,
             "en",
             "termes",
             "de",
@@ -4889,7 +4785,6 @@
         ],
         "relevant_words": [
             "Lium",
-            null,
             "Nouvelles",
             "Tâche",
             "de",
@@ -5005,7 +4900,6 @@
             "l’anglais,",
             "le",
             "tchèque",
-            null,
             "l’anglais→langue",
             "latine."
         ]
@@ -5085,11 +4979,8 @@
         ],
         "relevant_words": [
             "formons",
-            null,
             "neuronales",
             "BPE",
-            null,
-            null,
             "factorisées",
             "le",
             "framework",
@@ -5271,18 +5162,9 @@
             "rétro-traduction",
             "quantitative",
             "est",
-            null,
-            null,
-            null,
             "English→Turkish",
-            null,
-            null,
             "soumission",
             "post-date",
-            null,
-            null,
-            null,
-            null,
             "la",
             "meilleure",
             "entrée"
@@ -5387,10 +5269,7 @@
             "MT,",
             "à",
             "évaluer",
-            null,
             "ensembles",
-            null,
-            null,
             "différents."
         ]
     },
@@ -5501,10 +5380,7 @@
             "sorties",
             "du",
             "système",
-            "avec",
-            null,
-            null,
-            null
+            "avec"
         ]
     },
     {
@@ -5861,9 +5737,7 @@
             }
         ],
         "relevant_words": [
-            "ensembles",
-            null,
-            null
+            "ensembles"
         ]
     },
     {
@@ -6011,8 +5885,7 @@
             "naturel",
             "suites",
             "cliniques",
-            "PNL",
-            null
+            "PNL"
         ]
     },
     {
@@ -6120,9 +5993,7 @@
             "naturel",
             "(PNL)",
             "exploités",
-            "données.",
-            null,
-            null
+            "données."
         ]
     },
     {
@@ -6263,13 +6134,9 @@
         "relevant_words": [
             "SMM",
             "bioinformatiques",
-            null,
-            null,
-            null,
             "cadres",
             "cliniques",
-            "PNL.",
-            null
+            "PNL."
         ]
     },
     {
@@ -6380,8 +6247,7 @@
         "relevant_words": [
             "cadres",
             "PNL",
-            "aux",
-            null
+            "aux"
         ]
     },
     {
@@ -6536,7 +6402,6 @@
             "le",
             "framework",
             "NLP",
-            null,
             "actuel",
             "fonctionnalités"
         ]
@@ -6651,9 +6516,7 @@
         "relevant_words": [
             "cadres",
             "basés",
-            "fonctionnalités.",
-            null,
-            null
+            "fonctionnalités."
         ]
     },
     {
@@ -6707,8 +6570,7 @@
             "de",
             "travail",
             "en",
-            "milieu",
-            null
+            "milieu"
         ]
     },
     {
@@ -6758,12 +6620,7 @@
             "social",
             "du",
             "langage",
-            "naturel.",
-            null,
-            null,
-            null,
-            null,
-            null
+            "naturel."
         ]
     },
     {
@@ -6916,7 +6773,6 @@
         "relevant_words": [
             "Sur",
             "améliorer",
-            null,
             "pour",
             "les"
         ]
@@ -6966,9 +6822,7 @@
         "postedition": "Bien qu'environ 30 % de toutes les langues parlées dans le monde soient africaines, ces dernières ont été très peu étudiées, en partie à cause du manque de corpus parallèles libres d'accès mis en ligne.",
         "spans_each_mt": [],
         "relevant_words": [
-            "publics",
-            null,
-            null
+            "publics"
         ]
     },
     {
@@ -6983,9 +6837,6 @@
             "elles,",
             "publique",
             "d'utiliser",
-            null,
-            null,
-            null,
             "les",
             "sur"
         ]
@@ -6998,7 +6849,6 @@
         "spans_each_mt": [],
         "relevant_words": [
             "Pour",
-            null,
             "questions,",
             "nouvel",
             "ensemble",
@@ -7025,7 +6875,6 @@
         "spans_each_mt": [],
         "relevant_words": [
             "utilisons",
-            null,
             "de",
             "population"
         ]
@@ -7133,14 +6982,11 @@
         "relevant_words": [
             "montrons",
             "des",
-            null,
             "individuelles",
             "à",
             "l'intérieur",
             "ce",
-            "groupe.",
-            null,
-            null
+            "groupe."
         ]
     },
     {
@@ -7392,9 +7238,7 @@
             }
         ],
         "relevant_words": [
-            "NMT.",
-            null,
-            null
+            "NMT."
         ]
     },
     {
@@ -7581,7 +7425,6 @@
         "spans_each_mt": [],
         "relevant_words": [
             "visent",
-            null,
             "s’il",
             "y",
             "a",
@@ -7589,8 +7432,6 @@
             "émergence",
             "de",
             "langue,",
-            null,
-            null,
             "répartit"
         ]
     },
@@ -7637,8 +7478,6 @@
             "Bien",
             "aient",
             "menés",
-            null,
-            null,
             "manière",
             "(NMT)."
         ]
@@ -7803,7 +7642,6 @@
             "du",
             "codeur",
             "codeur-décodeur",
-            null,
             "NMT",
             "multiple-to-one)",
             "sont",
@@ -7814,7 +7652,6 @@
             "tels",
             "que",
             "classer",
-            null,
             "l’importance",
             "des",
             "à",
@@ -7867,7 +7704,6 @@
         "relevant_words": [
             "montrent",
             "qu’étonnamment,",
-            null,
             "dans",
             "les",
             "paires",
@@ -7902,8 +7738,6 @@
         ],
         "relevant_words": [
             "Screening",
-            null,
-            null,
             "dans",
             "la"
         ]
@@ -8821,11 +8655,9 @@
             "de",
             "révision",
             "systématique",
-            null,
             "la",
             "paillette",
-            "blé.",
-            null
+            "blé."
         ]
     },
     {
@@ -8835,10 +8667,7 @@
         "postedition": "Les revues systématiques, par exemple en médecine fondée sur les preuves, abordent les questions de recherche en examinant de façon exhaustive l'ensemble de la littérature publiée.",
         "spans_each_mt": [],
         "relevant_words": [
-            "empirique,",
-            null,
-            null,
-            null
+            "empirique,"
         ]
     },
     {
@@ -8893,43 +8722,23 @@
             "décident",
             "l'inclusion",
             "en",
-            null,
-            null,
-            null,
-            null,
-            null,
-            null,
-            null,
-            null,
             "étapes,",
             "d'abord",
             "en",
             "fonction",
-            null,
-            null,
-            null,
             "résumés",
             "titre,",
             "puis",
             "par",
             "intégral,",
             "mais",
-            null,
-            null,
-            null,
-            null,
-            null,
-            null,
-            null,
             "actuelles",
             "pour",
             "automatiser",
             "le",
             "processus",
             "données",
-            "d'or",
-            null,
-            null
+            "d'or"
         ]
     },
     {
@@ -9138,12 +8947,6 @@
             "d'un",
             "nouvel",
             "ensemble",
-            null,
-            null,
-            null,
-            null,
-            null,
-            null,
             "données",
             "étalon",
             "or",
@@ -9306,8 +9109,6 @@
             "basées",
             "sur",
             "le",
-            null,
-            null,
             "ASC",
             "des",
             "décisions",
@@ -9315,9 +9116,7 @@
             "l'étalon-or",
             "basées",
             "sur",
-            "le",
-            null,
-            null
+            "le"
         ]
     },
     {
@@ -9378,10 +9177,6 @@
             "à",
             "quel",
             "stade",
-            null,
-            null,
-            null,
-            null,
             "l'examen",
             "préliminaire",
             "les",
@@ -9394,10 +9189,6 @@
             "que",
             "les",
             "décisions",
-            null,
-            null,
-            null,
-            null,
             "doivent",
             "être",
             "fondées",
@@ -9497,9 +9288,7 @@
             "Natural",
             "Language",
             "Processing",
-            "(NLP)",
-            null,
-            null
+            "(NLP)"
         ]
     },
     {
@@ -9765,14 +9554,6 @@
         ],
         "relevant_words": [
             "évaluation",
-            null,
-            null,
-            null,
-            null,
-            null,
-            null,
-            null,
-            null,
             "associées",
             "dans",
             "une",
@@ -9918,13 +9699,7 @@
             "d'émission",
             "croisée",
             "dans",
-            "locuteur,",
-            null,
-            null,
-            null,
-            null,
-            null,
-            null
+            "locuteur,"
         ]
     },
     {
@@ -10127,8 +9902,6 @@
             "profond,",
             "une",
             "analyse",
-            null,
-            null,
             "ainsi",
             "que",
             "mesures",
@@ -10273,10 +10046,7 @@
             "réglage",
             "l'essai",
             "non",
-            "utiles.",
-            null,
-            null,
-            null
+            "utiles."
         ]
     },
     {
@@ -10289,7 +10059,6 @@
             "appropriées",
             "construire",
             "des",
-            null,
             "de",
             "traduction",
             "la",
@@ -10332,8 +10101,6 @@
         ],
         "relevant_words": [
             "impliqués",
-            null,
-            null,
             "genre"
         ]
     },
@@ -10416,8 +10183,6 @@
         ],
         "relevant_words": [
             "la",
-            null,
-            null,
             "(un"
         ]
     },
@@ -10484,7 +10249,6 @@
             "vidéo",
             "éducatives,",
             "l'approche",
-            null,
             "langue",
             "à",
             "classes",
@@ -10529,8 +10293,7 @@
         "relevant_words": [
             "multitale",
             "l’outil",
-            "PNL",
-            null
+            "PNL"
         ]
     },
     {
@@ -11653,9 +11416,7 @@
         "relevant_words": [
             "lorsqu'il",
             "s'agit",
-            "de",
-            null,
-            null
+            "de"
         ]
     },
     {
@@ -11764,7 +11525,6 @@
             "méthodologies",
             "d'alignement,",
             "qui",
-            null,
             "utilisés",
             "ensembles",
             "du",
@@ -12016,11 +11776,9 @@
         ],
         "relevant_words": [
             "entraînons",
-            null,
             "attentive",
             "basés",
             "les",
-            null,
             "factorisées",
             "le",
             "cadre",
@@ -12075,11 +11833,9 @@
             "en",
             "assemblant",
             "différents",
-            null,
             "exploitant",
             "la",
-            "disponibilité",
-            null
+            "disponibilité"
         ]
     },
     {
@@ -12189,7 +11945,6 @@
             "la",
             "rétro-traduction",
             "soumission",
-            null,
             "limite",
             "la",
             "meilleure",
@@ -12234,11 +11989,7 @@
         "postedition": "Les sous-titres apparaissent à l’écran sous forme de courts morceaux de texte, segmentés en fonction de contraintes formelles (p. ex. sur la longueur) et de critères syntaxiques/sémantiques.",
         "spans_each_mt": [],
         "relevant_words": [
-            "(longueur)",
-            null,
-            null,
-            null,
-            null
+            "(longueur)"
         ]
     },
     {
@@ -12360,11 +12111,6 @@
             "standard",
             "génèrent",
             "différentes",
-            null,
-            null,
-            null,
-            null,
-            null,
             "avec"
         ]
     },
@@ -12383,10 +12129,7 @@
             "quel",
             "que",
             "soit",
-            "le",
-            null,
-            null,
-            null
+            "le"
         ]
     },
     {
@@ -12552,7 +12295,6 @@
         "relevant_words": [
             "allant",
             "d’hypothèses",
-            null,
             "à"
         ]
     },
@@ -12659,7 +12401,6 @@
         "relevant_words": [
             "Vocabulaires",
             "de",
-            null,
             "GDPR"
         ]
     },
@@ -12685,9 +12426,6 @@
             "avec",
             "si",
             "les",
-            null,
-            null,
-            null,
             "peuvent",
             "être",
             "utiles",
@@ -12722,12 +12460,7 @@
             "on",
             "a",
             "examiné",
-            "données.",
-            null,
-            null,
-            null,
-            null,
-            null
+            "données."
         ]
     },
     {
@@ -12816,8 +12549,6 @@
             "entreprise",
             "vise",
             "à",
-            null,
-            null,
             "alignés",
             "sur",
             "le",
@@ -12894,7 +12625,6 @@
         ],
         "relevant_words": [
             "Lignes",
-            null,
             "neuronales",
             "les",
             "alignements"
@@ -12974,9 +12704,7 @@
             "une",
             "estimation",
             "de",
-            "qualité.",
-            null,
-            null
+            "qualité."
         ]
     },
     {
@@ -13088,7 +12816,6 @@
             "lignes",
             "nos",
             "modèles",
-            null,
             "pour",
             "illustrer"
         ]
@@ -13229,9 +12956,7 @@
             "le",
             "sous-titrage",
             "de",
-            "automatique.",
-            null,
-            null
+            "automatique."
         ]
     },
     {
@@ -13312,7 +13037,6 @@
             "partir",
             "tableaux",
             "multilingues",
-            null,
             "sous-titres",
             "pour",
             "la",
@@ -13386,7 +13110,6 @@
         ],
         "relevant_words": [
             "quelques",
-            null,
             "de"
         ]
     },
@@ -13824,8 +13547,7 @@
         "spans_each_mt": [],
         "relevant_words": [
             "de",
-            "structures",
-            null
+            "structures"
         ]
     },
     {
@@ -13934,11 +13656,7 @@
             "changements",
             "apportés",
             "à",
-            "la",
-            null,
-            null,
-            null,
-            null
+            "la"
         ]
     },
     {
@@ -13975,8 +13693,7 @@
         ],
         "relevant_words": [
             "générées",
-            "morphologique.",
-            null
+            "morphologique."
         ]
     },
     {
@@ -14027,8 +13744,7 @@
             }
         ],
         "relevant_words": [
-            "en",
-            null
+            "en"
         ]
     },
     {
@@ -14106,10 +13822,7 @@
         ],
         "relevant_words": [
             "l'adaptation",
-            "divers",
-            null,
-            null,
-            null
+            "divers"
         ]
     },
     {
@@ -14333,9 +14046,7 @@
         ],
         "relevant_words": [
             "entière",
-            "disponible.",
-            null,
-            null
+            "disponible."
         ]
     },
     {
@@ -14494,9 +14205,7 @@
             "corps",
             "parlés",
             "d'ensembles",
-            null,
-            "IWSLT.",
-            null
+            "IWSLT."
         ]
     },
     {
@@ -14577,11 +14286,7 @@
         ],
         "relevant_words": [
             "transformateurs",
-            null,
             "2D-convolutionnelles",
-            null,
-            null,
-            null,
             "se",
             "généralisent",
             "bien",
@@ -14620,11 +14325,7 @@
             "est",
             "en",
             "concurrence",
-            "avec",
-            null,
-            null,
-            null,
-            null
+            "avec"
         ]
     },
     {
@@ -14855,8 +14556,7 @@
         "postedition": "Notre code est disponible à l'adresse https://github.com/boudinfl/ir-using-kg",
         "spans_each_mt": [],
         "relevant_words": [
-            "sur",
-            null
+            "sur"
         ]
     },
     {
@@ -15150,8 +14850,7 @@
             }
         ],
         "relevant_words": [
-            "en",
-            null
+            "en"
         ]
     },
     {
@@ -15261,8 +14960,7 @@
         "relevant_words": [
             "signeur,",
             "\"transcription",
-            "glossaire\"",
-            null
+            "glossaire\""
         ]
     },
     {
@@ -15827,8 +15525,6 @@
             "d'un",
             "d'une",
             "rend",
-            null,
-            null,
             "la",
             "comparaison",
             "des",
@@ -16010,9 +15706,7 @@
             "traitant",
             "du",
             "langage",
-            "naturel,",
-            null,
-            null
+            "naturel,"
         ]
     },
     {
@@ -16068,15 +15762,6 @@
             "Lexicalized",
             "Constituency",
             "Parsing",
-            null,
-            null,
-            null,
-            null,
-            null,
-            null,
-            null,
-            null,
-            null,
             "avec",
             "des",
             "tâches",
@@ -16206,11 +15891,9 @@
             "introduisons",
             "de",
             "circonscription",
-            null,
             "du",
             "travail",
             "re-cent",
-            null,
             "peuvent",
             "caractère",
             "niveau",
@@ -16359,7 +16042,6 @@
             "(POS)",
             "l’étiquetage",
             "morphologique,",
-            null,
             "prédic-tion",
             "fonctionnelle",
             "de",
@@ -16492,16 +16174,11 @@
             "l’analyse",
             "des",
             "circonscriptions",
-            null,
             "une",
             "prévision",
             "POS",
             "ou",
-            null,
-            null,
-            null,
             "morphologiques,",
-            null,
             "sorties",
             "marquées",
             "d’arbres",
@@ -16606,9 +16283,6 @@
             "(MT)",
             "la",
             "entre",
-            null,
-            null,
-            null,
             "à",
             "faibles",
             "ressources."
@@ -16668,13 +16342,10 @@
         "spans_each_mt": [],
         "relevant_words": [
             "MT",
-            null,
             "à",
             "faibles",
             "ressources",
-            null,
             "d'ensembles",
-            null,
             "normalisés."
         ]
     },
@@ -16805,24 +16476,10 @@
         ],
         "relevant_words": [
             "multi-domaines",
-            null,
             "accent",
             "sur",
             "l'orthographe",
             "propre",
-            null,
-            null,
-            null,
-            null,
-            null,
-            null,
-            null,
-            null,
-            null,
-            null,
-            null,
-            null,
-            null,
             "yorùbá-anglais",
             "avec",
             "des",
@@ -16942,9 +16599,7 @@
             "repères",
             "MT",
             "neuronaux",
-            null,
             "MT",
-            null,
             "pré-formés",
             "l'ensemble",
             "de",
@@ -17121,10 +16776,8 @@
         ],
         "relevant_words": [
             "en",
-            null,
             "une",
-            "référence",
-            null
+            "référence"
         ]
     },
     {
@@ -17735,12 +17388,9 @@
         ],
         "relevant_words": [
             "d’Utterance",
-            null,
             "la",
             "des",
-            "NMT",
-            null,
-            null
+            "NMT"
         ]
     },
     {
@@ -17849,7 +17499,6 @@
             "ils",
             "sont",
             "contestés",
-            null,
             "paramètres",
             "de",
             "CLD",
@@ -17989,11 +17638,6 @@
             "limites",
             "avec",
             "informations",
-            null,
-            null,
-            null,
-            null,
-            null,
             "segmentation",
             "de",
             "l’apprentissage",
@@ -18077,10 +17721,8 @@
             "langage",
             "réel",
             "sous-ressource,",
-            null,
             "ces",
             "peuvent",
-            null,
             "de",
             "segmentation"
         ]
@@ -18181,9 +17823,6 @@
             "construire",
             "à",
             "évaluer",
-            null,
-            null,
-            null,
             "ensembles",
             "tests",
             "composés",
@@ -18298,18 +17937,10 @@
             "du",
             "système",
             "avec",
-            null,
-            null,
-            null,
             "utilisant",
-            null,
             "évaluation",
             "et",
             "(DA)",
-            null,
-            null,
-            null,
-            null,
             "de"
         ]
     },
@@ -18555,9 +18186,7 @@
         "postedition": "Nous présentons des expériences sur deux corpus comparables, le corpus MERLOT pour le français et le corpus THYME pour l'anglais, et montrons qu'une approche commune peut être utilisée pour les deux langues.",
         "spans_each_mt": [],
         "relevant_words": [
-            "expérimentons",
-            null,
-            null
+            "expérimentons"
         ]
     },
     {
@@ -18664,14 +18293,9 @@
         ],
         "relevant_words": [
             "mot-clé-signe,",
-            null,
-            null,
-            null,
             "une",
             "signature",
-            "continue.",
-            null,
-            null
+            "continue."
         ]
     },
     {
@@ -18862,8 +18486,6 @@
             "de",
             "l'image,",
             "image",
-            null,
-            null,
             "demandé."
         ]
     },
@@ -18948,8 +18570,7 @@
         "postedition": "Notre modèle d'alignement automatique ouvre des possibilités pour l'amélioration de la traduction automatique des langues des signes en fournissant des données vidéo et textuelles synchronisées en continu.",
         "spans_each_mt": [],
         "relevant_words": [
-            "d'amélioration",
-            null
+            "d'amélioration"
         ]
     },
     {
@@ -19005,9 +18626,6 @@
             "de",
             "légendes",
             "avec",
-            null,
-            null,
-            null,
             "décodage"
         ]
     },
@@ -19120,8 +18738,6 @@
             "le",
             "sous-titrage",
             "synchronisation",
-            null,
-            null,
             "et",
             "avec"
         ]
@@ -19166,11 +18782,8 @@
             "comprendre",
             "l’écriture",
             "abstraite",
-            null,
             "francophones,",
             "hispanophones",
-            null,
-            null,
             "portugais"
         ]
     },
@@ -19474,23 +19087,14 @@
         ],
         "relevant_words": [
             "tests",
-            null,
-            null,
             "(EN/PT)WMT",
-            null,
             "obtenues",
             "auprès",
             "des",
             "sites",
             "Web",
             "de",
-            "d’éditeurs.",
-            null,
-            null,
-            null,
-            null,
-            null,
-            null
+            "d’éditeurs."
         ]
     },
     {
@@ -19501,9 +19105,6 @@
         "spans_each_mt": [],
         "relevant_words": [
             "Les",
-            null,
-            null,
-            null,
             "d’écriture",
             "abstraite",
             "dans",
@@ -19575,15 +19176,13 @@
         ],
         "relevant_words": [
             "abstraite,",
-            null,
             "dans",
             "les",
             "ensembles",
             "se",
             "sont",
             "appuyés",
-            "sur",
-            null
+            "sur"
         ]
     },
     {
@@ -19696,10 +19295,6 @@
         "spans_each_mt": [],
         "relevant_words": [
             "Une",
-            null,
-            null,
-            null,
-            null,
             "biomédicales",
             "scientifique"
         ]
@@ -19867,10 +19462,7 @@
             "la",
             "traduction",
             "automatique",
-            "biomédicale.",
-            null,
-            null,
-            null
+            "biomédicale."
         ]
     },
     {
@@ -20099,7 +19691,6 @@
         ],
         "relevant_words": [
             "d'allégations",
-            null,
             "de"
         ]
     },
@@ -20288,8 +19879,7 @@
             "vidéo",
             "2D-Skeleton",
             "de",
-            "la",
-            null
+            "la"
         ]
     },
     {
@@ -20351,7 +19941,6 @@
             "données",
             "en",
             "de",
-            null,
             "Française"
         ]
     },
@@ -20458,10 +20047,7 @@
         "relevant_words": [
             "existants",
             "signes,",
-            null,
             "originaux",
-            null,
-            null,
             "langue",
             "des",
             "signes,",
@@ -20572,7 +20158,6 @@
             "corpus",
             "aux",
             "unités",
-            null,
             "traitement",
             "des",
             "dans",
@@ -20580,7 +20165,6 @@
             "d'intégrations",
             "texte",
             "vidéo",
-            null,
             "récupération"
         ]
     },
@@ -20694,11 +20278,7 @@
         ],
         "relevant_words": [
             "soumissions",
-            null,
-            "d'actualités",
-            null,
-            null,
-            null
+            "d'actualités"
         ]
     },
     {
@@ -20773,11 +20353,8 @@
         ],
         "relevant_words": [
             "formons",
-            null,
             "attentive",
             "BPE",
-            null,
-            null,
             "factorisées",
             "le",
             "framework",
@@ -20828,8 +20405,6 @@
         ],
         "relevant_words": [
             "exploitant",
-            null,
-            null,
             "rétrotraduction."
         ]
     },
@@ -20938,10 +20513,7 @@
             "rétrotraduction",
             "est",
             "English→Turkish,",
-            null,
-            null,
             "soumission",
-            null,
             "limite",
             "la",
             "meilleure",
@@ -21019,8 +20591,7 @@
             }
         ],
         "relevant_words": [
-            "d’entrée.",
-            null
+            "d’entrée."
         ]
     },
     {
@@ -21307,7 +20878,6 @@
         "relevant_words": [
             "basée",
             "l'étendue",
-            null,
             "basés",
             "sur",
             "des",
@@ -21400,7 +20970,6 @@
             "diagrammes",
             "basée",
             "l'étendue",
-            null,
             "de",
             "circonscription"
         ]
@@ -21478,9 +21047,7 @@
         "relevant_words": [
             "banques",
             "allemandes",
-            null,
             "anglaises",
-            null,
             "pointe"
         ]
     },
@@ -21924,9 +21491,7 @@
             "sur",
             "le",
             "réseau",
-            "NMT.",
-            null,
-            null
+            "NMT."
         ]
     },
     {
@@ -21987,7 +21552,6 @@
         "relevant_words": [
             "NMT",
             "comparer",
-            null,
             "la"
         ]
     },
@@ -22032,8 +21596,7 @@
         "relevant_words": [
             "menées",
             "d’indicateurs",
-            "NMT",
-            null
+            "NMT"
         ]
     },
     {
@@ -22153,12 +21716,9 @@
         ],
         "relevant_words": [
             "Des",
-            null,
-            null,
             "sont",
             "essentielles",
             "au",
-            null,
             "du",
             "langage",
             "naturel."
@@ -22217,7 +21777,6 @@
             "récits",
             "pour",
             "l'information",
-            null,
             "visant"
         ]
     },
@@ -22278,7 +21837,6 @@
             "se",
             "sont",
             "entraînés",
-            null,
             "procéder"
         ]
     },
@@ -22322,7 +21880,6 @@
         ],
         "relevant_words": [
             "d'entité",
-            null,
             "d'attribut."
         ]
     },
@@ -22442,10 +21999,8 @@
         ],
         "relevant_words": [
             "s'étendait",
-            null,
             "aboutissait",
             "à",
-            null,
             "comprenant",
             "jetons)"
         ]
@@ -22657,11 +22212,9 @@
         ],
         "relevant_words": [
             "d'entité",
-            null,
             "la",
             "valeur",
             "construire",
-            null,
             "évaluer",
             "des",
             "d'informations."
@@ -23409,11 +22962,7 @@
             "sa",
             "composante",
             "langage",
-            "naturel",
-            null,
-            null,
-            null,
-            null
+            "naturel"
         ]
     },
     {
@@ -23489,11 +23038,8 @@
         "relevant_words": [
             "en",
             "morphologie",
-            null,
             "important",
-            "divers",
-            null,
-            null
+            "divers"
         ]
     },
     {
@@ -23517,8 +23063,7 @@
         ],
         "relevant_words": [
             "avec",
-            "un",
-            null
+            "un"
         ]
     },
     {
@@ -23625,7 +23170,6 @@
             "langage",
             "naturel",
             "biomédical",
-            null,
             "des"
         ]
     },
@@ -23795,8 +23339,6 @@
         ],
         "relevant_words": [
             "Ici,",
-            null,
-            null,
             "de",
             "la",
             "partie",
@@ -23860,8 +23402,6 @@
         ],
         "relevant_words": [
             "performances,",
-            null,
-            null,
             "exécutions",
             "d'ensembles",
             "données"
@@ -23990,8 +23530,6 @@
             "interlangues",
             "pour",
             "améliorer",
-            null,
-            null,
             "des",
             "à",
             "faibles",
@@ -24097,13 +23635,10 @@
             "(une",
             "instance",
             "LRL),",
-            null,
-            null,
             "cognées",
             "construites",
             "à",
             "partir",
-            null,
             "de",
             "mots",
             "bhojpuri."
@@ -24185,8 +23720,7 @@
             "formation",
             "NMT",
             "au",
-            "niveau",
-            null
+            "niveau"
         ]
     },
     {
@@ -24282,7 +23816,6 @@
         ],
         "relevant_words": [
             "l'appliquant",
-            null,
             "hindi-bangla."
         ]
     },
@@ -24336,9 +23869,6 @@
             "connaissance",
             "sémantique",
             "capturée",
-            null,
-            null,
-            null,
             "enchâssements",
             "au",
             "niveau",
@@ -24373,7 +23903,6 @@
         "relevant_words": [
             "prévision",
             "apparentée",
-            null,
             "en",
             "tant",
             "que",
@@ -24488,10 +24017,6 @@
             "apparentés",
             "apparentée,",
             "où",
-            null,
-            null,
-            null,
-            null,
             "mots",
             "apparentés",
             "sont",
@@ -24544,8 +24069,7 @@
         "relevant_words": [
             "(MT)",
             "fonction",
-            "des",
-            null
+            "des"
         ]
     },
     {
@@ -24591,19 +24115,13 @@
         "relevant_words": [
             "examinons",
             "si",
-            null,
-            null,
             "congénitale",
-            null,
             "informations",
             "provenant",
             "MT",
             "à",
             "faibles",
-            "ressources.",
-            null,
-            null,
-            null
+            "ressources."
         ]
     },
     {
@@ -24647,7 +24165,6 @@
         ],
         "relevant_words": [
             "MT",
-            null,
             "MT"
         ]
     },
@@ -24811,12 +24328,10 @@
             "langages",
             "romains",
             "apparentée",
-            null,
             "MT",
             "à",
             "faibles",
-            "ressources.",
-            null
+            "ressources."
         ]
     },
     {
@@ -24840,9 +24355,7 @@
         ],
         "relevant_words": [
             "MT,",
-            null,
-            "MT.",
-            null
+            "MT."
         ]
     },
     {
@@ -25100,7 +24613,6 @@
             "previ-",
             "ous,",
             "publié",
-            null,
             "séries"
         ]
     },
@@ -25160,9 +24672,7 @@
         "relevant_words": [
             "principaux",
             "ensembles",
-            "MEDLINE,",
-            null,
-            null
+            "MEDLINE,"
         ]
     },
     {
@@ -25296,13 +24806,10 @@
         ],
         "relevant_words": [
             "expérimentons",
-            null,
-            null,
             "notes",
             "anonymisées",
             "Clinique",
-            "Mayo,",
-            null
+            "Mayo,"
         ]
     },
     {
@@ -25596,7 +25103,6 @@
         ],
         "relevant_words": [
             "niveaux:",
-            null,
             "macro-syntactique,",
             "illocutionnaires",
             "micro-syntactique",
@@ -25612,9 +25118,7 @@
         "relevant_words": [
             "micro-syntactique,",
             "de",
-            "d’analyse",
-            null,
-            null
+            "d’analyse"
         ]
     },
     {
@@ -25725,8 +25229,7 @@
             "dépendance",
             "de",
             "pieux",
-            "sous-tendent",
-            null
+            "sous-tendent"
         ]
     },
     {
@@ -25782,8 +25285,7 @@
         ],
         "relevant_words": [
             "faible",
-            "ressource?",
-            null
+            "ressource?"
         ]
     },
     {
@@ -26042,8 +25544,7 @@
         ],
         "relevant_words": [
             "ressources:",
-            "préformation",
-            null
+            "préformation"
         ]
     },
     {
@@ -26279,20 +25780,6 @@
             "ensembles",
             "utilisés",
             "efficacement",
-            null,
-            null,
-            null,
-            null,
-            null,
-            null,
-            null,
-            null,
-            null,
-            null,
-            null,
-            null,
-            null,
-            null,
             "traduction",
             "automatique",
             "complexe,",
@@ -26321,11 +25808,9 @@
             "publication",
             "des",
             "de",
-            null,
             "consomment",
             "beaucoup",
             "de",
-            null,
             "et",
             "de"
         ]
@@ -26436,7 +25921,6 @@
         "spans_each_mt": [],
         "relevant_words": [
             "ensemble",
-            null,
             "à",
             "grande",
             "échelle",
@@ -26483,12 +25967,6 @@
         "relevant_words": [
             "ensembles",
             "phrases-clés",
-            null,
-            null,
-            null,
-            null,
-            null,
-            null,
             "disponibles",
             "que",
             "pour",
@@ -26540,7 +26018,6 @@
         ],
         "relevant_words": [
             "l'ensemble",
-            null,
             "ensembles"
         ]
     },
@@ -26625,7 +26102,6 @@
         ],
         "relevant_words": [
             "phrases-clés",
-            null,
             "pointe",
             "afin",
             "d'obtenir",
@@ -26660,8 +26136,7 @@
             }
         ],
         "relevant_words": [
-            "L'ensemble",
-            null
+            "L'ensemble"
         ]
     },
     {
@@ -26936,9 +26411,7 @@
         ],
         "relevant_words": [
             "légère",
-            null,
             "des",
-            null,
             "d’adaptateur",
             "supplémentaires",
             "(petites),"
@@ -27028,8 +26501,6 @@
         ],
         "relevant_words": [
             "contrastons",
-            null,
-            null,
             "idée"
         ]
     },
@@ -27158,15 +26629,12 @@
             "perspective",
             "ouverte",
             "pour",
-            null,
-            null,
             "également",
             "pour",
             "étiqueter",
             "les",
             "de",
-            "domaine.",
-            null
+            "domaine."
         ]
     },
     {
@@ -27255,8 +26723,7 @@
             }
         ],
         "relevant_words": [
-            "des",
-            null
+            "des"
         ]
     },
     {
@@ -27443,8 +26910,7 @@
         ],
         "relevant_words": [
             "dans",
-            "la",
-            null
+            "la"
         ]
     },
     {
@@ -27670,8 +27136,7 @@
             }
         ],
         "relevant_words": [
-            "l’analyse.",
-            null
+            "l’analyse."
         ]
     },
     {
@@ -27870,7 +27335,6 @@
             "l’alphabétisation",
             "professionnelle",
             "en",
-            null,
             "littératie"
         ]
     },
@@ -27898,9 +27362,7 @@
         "relevant_words": [
             "axée",
             "les",
-            "données,",
-            null,
-            null
+            "données,"
         ]
     },
     {
@@ -27912,8 +27374,7 @@
         "relevant_words": [
             "l’augmentation",
             "de",
-            "datafication",
-            null
+            "datafication"
         ]
     },
     {
@@ -28060,8 +27521,6 @@
             "Efficace",
             "Discontinue-Structure",
             "Parsing",
-            null,
-            null,
             "l’arborescence",
             "maximale"
         ]
@@ -28167,9 +27626,7 @@
             "épines",
             "lexicalisées",
             "effectué",
-            "conjointement.",
-            null,
-            null
+            "conjointement."
         ]
     },
     {
@@ -28251,16 +27708,11 @@
         "relevant_words": [
             "marquage",
             "conjoint",
-            null,
-            null,
             "de",
             "dépendance",
             "non-projective",
             "maximale",
             "généralisée,",
-            null,
-            null,
-            null,
             "grâce",
             "à"
         ]
@@ -28308,11 +27760,9 @@
         ],
         "relevant_words": [
             "pointe",
-            null,
             "de",
             "solides",
-            "d’indépendance.",
-            null
+            "d’indépendance."
         ]
     },
     {
@@ -28952,10 +28402,6 @@
         ],
         "relevant_words": [
             "aborde",
-            null,
-            null,
-            null,
-            null,
             "de",
             "discours,",
             "extra-sentiel."
@@ -29007,13 +28453,6 @@
             "dans",
             "la",
             "(NMT),",
-            null,
-            null,
-            null,
-            null,
-            null,
-            null,
-            null,
             "de",
             "discours."
         ]
@@ -29070,8 +28509,6 @@
         ],
         "relevant_words": [
             "ensembles",
-            null,
-            null,
             "discours",
             "faits",
             "à",
@@ -29081,7 +28518,6 @@
             "pour",
             "exploiter",
             "les",
-            null,
             "précédentes."
         ]
     },
@@ -29162,13 +28598,10 @@
             "façon",
             "d’exploiter",
             "le",
-            null,
-            null,
             "de",
             "la",
             "phrase",
-            "précédente.",
-            null
+            "précédente."
         ]
     },
     {
@@ -29294,11 +28727,9 @@
             "tirés",
             "l’utilisation",
             "de",
-            null,
             "n’apportent",
             "qu’une",
             "amélioration",
-            null,
             "dans",
             "la",
             "gestion",
@@ -29308,8 +28739,7 @@
             "de",
             "notre",
             "ensemble",
-            "de",
-            null
+            "de"
         ]
     },
     {
@@ -29429,11 +28859,6 @@
             "actuelle",
             "conduit",
             "à",
-            null,
-            null,
-            null,
-            null,
-            null,
             "stratégie",
             "multi-codage",
             "conduit",
@@ -29561,8 +28986,7 @@
         "postedition": "Pour ce faire, nous proposons de mettre en correspondance les éléments de l'ontologie avec des connaissances multilingues définies dans une ontologie SKOS.",
         "spans_each_mt": [],
         "relevant_words": [
-            "d'ontologie",
-            null
+            "d'ontologie"
         ]
     }
 ]
