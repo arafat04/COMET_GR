@@ -33,3 +33,79 @@ If the files are already there and match the expected revision/hash, it skips do
 So functionally: no bytes get re-downloaded,however it still does a cache lookup and returns the path. That's actually consistent with the notebook's output:
 
 Fetching 5 files: 100%|██████████| 5/5 [00:00<00:00, 7145.32it/s]
+
+**confidence_score_solved_final.ipynb is the initial version of confidence_score_solved_final.ipynb**
+
+confidence_score_solved_final.ipynb: 
+
+1. is working with postedition_aligned.community.tsv
+2. loading the model from already downloaded checkpoints and instantiating the CustomXCOMET with the checkpoint.
+3. The model can generate spans with or without references. Here we have the reference:
+
+       data = [
+        {
+          "src": "Boris Johnson teeters on edge of favour with Tory MPs",
+          "mt": "Boris Johnsons Beliebtheit bei Tory-Abgeordneten völlig in der Gunst",
+          "ref": "Boris Johnsons Beliebtheit bei Tory-MPs steht auf der Kippe"
+        }
+        ]
+so it expects data in a list of dictionaries where each keys needed to be explicitly specified.
+
+So we need to create the list of dictionaries from the dataframe. so in cell In[7], it is creating a list of dicts from the **original** dataframe where each line is separated, not the merged document. **The reason we are doing it that, as XCOMET has the max token length, if we pass the whole abstract, then it will not maybe able to produce the spans.** 
+
+4. then it calls the model on it:
+
+       In[9] model_output = model.predict(data, batch_size=8, gpus=1)
+
+5. In [16] - working with the model tokenizer to tokenize a word and and reconstruct the word using the token ids assigned to each token.
+
+**Main codes for getting spans for the community dataset start here:
+
+In [22]: # create a json file with the results
+
+# Save to a JSON file
+    with open("output_all_spans_community.json", "w", encoding="utf-8") as f:
+
+    json.dump(model_output.metadata.error_spans, f, ensure_ascii=False, indent=2)  # `indent` for readability
+6. **tokenize the translation and postedition using xcomet's tokenizer** - this is to get the word level offsets for the dataset in order to facilitate word level mapping.
+   
+8. 
+
+**dataset used for "confidence_score_solved_final.ipynb" and what codes and output files to look for:**
+
+1. Input data: postedition_aligned.community.tsv
+2. model: XCOMET already downloaded and the custom Xcomet class is instantiated with calling the checkpoint. In [5] and [6]
+3. output data: "output_all_spans_community.json" - In [22], next In is In [7], these codes are getting the total count for major,minor etc spans from the whole dataset and used for initial statistics analysis how the dataset is distributed across spans. - [ ] do we need to do this for czech as well?
+4. 
+
+
+**So what needed to be done for English to Czech experiment:**
+
+1. Load the dataset.
+2. use the same model as english to frn experiment.
+   from comet import download_model, load_from_checkpoint
+
+model_path = download_model("Unbabel/XCOMET-XL")
+#model = load_from_checkpoint(model_path)
+/storage/brno2/home/rahmang/envs/xcomet/lib/python3.11/site-packages/tqdm/auto.py:21: TqdmWarning: IProgress not found. Please update jupyter and ipywidgets. See https://ipywidgets.readthedocs.io/en/stable/user_install.html
+  from .autonotebook import tqdm as notebook_tqdm
+Fetching 5 files: 100%|██████████| 5/5 [00:00<00:00, 22770.38it/s]
+
+Then use the **CustomXCOMET** class and instantiate it using the checkpoint of the model. (In[6])
+
+3. Then pass the dataset as list of dicts in this format:
+
+        data = [
+                 {"src": source,
+                   "mt": mt,
+                 }
+                 {
+                   }
+                 ......
+               ]
+   where each dict is a line from the created document.
+
+  - [ ] How to do it more efficiently:
+
+
+   
