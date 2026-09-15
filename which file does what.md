@@ -34,13 +34,13 @@ So functionally: no bytes get re-downloaded,however it still does a cache lookup
 
 Fetching 5 files: 100%|██████████| 5/5 [00:00<00:00, 7145.32it/s]
 
-**confidence_score_solved_final.ipynb is the initial version of confidence_score_solved_final.ipynb**
+**confidence_score_solved.ipynb is the initial version of confidence_score_solved_final.ipynb**
 
 confidence_score_solved_final.ipynb: 
 
 1. is working with postedition_aligned.community.tsv
 2. loading the model from already downloaded checkpoints and instantiating the CustomXCOMET with the checkpoint.
-3. The model can generate spans with or without references. Here we have the reference:
+3. The model can generate spans with or without references. Here we have the reference: its doing this on cell In [7] with the heading: **create data list for calculating the spans without the ref** and dumping the result in this file: **output_all_spans_community.json** in In [22].
 
        data = [
         {
@@ -51,7 +51,7 @@ confidence_score_solved_final.ipynb:
         ]
 so it expects data in a list of dictionaries where each keys needed to be explicitly specified.
 
-So we need to create the list of dictionaries from the dataframe. so in cell In[7], it is creating a list of dicts from the **original** dataframe where each line is separated, not the merged document. **The reason we are doing it that, as XCOMET has the max token length, if we pass the whole abstract, then it will not maybe able to produce the spans.** 
+So we need to create the list of dictionaries from the dataframe. so in **cell In[7]**, it is creating a list of dicts from the **original** dataframe where each line is separated, not the merged document. **The reason we are doing it that, as XCOMET has the max token length, if we pass the whole abstract, then it will not maybe able to produce the spans.** 
 
 4. then it calls the model on it:
 
@@ -67,17 +67,33 @@ In [22]: # create a json file with the results
     with open("output_all_spans_community.json", "w", encoding="utf-8") as f:
 
     json.dump(model_output.metadata.error_spans, f, ensure_ascii=False, indent=2)  # `indent` for readability
-6. **tokenize the translation and postedition using xcomet's tokenizer** - this is to get the word level offsets for the dataset in order to facilitate word level mapping.
-   
-8. 
+6. **tokenize the translation and postedition using xcomet's tokenizer** - this is to get the word level offsets for the dataset in order to facilitate word level mapping. This calculates the offsets of each word and stores the tokenized words for each sentence as well their offsets. 
+
+7. **difflib helper function** - it just calculating the statistics of how many major, minor, critical spans are there using tokenized words by xcomet and saves the result at:
+   **with open("all_entries_bug_fixed_with_opcodes_community.json", "w", encoding="utf-8") as f:**
+
+8. **'Sentence level score' - heading:** - its just uses the regression head to provide sentence level scores and also later the codes also do the whole abstract level scores.
 
 **dataset used for "confidence_score_solved_final.ipynb" and what codes and output files to look for:**
 
 1. Input data: postedition_aligned.community.tsv
 2. model: XCOMET already downloaded and the custom Xcomet class is instantiated with calling the checkpoint. In [5] and [6]
 3. output data: "output_all_spans_community.json" - In [22], next In is In [7], these codes are getting the total count for major,minor etc spans from the whole dataset and used for initial statistics analysis how the dataset is distributed across spans. - [ ] do we need to do this for czech as well?
-4. 
-
+4. tokenized output for community data: **df.to_csv("postedition_aligned_with_tokenized_offsets_community.csv", index=False)** - [ ] look for it where it gets used, it should be used in calculating the word level mapping.
+5. community dataset statistics of the proportion of spans: with open("all_entries_bug_fixed_with_opcodes_community.json", "w", encoding="utf-8") as f:
+6. it produces all the json files needed for statistics, xcomet error spans:
+   1. all_entries_bug_fixed_with_opcodes_community.json
+   2. output_all_spans_community.json
+   3. postedition_aligned_with_tokenized_offsets_community.csv
+   4. relevant_words_in_pet_community_without_mapping.json
+   what it does not produce or the codes were removed for generating the files:
+   1. all_entries.json
+   2. all_entries_bug_fixed.json
+   3. all_entries_with_opcodes_translator.json
+   4. postedition_aligned.final.translator.tsv
+   5. postedition_aligned_with_tokenized_offsets_translator.csv
+   6. relevant_words_in_pet_community.json
+   7. relevant_words_in_pet_translator_without_mapping.json
 
 **So what needed to be done for English to Czech experiment:**
 
