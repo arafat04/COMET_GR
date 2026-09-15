@@ -86,7 +86,9 @@ In [22]: # create a json file with the results
    2. output_all_spans_community.json
    3. postedition_aligned_with_tokenized_offsets_community.csv
    4. relevant_words_in_pet_community_without_mapping.json
+      
    what it does not produce or the codes were removed for generating the files:
+   
    1. all_entries.json
    2. all_entries_bug_fixed.json
    3. all_entries_with_opcodes_translator.json
