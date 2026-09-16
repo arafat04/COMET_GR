@@ -82,10 +82,10 @@ In [22]: # create a json file with the results
 4. tokenized output for community data: **df.to_csv("postedition_aligned_with_tokenized_offsets_community.csv", index=False)** - [ ] look for it where it gets used, it should be used in calculating the word level mapping.
 5. community dataset statistics of the proportion of spans: with open("all_entries_bug_fixed_with_opcodes_community.json", "w", encoding="utf-8") as f:
 6. it produces all the json files needed for statistics, xcomet error spans:
-   1. all_entries_bug_fixed_with_opcodes_community.json
-   2. output_all_spans_community.json
-   3. postedition_aligned_with_tokenized_offsets_community.csv
-   4. relevant_words_in_pet_community_without_mapping.json
+   1. all_entries_bug_fixed_with_opcodes_community.json - final output file
+   2. output_all_spans_community.json - contains xcomet spans final version
+   3. postedition_aligned_with_tokenized_offsets_community.csv - this is the dataframe that adds tokenized words, offsets retrieved from xcomet to the original community dataset.
+   4. relevant_words_in_pet_community_without_mapping.json - for each row in the dataframe the relevant words are extracted from the difflib opcodes where the words were replaced or deleted in the PE version from the original MT version, and this file contains entry for each row and the words that are relevant (replaced or deleted by the post editors in the MT sentence)
       
    what it does not produce or the codes were removed for generating the files:
    
@@ -97,9 +97,11 @@ In [22]: # create a json file with the results
    6. relevant_words_in_pet_community.json
    7. relevant_words_in_pet_translator_without_mapping.json
 
-**So what needed to be done for English to Czech experiment:**
+### **So what needed to be done for English to Czech experiment:**
 
-1. Load the dataset.
+- [ ] 1. Load the dataset. first compute the abstract length of each document, then create the dataset in this way:
+       - [ ] 1.1. only keep the sentences for a document that is part of it. then insert translation_id (you can start from 1 to 20) and postedit id (same, 1 to 20) and number each sentence in a document from 0 to doc_length -1.
+       -
 2. use the same model as english to frn experiment.
    from comet import download_model, load_from_checkpoint
 
@@ -123,7 +125,20 @@ Then use the **CustomXCOMET** class and instantiate it using the checkpoint of t
                ]
    where each dict is a line from the created document.
 
-  - [ ] How to do it more efficiently:
+  - [ ] 3.1. then calculate the xcomet spans for each sentences and store them in "xcomet_spans.json"
+  - [ ] 3.2. tokenize the sentences using xcomet tokenizer for later use to have word mapping logics. store it as "xcomet tokenized word and offsets_czech.json"
+  - [ ] 3.3. do i also need to store difflib opcodes here?
 
 
-   
+### How relevant words are calculated:
+
+those words were replaced, deleted from MT in the pe version, not the inserted ones.
+
+#### So what does the **### confidence_score_solved_final.ipynb:** do:
+
+1. It implements the custom xcomet class,
+2. tokenize the sentences row wise in the df to get tokenize words and offsets for mt and pet sentences.
+3. gets the xcomet spans
+4. calculate the statistics of which words that were edited by the post editors actually fall into xcomet spans. for pedited words, it uses difflib sequence matcher and opcodes. and then it checks if the opcodes or changed words are inside the xcomet spans and then calculate the model performance in terms of tp, fp, tn, fn, - however, **the sequence mathcer works at word level.**
+5. then it gets sentence level regression head scores and also for abstract level.
+6. saves the relevant words found from difflib opcodes, df with tokenized words and offsets 
