@@ -181,3 +181,7 @@ It uses ""output_all_spans_community.json"  and ""relevant_words_in_pet_communit
 # 7. tp_fp_using_difflib_translator.ipynb 
 
 it does the same thing as no 6. 
+
+# 8. test_run_eng_cz.ipynb:
+
+It checks if we can instantiate the model using the custom xcomet class and check if the result of the same data used in "confidence_score_solved_final.ipynb" produced here also the same. **ITS SAME.** 
