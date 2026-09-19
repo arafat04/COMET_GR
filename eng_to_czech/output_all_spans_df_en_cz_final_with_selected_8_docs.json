@@ -1,0 +1,2974 @@
+[
+  [
+    {
+      "text": [
+        "k",
+        "vyzkoušení",
+        "a",
+        "zvýšení",
+        "výnosů"
+      ],
+      "confidence": 0.4998055100440979,
+      "severity": "major",
+      "start": 31,
+      "end": 61,
+      "check severity": [
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major"
+      ]
+    },
+    {
+      "text": [
+        "tlaku"
+      ],
+      "confidence": 0.4838374853134155,
+      "severity": "major",
+      "start": 81,
+      "end": 87,
+      "check severity": [
+        "major"
+      ]
+    },
+    {
+      "text": [
+        "na",
+        "vytlačení",
+        "více"
+      ],
+      "confidence": 0.4628485143184662,
+      "severity": "major",
+      "start": 92,
+      "end": 110,
+      "check severity": [
+        "major",
+        "major",
+        "major",
+        "major",
+        "major"
+      ]
+    }
+  ],
+  [
+    {
+      "text": [
+        "do"
+      ],
+      "confidence": 0.3504355847835541,
+      "severity": "major",
+      "start": 42,
+      "end": 45,
+      "check severity": [
+        "major"
+      ]
+    },
+    {
+      "text": [
+        "podnikání,"
+      ],
+      "confidence": 0.5043115615844727,
+      "severity": "major",
+      "start": 77,
+      "end": 88,
+      "check severity": [
+        "major"
+      ]
+    },
+    {
+      "text": [
+        "je"
+      ],
+      "confidence": 0.41571885347366333,
+      "severity": "major",
+      "start": 120,
+      "end": 123,
+      "check severity": [
+        "major"
+      ]
+    },
+    {
+      "text": [
+        "podstaty",
+        "nižší",
+        "riziko",
+        "a",
+        "rychlejší",
+        "vítězství,“"
+      ],
+      "confidence": 0.4437088072299957,
+      "severity": "major",
+      "start": 130,
+      "end": 176,
+      "check severity": [
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major"
+      ]
+    },
+    {
+      "text": [
+        "vedoucí",
+        "klientského",
+        "bankovnictví"
+      ],
+      "confidence": 0.43836647272109985,
+      "severity": "major",
+      "start": 206,
+      "end": 239,
+      "check severity": [
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major"
+      ]
+    }
+  ],
+  [
+    {
+      "text": [
+        "iniciativa",
+        "„síťový",
+        "příjem“"
+      ],
+      "confidence": 0.44497817754745483,
+      "severity": "major",
+      "start": 83,
+      "end": 110,
+      "check severity": [
+        "minor",
+        "minor",
+        "major",
+        "major",
+        "major",
+        "major",
+        "minor"
+      ]
+    },
+    {
+      "text": [
+        "příjmy",
+        "stovky"
+      ],
+      "confidence": 0.34814488887786865,
+      "severity": "major",
+      "start": 129,
+      "end": 143,
+      "check severity": [
+        "major",
+        "minor"
+      ]
+    },
+    {
+      "text": [
+        "dolarů."
+      ],
+      "confidence": 0.3655959665775299,
+      "severity": "minor",
+      "start": 151,
+      "end": 159,
+      "check severity": [
+        "minor"
+      ]
+    }
+  ],
+  [
+    {
+      "text": [
+        "Pohon"
+      ],
+      "confidence": 0.5084123611450195,
+      "severity": "major",
+      "start": 0,
+      "end": 5,
+      "check severity": [
+        "major",
+        "major"
+      ]
+    },
+    {
+      "text": [
+        "důležitou"
+      ],
+      "confidence": 0.4186568856239319,
+      "severity": "major",
+      "start": 8,
+      "end": 18,
+      "check severity": [
+        "major"
+      ]
+    },
+    {
+      "text": [
+        "zmenšovat"
+      ],
+      "confidence": 0.38753747940063477,
+      "severity": "major",
+      "start": 132,
+      "end": 142,
+      "check severity": [
+        "major",
+        "major",
+        "major"
+      ]
+    },
+    {
+      "text": [
+        "pod",
+        "náklady"
+      ],
+      "confidence": 0.3583698570728302,
+      "severity": "major",
+      "start": 212,
+      "end": 224,
+      "check severity": [
+        "major",
+        "minor"
+      ]
+    }
+  ],
+  [
+    {
+      "text": [
+        "investovat"
+      ],
+      "confidence": 0.3511190712451935,
+      "severity": "major",
+      "start": 16,
+      "end": 27,
+      "check severity": [
+        "major"
+      ]
+    },
+    {
+      "text": [
+        "dolarů",
+        "do",
+        "souladu",
+        "s",
+        "finanční",
+        "kriminalitou"
+      ],
+      "confidence": 0.43072980642318726,
+      "severity": "major",
+      "start": 42,
+      "end": 84,
+      "check severity": [
+        "minor",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major"
+      ]
+    },
+    {
+      "text": [
+        "urovnání",
+        "1,9",
+        "miliardy",
+        "USD"
+      ],
+      "confidence": 0.3809400498867035,
+      "severity": "major",
+      "start": 92,
+      "end": 118,
+      "check severity": [
+        "minor",
+        "major",
+        "major",
+        "minor",
+        "minor",
+        "major",
+        "major"
+      ]
+    },
+    {
+      "text": [
+        "jednotky."
+      ],
+      "confidence": 0.3809351623058319,
+      "severity": "minor",
+      "start": 236,
+      "end": 246,
+      "check severity": [
+        "minor"
+      ]
+    }
+  ],
+  [
+    {
+      "text": [
+        "zákazníky",
+        "“a",
+        "společnosti",
+        "na",
+        "sebe",
+        "navazuje",
+        "a"
+      ],
+      "confidence": 0.46707406640052795,
+      "severity": "major",
+      "start": 40,
+      "end": 84,
+      "check severity": [
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major"
+      ]
+    },
+    {
+      "text": [
+        "odhalení"
+      ],
+      "confidence": 0.48271530866622925,
+      "severity": "major",
+      "start": 127,
+      "end": 136,
+      "check severity": [
+        "major",
+        "major",
+        "major"
+      ]
+    }
+  ],
+  [
+    {
+      "text": [
+        "by",
+        "mohli",
+        "přecházet"
+      ],
+      "confidence": 0.5023401379585266,
+      "severity": "major",
+      "start": 56,
+      "end": 75,
+      "check severity": [
+        "major",
+        "major",
+        "major",
+        "major"
+      ]
+    },
+    {
+      "text": [
+        "pomáháním"
+      ],
+      "confidence": 0.3749634325504303,
+      "severity": "minor",
+      "start": 165,
+      "end": 175,
+      "check severity": [
+        "minor"
+      ]
+    },
+    {
+      "text": [
+        "obchodu",
+        "HSBC."
+      ],
+      "confidence": 0.4014968276023865,
+      "severity": "major",
+      "start": 231,
+      "end": 245,
+      "check severity": [
+        "major",
+        "major",
+        "major"
+      ]
+    }
+  ],
+  [
+    {
+      "text": [
+        "Společnost",
+        "Nivison",
+        "společnosti"
+      ],
+      "confidence": 0.483885258436203,
+      "severity": "major",
+      "start": 0,
+      "end": 30,
+      "check severity": [
+        "major",
+        "major",
+        "major",
+        "major",
+        "major"
+      ]
+    },
+    {
+      "text": [
+        "uvedla,",
+        "že",
+        "okamžik",
+        "žárovky",
+        "si",
+        "uvědomuje,"
+      ],
+      "confidence": 0.4463229179382324,
+      "severity": "major",
+      "start": 35,
+      "end": 76,
+      "check severity": [
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major"
+      ]
+    },
+    {
+      "text": [
+        "tento",
+        "nástroj"
+      ],
+      "confidence": 0.3999452590942383,
+      "severity": "major",
+      "start": 79,
+      "end": 93,
+      "check severity": [
+        "major",
+        "major"
+      ]
+    },
+    {
+      "text": [
+        "přemístěn"
+      ],
+      "confidence": 0.48763203620910645,
+      "severity": "major",
+      "start": 105,
+      "end": 115,
+      "check severity": [
+        "major",
+        "major",
+        "major",
+        "major",
+        "major"
+      ]
+    },
+    {
+      "text": [
+        "hledal"
+      ],
+      "confidence": 0.45703238248825073,
+      "severity": "major",
+      "start": 124,
+      "end": 131,
+      "check severity": [
+        "major",
+        "major"
+      ]
+    },
+    {
+      "text": [
+        "„červené",
+        "vlajky“"
+      ],
+      "confidence": 0.4534144699573517,
+      "severity": "major",
+      "start": 193,
+      "end": 210,
+      "check severity": [
+        "major",
+        "major"
+      ]
+    }
+  ],
+  [
+    {
+      "text": [
+        "Kmenové"
+      ],
+      "confidence": 0.34470564126968384,
+      "severity": "major",
+      "start": 0,
+      "end": 7,
+      "check severity": [
+        "major",
+        "major"
+      ]
+    },
+    {
+      "text": [
+        "pacientů"
+      ],
+      "confidence": 0.3943239450454712,
+      "severity": "major",
+      "start": 16,
+      "end": 25,
+      "check severity": [
+        "major",
+        "major"
+      ]
+    },
+    {
+      "text": [
+        "rakovinou",
+        "u",
+        "dětí",
+        "ztracených",
+        "v",
+        "dětské",
+        "nemocnici"
+      ],
+      "confidence": 0.4133090376853943,
+      "severity": "major",
+      "start": 27,
+      "end": 74,
+      "check severity": [
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major"
+      ]
+    },
+    {
+      "text": [
+        "poruše",
+        "mrazáku"
+      ],
+      "confidence": 0.35948193073272705,
+      "severity": "major",
+      "start": 77,
+      "end": 92,
+      "check severity": [
+        "major",
+        "major"
+      ]
+    }
+  ],
+  [],
+  [],
+  [
+    {
+      "text": [
+        "Uvedený",
+        "pacient",
+        "vyžadoval",
+        "vzpomínku",
+        "na",
+        "kmenové",
+        "buňky,"
+      ],
+      "confidence": 0.47150981426239014,
+      "severity": "major",
+      "start": 56,
+      "end": 110,
+      "check severity": [
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major"
+      ]
+    }
+  ],
+  [
+    {
+      "text": [
+        "ztrátě"
+      ],
+      "confidence": 0.3586508333683014,
+      "severity": "major",
+      "start": 52,
+      "end": 59,
+      "check severity": [
+        "major"
+      ]
+    },
+    {
+      "text": [
+        "náhodně"
+      ],
+      "confidence": 0.34545189142227173,
+      "severity": "major",
+      "start": 63,
+      "end": 71,
+      "check severity": [
+        "major"
+      ]
+    },
+    {
+      "text": [
+        "za",
+        "dohled",
+        "nad",
+        "zasíláním",
+        "zpráv."
+      ],
+      "confidence": 0.46816784143447876,
+      "severity": "major",
+      "start": 143,
+      "end": 174,
+      "check severity": [
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major"
+      ]
+    }
+  ],
+  [
+    {
+      "text": [
+        "kmenových"
+      ],
+      "confidence": 0.36215606331825256,
+      "severity": "major",
+      "start": 27,
+      "end": 37,
+      "check severity": [
+        "major"
+      ]
+    },
+    {
+      "text": [
+        "umístěny",
+        "do",
+        "dlouhodobého",
+        "skladování,"
+      ],
+      "confidence": 0.434897243976593,
+      "severity": "major",
+      "start": 55,
+      "end": 92,
+      "check severity": [
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major"
+      ]
+    },
+    {
+      "text": [
+        "se",
+        "chtějí",
+        "znovu",
+        "sklízet."
+      ],
+      "confidence": 0.5304878950119019,
+      "severity": "major",
+      "start": 170,
+      "end": 195,
+      "check severity": [
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major"
+      ]
+    }
+  ],
+  [
+    {
+      "text": [
+        "to"
+      ],
+      "confidence": 0.3410729765892029,
+      "severity": "major",
+      "start": 16,
+      "end": 19,
+      "check severity": [
+        "major"
+      ]
+    },
+    {
+      "text": [
+        "„bolestivý“."
+      ],
+      "confidence": 0.44191741943359375,
+      "severity": "major",
+      "start": 31,
+      "end": 44,
+      "check severity": [
+        "major",
+        "major",
+        "major",
+        "major"
+      ]
+    },
+    {
+      "text": [
+        "Corona"
+      ],
+      "confidence": 0.3670617640018463,
+      "severity": "minor",
+      "start": 58,
+      "end": 65,
+      "check severity": [
+        "minor"
+      ]
+    },
+    {
+      "text": [
+        "diagnostikována",
+        "neuroblastom",
+        "fáze",
+        "4"
+      ],
+      "confidence": 0.421939492225647,
+      "severity": "major",
+      "start": 125,
+      "end": 161,
+      "check severity": [
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major"
+      ]
+    },
+    {
+      "text": [
+        "spojen"
+      ],
+      "confidence": 0.35014820098876953,
+      "severity": "major",
+      "start": 226,
+      "end": 233,
+      "check severity": [
+        "major"
+      ]
+    },
+    {
+      "text": [
+        "stroji"
+      ],
+      "confidence": 0.38385969400405884,
+      "severity": "major",
+      "start": 236,
+      "end": 243,
+      "check severity": [
+        "major",
+        "major"
+      ]
+    },
+    {
+      "text": [
+        "který",
+        "shromažďoval"
+      ],
+      "confidence": 0.3552187979221344,
+      "severity": "major",
+      "start": 256,
+      "end": 275,
+      "check severity": [
+        "major",
+        "major"
+      ]
+    },
+    {
+      "text": [
+        "znovu",
+        "naplněna",
+        "zpět"
+      ],
+      "confidence": 0.44437655806541443,
+      "severity": "major",
+      "start": 309,
+      "end": 329,
+      "check severity": [
+        "major",
+        "major",
+        "major",
+        "major",
+        "major"
+      ]
+    }
+  ],
+  [
+    {
+      "text": [
+        "„Pokusil",
+        "jsem",
+        "se",
+        "spát"
+      ],
+      "confidence": 0.45487719774246216,
+      "severity": "major",
+      "start": 0,
+      "end": 21,
+      "check severity": [
+        "major",
+        "major",
+        "major",
+        "major",
+        "major"
+      ]
+    },
+    {
+      "text": [
+        "jen"
+      ],
+      "confidence": 0.47515806555747986,
+      "severity": "major",
+      "start": 36,
+      "end": 40,
+      "check severity": [
+        "major"
+      ]
+    },
+    {
+      "text": [
+        "třást,"
+      ],
+      "confidence": 0.3804026246070862,
+      "severity": "major",
+      "start": 47,
+      "end": 54,
+      "check severity": [
+        "major",
+        "major"
+      ]
+    },
+    {
+      "text": [
+        "jsem",
+        "začal",
+        "vyděsit"
+      ],
+      "confidence": 0.4223063588142395,
+      "severity": "major",
+      "start": 60,
+      "end": 79,
+      "check severity": [
+        "major",
+        "major",
+        "major",
+        "major",
+        "major"
+      ]
+    },
+    {
+      "text": [
+        "jsem"
+      ],
+      "confidence": 0.3864012062549591,
+      "severity": "major",
+      "start": 87,
+      "end": 92,
+      "check severity": [
+        "major"
+      ]
+    },
+    {
+      "text": [
+        "řekla"
+      ],
+      "confidence": 0.4012353718280792,
+      "severity": "major",
+      "start": 101,
+      "end": 107,
+      "check severity": [
+        "major"
+      ]
+    }
+  ],
+  [],
+  [
+    {
+      "text": [
+        "regionálními",
+        "vítězi"
+      ],
+      "confidence": 0.3832630515098572,
+      "severity": "minor",
+      "start": 45,
+      "end": 65,
+      "check severity": [
+        "minor",
+        "minor",
+        "minor",
+        "minor"
+      ]
+    }
+  ],
+  [
+    {
+      "text": [
+        "absolventi"
+      ],
+      "confidence": 0.4180087447166443,
+      "severity": "minor",
+      "start": 58,
+      "end": 69,
+      "check severity": [
+        "minor",
+        "minor"
+      ]
+    },
+    {
+      "text": [
+        "v",
+        "roce",
+        "2019",
+        "Global",
+        "Undergraduate",
+        "Awards,"
+      ],
+      "confidence": 0.41975587606430054,
+      "severity": "major",
+      "start": 95,
+      "end": 136,
+      "check severity": [
+        "minor",
+        "major",
+        "minor",
+        "minor",
+        "minor",
+        "minor",
+        "minor"
+      ]
+    },
+    {
+      "text": [
+        "soudci"
+      ],
+      "confidence": 0.3969070315361023,
+      "severity": "minor",
+      "start": 191,
+      "end": 198,
+      "check severity": [
+        "minor",
+        "minor"
+      ]
+    }
+  ],
+  [
+    {
+      "text": [
+        "Evropskou",
+        "cenu",
+        "za",
+        "Life",
+        "Sciences,"
+      ],
+      "confidence": 0.43161576986312866,
+      "severity": "minor",
+      "start": 62,
+      "end": 95,
+      "check severity": [
+        "minor",
+        "minor",
+        "minor",
+        "minor",
+        "minor",
+        "minor"
+      ]
+    },
+    {
+      "text": [
+        "vystudoval",
+        "MSc"
+      ],
+      "confidence": 0.4167885482311249,
+      "severity": "minor",
+      "start": 112,
+      "end": 127,
+      "check severity": [
+        "minor",
+        "minor",
+        "minor",
+        "minor",
+        "minor"
+      ]
+    },
+    {
+      "text": [
+        "Health",
+        "Nursing"
+      ],
+      "confidence": 0.43481767177581787,
+      "severity": "minor",
+      "start": 134,
+      "end": 149,
+      "check severity": [
+        "minor",
+        "minor",
+        "minor"
+      ]
+    },
+    {
+      "text": [
+        "cenu",
+        "Nursing,",
+        "Midwifery",
+        "&"
+      ],
+      "confidence": 0.43674641847610474,
+      "severity": "minor",
+      "start": 158,
+      "end": 184,
+      "check severity": [
+        "minor",
+        "minor",
+        "minor",
+        "minor",
+        "minor"
+      ]
+    },
+    {
+      "text": [
+        "Healthcare,"
+      ],
+      "confidence": 0.4491194486618042,
+      "severity": "minor",
+      "start": 191,
+      "end": 203,
+      "check severity": [
+        "minor"
+      ]
+    }
+  ],
+  [
+    {
+      "text": [
+        "konkurencí",
+        "některých"
+      ],
+      "confidence": 0.3955276906490326,
+      "severity": "minor",
+      "start": 82,
+      "end": 103,
+      "check severity": [
+        "minor",
+        "minor",
+        "minor"
+      ]
+    }
+  ],
+  [],
+  [
+    {
+      "text": [
+        "„Ceny",
+        "bakalářského",
+        "studia"
+      ],
+      "confidence": 0.4202323853969574,
+      "severity": "major",
+      "start": 0,
+      "end": 25,
+      "check severity": [
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major"
+      ]
+    },
+    {
+      "text": [
+        "ostře",
+        "zpochybňovány"
+      ],
+      "confidence": 0.47564780712127686,
+      "severity": "critical",
+      "start": 30,
+      "end": 50,
+      "check severity": [
+        "critical",
+        "major",
+        "critical",
+        "critical",
+        "critical",
+        "critical"
+      ]
+    },
+    {
+      "text": [
+        "Dundee"
+      ],
+      "confidence": 0.37941277027130127,
+      "severity": "major",
+      "start": 163,
+      "end": 170,
+      "check severity": [
+        "major"
+      ]
+    },
+    {
+      "text": [
+        "zastoupen"
+      ],
+      "confidence": 0.34802722930908203,
+      "severity": "major",
+      "start": 183,
+      "end": 193,
+      "check severity": [
+        "major"
+      ]
+    }
+  ],
+  [
+    {
+      "text": [
+        "bych",
+        "poděkovat",
+        "svým",
+        "nejteplejším",
+        "gratulacím",
+        "Scottovi,",
+        "Chesterovi"
+      ],
+      "confidence": 0.3948741853237152,
+      "severity": "critical",
+      "start": 6,
+      "end": 71,
+      "check severity": [
+        "major",
+        "major",
+        "major",
+        "major",
+        "critical",
+        "critical",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major"
+      ]
+    },
+    {
+      "text": [
+        "Lolovi"
+      ],
+      "confidence": 0.45970988273620605,
+      "severity": "major",
+      "start": 73,
+      "end": 80,
+      "check severity": [
+        "major",
+        "major"
+      ]
+    }
+  ],
+  [
+    {
+      "text": [
+        "Investice",
+        "LNG"
+      ],
+      "confidence": 0.4372941851615906,
+      "severity": "minor",
+      "start": 0,
+      "end": 13,
+      "check severity": [
+        "minor",
+        "minor",
+        "minor",
+        "minor"
+      ]
+    }
+  ],
+  [
+    {
+      "text": [
+        "zkapalněného"
+      ],
+      "confidence": 0.4062318503856659,
+      "severity": "minor",
+      "start": 12,
+      "end": 25,
+      "check severity": [
+        "minor"
+      ]
+    }
+  ],
+  [
+    {
+      "text": [
+        "„Letos",
+        "2019",
+        "poprvé",
+        "zlomil",
+        "nejvyšší",
+        "částku",
+        "(konečná",
+        "investiční",
+        "rozhodnutí)",
+        "poprvé,",
+        "50",
+        "miliard",
+        "dolarů,“"
+      ],
+      "confidence": 0.4383421540260315,
+      "severity": "critical",
+      "start": 0,
+      "end": 101,
+      "check severity": [
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "critical",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major"
+      ]
+    }
+  ],
+  [
+    {
+      "text": [
+        "Čína",
+        "stále",
+        "očekává,",
+        "že",
+        "předběhne"
+      ],
+      "confidence": 0.4298754334449768,
+      "severity": "critical",
+      "start": 101,
+      "end": 134,
+      "check severity": [
+        "major",
+        "major",
+        "major",
+        "critical",
+        "critical",
+        "major",
+        "major",
+        "major"
+      ]
+    },
+    {
+      "text": [
+        "špičkový"
+      ],
+      "confidence": 0.34824761748313904,
+      "severity": "major",
+      "start": 156,
+      "end": 165,
+      "check severity": [
+        "major"
+      ]
+    }
+  ],
+  [
+    {
+      "text": [
+        "uvedla",
+        "Birol."
+      ],
+      "confidence": 0.4096549153327942,
+      "severity": "major",
+      "start": 122,
+      "end": 136,
+      "check severity": [
+        "major",
+        "major",
+        "major",
+        "major"
+      ]
+    }
+  ],
+  [
+    {
+      "text": [
+        "investic,",
+        "neexistují",
+        "ani"
+      ],
+      "confidence": 0.4077182710170746,
+      "severity": "minor",
+      "start": 16,
+      "end": 41,
+      "check severity": [
+        "minor",
+        "minor",
+        "minor",
+        "minor"
+      ]
+    }
+  ],
+  [
+    {
+      "text": [
+        "LNG."
+      ],
+      "confidence": 0.4092109203338623,
+      "severity": "minor",
+      "start": 254,
+      "end": 259,
+      "check severity": [
+        "minor"
+      ]
+    }
+  ],
+  [
+    {
+      "text": [
+        "ale"
+      ],
+      "confidence": 0.367926687002182,
+      "severity": "minor",
+      "start": 63,
+      "end": 67,
+      "check severity": [
+        "minor"
+      ]
+    },
+    {
+      "text": [
+        "účastníky",
+        "menšin",
+        "včetně"
+      ],
+      "confidence": 0.4537246823310852,
+      "severity": "major",
+      "start": 185,
+      "end": 209,
+      "check severity": [
+        "major",
+        "major",
+        "major",
+        "major",
+        "major"
+      ]
+    }
+  ],
+  [
+    {
+      "text": [
+        "právě",
+        "vyrazil",
+        "s"
+      ],
+      "confidence": 0.4718383848667145,
+      "severity": "major",
+      "start": 17,
+      "end": 33,
+      "check severity": [
+        "major",
+        "major",
+        "major",
+        "major"
+      ]
+    },
+    {
+      "text": [
+        "dostali"
+      ],
+      "confidence": 0.4817184805870056,
+      "severity": "major",
+      "start": 48,
+      "end": 56,
+      "check severity": [
+        "major"
+      ]
+    }
+  ],
+  [
+    {
+      "text": [
+        "Hvězda",
+        "„Queer",
+        "Eye“",
+        "Jonathan",
+        "Van",
+        "Ness",
+        "ve",
+        "čtvrtek",
+        "natáhla",
+        "své",
+        "věci",
+        "na",
+        "Capitol",
+        "Hill",
+        "a",
+        "spojila",
+        "své",
+        "síly"
+      ],
+      "confidence": 0.47470811009407043,
+      "severity": "major",
+      "start": 0,
+      "end": 99,
+      "check severity": [
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major"
+      ]
+    },
+    {
+      "text": [
+        "House",
+        "Speaker"
+      ],
+      "confidence": 0.46854305267333984,
+      "severity": "major",
+      "start": 101,
+      "end": 115,
+      "check severity": [
+        "major",
+        "major"
+      ]
+    },
+    {
+      "text": [
+        "(D-Calif.),",
+        "Aby",
+        "diskutovala",
+        "o",
+        "zákonu",
+        "o",
+        "rovnosti."
+      ],
+      "confidence": 0.49610570073127747,
+      "severity": "major",
+      "start": 128,
+      "end": 177,
+      "check severity": [
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major"
+      ]
+    }
+  ],
+  [
+    {
+      "text": [
+        "poroty"
+      ],
+      "confidence": 0.39597177505493164,
+      "severity": "minor",
+      "start": 144,
+      "end": 151,
+      "check severity": [
+        "minor",
+        "minor"
+      ]
+    }
+  ],
+  [
+    {
+      "text": [
+        "tříd."
+      ],
+      "confidence": 0.41920989751815796,
+      "severity": "minor",
+      "start": 147,
+      "end": 153,
+      "check severity": [
+        "minor"
+      ]
+    }
+  ],
+  [
+    {
+      "text": [
+        "vyšel",
+        "jako"
+      ],
+      "confidence": 0.39890381693840027,
+      "severity": "major",
+      "start": 31,
+      "end": 42,
+      "check severity": [
+        "major",
+        "major",
+        "major"
+      ]
+    },
+    {
+      "text": [
+        "pozitivní,"
+      ],
+      "confidence": 0.3735796809196472,
+      "severity": "major",
+      "start": 46,
+      "end": 57,
+      "check severity": [
+        "major",
+        "major"
+      ]
+    },
+    {
+      "text": [
+        "své",
+        "kočky,",
+        "která",
+        "chodila",
+        "v",
+        "Capitolu,"
+      ],
+      "confidence": 0.38930314779281616,
+      "severity": "critical",
+      "start": 84,
+      "end": 121,
+      "check severity": [
+        "major",
+        "critical",
+        "critical",
+        "critical",
+        "critical",
+        "critical",
+        "major",
+        "major",
+        "major",
+        "major"
+      ]
+    },
+    {
+      "text": [
+        "titulku",
+        "vysvětlil,"
+      ],
+      "confidence": 0.4530804753303528,
+      "severity": "major",
+      "start": 131,
+      "end": 150,
+      "check severity": [
+        "major",
+        "major",
+        "major"
+      ]
+    },
+    {
+      "text": [
+        "mluvčím",
+        "domu,"
+      ],
+      "confidence": 0.45329833030700684,
+      "severity": "major",
+      "start": 165,
+      "end": 179,
+      "check severity": [
+        "major",
+        "major"
+      ]
+    },
+    {
+      "text": [
+        "mluvil",
+        "o",
+        "zákoně",
+        "o",
+        "rovnosti,",
+        "žil",
+        "s"
+      ],
+      "confidence": 0.44106900691986084,
+      "severity": "major",
+      "start": 183,
+      "end": 217,
+      "check severity": [
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major"
+      ]
+    },
+    {
+      "text": [
+        "a",
+        "přístup",
+        "k",
+        "PrEP.",
+        "(preventivní",
+        "léky"
+      ],
+      "confidence": 0.45159319043159485,
+      "severity": "major",
+      "start": 221,
+      "end": 257,
+      "check severity": [
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major"
+      ]
+    }
+  ],
+  [
+    {
+      "text": [
+        "delší",
+        "post",
+        "zobrazující"
+      ],
+      "confidence": 0.42484432458877563,
+      "severity": "major",
+      "start": 11,
+      "end": 34,
+      "check severity": [
+        "major",
+        "major",
+        "major"
+      ]
+    },
+    {
+      "text": [
+        "naléhavě"
+      ],
+      "confidence": 0.36781957745552063,
+      "severity": "major",
+      "start": 59,
+      "end": 68,
+      "check severity": [
+        "major"
+      ]
+    },
+    {
+      "text": [
+        "stoupence,"
+      ],
+      "confidence": 0.37226590514183044,
+      "severity": "major",
+      "start": 79,
+      "end": 90,
+      "check severity": [
+        "major"
+      ]
+    },
+    {
+      "text": [
+        "postavili",
+        "před",
+        "vůdce",
+        "většiny",
+        "Senátu",
+        "Mitch",
+        "McConnell",
+        "(R-Ky.)",
+        "A",
+        "aby",
+        "vyvíjeli"
+      ],
+      "confidence": 0.42716678977012634,
+      "severity": "major",
+      "start": 97,
+      "end": 172,
+      "check severity": [
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major"
+      ]
+    },
+    {
+      "text": [
+        "GOP,"
+      ],
+      "confidence": 0.43582403659820557,
+      "severity": "major",
+      "start": 189,
+      "end": 194,
+      "check severity": [
+        "major",
+        "major"
+      ]
+    }
+  ],
+  [
+    {
+      "text": [
+        "rovnosti"
+      ],
+      "confidence": 0.39384621381759644,
+      "severity": "minor",
+      "start": 21,
+      "end": 30,
+      "check severity": [
+        "minor"
+      ]
+    },
+    {
+      "text": [
+        "právní",
+        "předpisy"
+      ],
+      "confidence": 0.3908259868621826,
+      "severity": "minor",
+      "start": 59,
+      "end": 75,
+      "check severity": [
+        "minor",
+        "minor",
+        "minor"
+      ]
+    },
+    {
+      "text": [
+        "přinesen"
+      ],
+      "confidence": 0.3982407748699188,
+      "severity": "minor",
+      "start": 97,
+      "end": 106,
+      "check severity": [
+        "minor"
+      ]
+    }
+  ],
+  [
+    {
+      "text": [
+        "legalizoval"
+      ],
+      "confidence": 0.3495151698589325,
+      "severity": "major",
+      "start": 60,
+      "end": 72,
+      "check severity": [
+        "major"
+      ]
+    },
+    {
+      "text": [
+        "a",
+        "ve",
+        "zkratce",
+        "amicus",
+        "tvrdil,"
+      ],
+      "confidence": 0.4451071321964264,
+      "severity": "major",
+      "start": 118,
+      "end": 146,
+      "check severity": [
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major"
+      ]
+    },
+    {
+      "text": [
+        "občanských"
+      ],
+      "confidence": 0.3400840163230896,
+      "severity": "major",
+      "start": 207,
+      "end": 218,
+      "check severity": [
+        "major"
+      ]
+    },
+    {
+      "text": [
+        "propuštěním",
+        "na"
+      ],
+      "confidence": 0.40573549270629883,
+      "severity": "major",
+      "start": 277,
+      "end": 292,
+      "check severity": [
+        "major",
+        "major",
+        "major",
+        "major"
+      ]
+    },
+    {
+      "text": [
+        "orientaci."
+      ],
+      "confidence": 0.38566434383392334,
+      "severity": "major",
+      "start": 308,
+      "end": 319,
+      "check severity": [
+        "major"
+      ]
+    }
+  ],
+  [
+    {
+      "text": [
+        "bílá",
+        "kniha,"
+      ],
+      "confidence": 0.4106943905353546,
+      "severity": "major",
+      "start": 125,
+      "end": 137,
+      "check severity": [
+        "major",
+        "major"
+      ]
+    },
+    {
+      "text": [
+        "zemí,"
+      ],
+      "confidence": 0.4021510183811188,
+      "severity": "major",
+      "start": 174,
+      "end": 180,
+      "check severity": [
+        "major"
+      ]
+    },
+    {
+      "text": [
+        "měla"
+      ],
+      "confidence": 0.4035094380378723,
+      "severity": "major",
+      "start": 186,
+      "end": 191,
+      "check severity": [
+        "major"
+      ]
+    },
+    {
+      "text": [
+        "vedení"
+      ],
+      "confidence": 0.35887572169303894,
+      "severity": "major",
+      "start": 210,
+      "end": 217,
+      "check severity": [
+        "major"
+      ]
+    },
+    {
+      "text": [
+        "(CPC)",
+        ")"
+      ],
+      "confidence": 0.40298059582710266,
+      "severity": "minor",
+      "start": 252,
+      "end": 260,
+      "check severity": [
+        "minor",
+        "minor"
+      ]
+    }
+  ],
+  [
+    {
+      "text": [
+        "skutečnými"
+      ],
+      "confidence": 0.3883833885192871,
+      "severity": "minor",
+      "start": 24,
+      "end": 35,
+      "check severity": [
+        "minor"
+      ]
+    },
+    {
+      "text": [
+        "nenapadla"
+      ],
+      "confidence": 0.4110865890979767,
+      "severity": "minor",
+      "start": 110,
+      "end": 120,
+      "check severity": [
+        "minor"
+      ]
+    },
+    {
+      "text": [
+        "čtverec"
+      ],
+      "confidence": 0.38940906524658203,
+      "severity": "minor",
+      "start": 127,
+      "end": 135,
+      "check severity": [
+        "minor",
+        "minor",
+        "minor"
+      ]
+    }
+  ],
+  [
+    {
+      "text": [
+        "Dokument",
+        "white",
+        "paper,",
+        "zatímco",
+        "zdůrazňuje",
+        "CPS",
+        "je",
+        "“mírový",
+        "vzestup”",
+        "dělal",
+        "žádný",
+        "odkaz"
+      ],
+      "confidence": 0.4075685143470764,
+      "severity": "critical",
+      "start": 0,
+      "end": 82,
+      "check severity": [
+        "critical",
+        "critical",
+        "critical",
+        "major",
+        "critical",
+        "critical",
+        "critical",
+        "major",
+        "critical",
+        "critical",
+        "critical",
+        "major",
+        "major",
+        "critical",
+        "major",
+        "major",
+        "critical",
+        "major",
+        "major",
+        "critical",
+        "major",
+        "critical",
+        "critical",
+        "critical"
+      ]
+    },
+    {
+      "text": [
+        "válku",
+        "1962",
+        "s",
+        "Indií"
+      ],
+      "confidence": 0.3641350567340851,
+      "severity": "major",
+      "start": 93,
+      "end": 112,
+      "check severity": [
+        "major",
+        "major",
+        "major",
+        "major",
+        "major"
+      ]
+    },
+    {
+      "text": [
+        "plochy",
+        "země,",
+        "obzvláště",
+        "v",
+        "Aksai",
+        "bradě",
+        "obsazené"
+      ],
+      "confidence": 0.3958509862422943,
+      "severity": "major",
+      "start": 123,
+      "end": 169,
+      "check severity": [
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major"
+      ]
+    }
+  ],
+  [
+    {
+      "text": [
+        "linii",
+        "skutečné",
+        "kontroly"
+      ],
+      "confidence": 0.4024727940559387,
+      "severity": "major",
+      "start": 60,
+      "end": 84,
+      "check severity": [
+        "minor",
+        "major",
+        "major",
+        "minor"
+      ]
+    },
+    {
+      "text": [
+        "Indie",
+        "zpochybňuje."
+      ],
+      "confidence": 0.3654107451438904,
+      "severity": "major",
+      "start": 180,
+      "end": 199,
+      "check severity": [
+        "minor",
+        "minor",
+        "major",
+        "minor"
+      ]
+    }
+  ],
+  [
+    {
+      "text": [
+        "kol"
+      ],
+      "confidence": 0.4695207476615906,
+      "severity": "minor",
+      "start": 28,
+      "end": 32,
+      "check severity": [
+        "minor"
+      ]
+    }
+  ],
+  [
+    {
+      "text": [
+        "1962",
+        "měly",
+        "Indie"
+      ],
+      "confidence": 0.4015684127807617,
+      "severity": "major",
+      "start": 18,
+      "end": 34,
+      "check severity": [
+        "major",
+        "major",
+        "major"
+      ]
+    },
+    {
+      "text": [
+        "Čína",
+        "v",
+        "Doklamu"
+      ],
+      "confidence": 0.44252336025238037,
+      "severity": "major",
+      "start": 36,
+      "end": 51,
+      "check severity": [
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major"
+      ]
+    },
+    {
+      "text": [
+        "2017",
+        "velký",
+        "vojenský",
+        "odstup,"
+      ],
+      "confidence": 0.3931605815887451,
+      "severity": "critical",
+      "start": 58,
+      "end": 86,
+      "check severity": [
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "critical"
+      ]
+    },
+    {
+      "text": [
+        "lidová",
+        "osvobozenecká",
+        "armáda",
+        "(PLA)",
+        "pokusila",
+        "položit"
+      ],
+      "confidence": 0.4621017277240753,
+      "severity": "major",
+      "start": 94,
+      "end": 145,
+      "check severity": [
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major"
+      ]
+    },
+    {
+      "text": [
+        "úzkého",
+        "indického",
+        "úzkého",
+        "koridoru",
+        "kuřecí",
+        "krku",
+        "spojujícího"
+      ],
+      "confidence": 0.4485422968864441,
+      "severity": "major",
+      "start": 160,
+      "end": 217,
+      "check severity": [
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major"
+      ]
+    },
+    {
+      "text": [
+        "severovýchodními",
+        "státy"
+      ],
+      "confidence": 0.41844069957733154,
+      "severity": "major",
+      "start": 220,
+      "end": 243,
+      "check severity": [
+        "major",
+        "major",
+        "major",
+        "major"
+      ]
+    },
+    {
+      "text": [
+        "oblasti.",
+        "tvrdí",
+        "Bhútán."
+      ],
+      "confidence": 0.4149452745914459,
+      "severity": "major",
+      "start": 245,
+      "end": 268,
+      "check severity": [
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major"
+      ]
+    }
+  ],
+  [
+    {
+      "text": [
+        "bylo"
+      ],
+      "confidence": 0.3604772984981537,
+      "severity": "minor",
+      "start": 7,
+      "end": 12,
+      "check severity": [
+        "minor"
+      ]
+    },
+    {
+      "text": [
+        "vyřešeno,",
+        "po",
+        "kterém"
+      ],
+      "confidence": 0.4005852937698364,
+      "severity": "major",
+      "start": 25,
+      "end": 45,
+      "check severity": [
+        "major",
+        "major",
+        "major",
+        "major"
+      ]
+    }
+  ],
+  [
+    {
+      "text": [
+        "Brunej"
+      ],
+      "confidence": 0.4075651168823242,
+      "severity": "minor",
+      "start": 151,
+      "end": 158,
+      "check severity": [
+        "minor",
+        "minor"
+      ]
+    },
+    {
+      "text": [
+        "Tchaj-wan"
+      ],
+      "confidence": 0.4066172242164612,
+      "severity": "minor",
+      "start": 160,
+      "end": 170,
+      "check severity": [
+        "minor",
+        "minor",
+        "minor",
+        "minor",
+        "minor"
+      ]
+    },
+    {
+      "text": [
+        "protinávrhy."
+      ],
+      "confidence": 0.3786916136741638,
+      "severity": "major",
+      "start": 175,
+      "end": 188,
+      "check severity": [
+        "minor",
+        "major",
+        "minor",
+        "minor"
+      ]
+    }
+  ],
+  [
+    {
+      "text": [
+        "monzunová"
+      ],
+      "confidence": 0.40617451071739197,
+      "severity": "minor",
+      "start": 7,
+      "end": 17,
+      "check severity": [
+        "minor",
+        "minor",
+        "minor"
+      ]
+    },
+    {
+      "text": [
+        "překročila"
+      ],
+      "confidence": 0.39669930934906006,
+      "severity": "minor",
+      "start": 27,
+      "end": 38,
+      "check severity": [
+        "minor",
+        "minor"
+      ]
+    },
+    {
+      "text": [
+        "hnít."
+      ],
+      "confidence": 0.39110827445983887,
+      "severity": "minor",
+      "start": 139,
+      "end": 145,
+      "check severity": [
+        "minor",
+        "minor"
+      ]
+    }
+  ],
+  [
+    {
+      "text": [
+        "monzun"
+      ],
+      "confidence": 0.4166228473186493,
+      "severity": "minor",
+      "start": 8,
+      "end": 15,
+      "check severity": [
+        "minor"
+      ]
+    },
+    {
+      "text": [
+        "srážka"
+      ],
+      "confidence": 0.4052496552467346,
+      "severity": "minor",
+      "start": 70,
+      "end": 77,
+      "check severity": [
+        "minor",
+        "minor"
+      ]
+    },
+    {
+      "text": [
+        "nad",
+        "normální."
+      ],
+      "confidence": 0.3815326690673828,
+      "severity": "minor",
+      "start": 103,
+      "end": 117,
+      "check severity": [
+        "minor",
+        "minor"
+      ]
+    },
+    {
+      "text": [
+        "ustoupil."
+      ],
+      "confidence": 0.3935190439224243,
+      "severity": "minor",
+      "start": 278,
+      "end": 288,
+      "check severity": [
+        "minor",
+        "minor"
+      ]
+    }
+  ],
+  [
+    {
+      "text": [
+        "dostává",
+        "bezprecedentní",
+        "déšť."
+      ],
+      "confidence": 0.36289820075035095,
+      "severity": "major",
+      "start": 24,
+      "end": 53,
+      "check severity": [
+        "minor",
+        "major",
+        "minor",
+        "minor",
+        "major",
+        "minor",
+        "minor"
+      ]
+    },
+    {
+      "text": [
+        "zmatků"
+      ],
+      "confidence": 0.39168232679367065,
+      "severity": "minor",
+      "start": 169,
+      "end": 176,
+      "check severity": [
+        "minor",
+        "minor"
+      ]
+    }
+  ],
+  [
+    {
+      "text": [
+        "brodili",
+        "ulicemi",
+        "vodou"
+      ],
+      "confidence": 0.4521242678165436,
+      "severity": "major",
+      "start": 26,
+      "end": 48,
+      "check severity": [
+        "major",
+        "major",
+        "major",
+        "major"
+      ]
+    },
+    {
+      "text": [
+        "kolenům"
+      ],
+      "confidence": 0.3232283592224121,
+      "severity": "minor",
+      "start": 54,
+      "end": 62,
+      "check severity": [
+        "minor"
+      ]
+    },
+    {
+      "text": [
+        "výšce",
+        "monzunu."
+      ],
+      "confidence": 0.3660433292388916,
+      "severity": "major",
+      "start": 97,
+      "end": 112,
+      "check severity": [
+        "major",
+        "minor",
+        "minor",
+        "major"
+      ]
+    }
+  ],
+  [
+    {
+      "text": [
+        "Kalkata,"
+      ],
+      "confidence": 0.4546363949775696,
+      "severity": "minor",
+      "start": 22,
+      "end": 31,
+      "check severity": [
+        "minor"
+      ]
+    },
+    {
+      "text": [
+        "a"
+      ],
+      "confidence": 0.44636115431785583,
+      "severity": "minor",
+      "start": 39,
+      "end": 41,
+      "check severity": [
+        "minor"
+      ]
+    },
+    {
+      "text": [
+        "viděl"
+      ],
+      "confidence": 0.4309750497341156,
+      "severity": "minor",
+      "start": 108,
+      "end": 114,
+      "check severity": [
+        "minor"
+      ]
+    }
+  ],
+  [
+    {
+      "text": [
+        "Monzun"
+      ],
+      "confidence": 0.40221211314201355,
+      "severity": "minor",
+      "start": 0,
+      "end": 6,
+      "check severity": [
+        "minor"
+      ]
+    }
+  ],
+  [
+    {
+      "text": [
+        "Rozšířený",
+        "monzun"
+      ],
+      "confidence": 0.4609741270542145,
+      "severity": "major",
+      "start": 0,
+      "end": 16,
+      "check severity": [
+        "major",
+        "major",
+        "major",
+        "major",
+        "major"
+      ]
+    },
+    {
+      "text": [
+        "Vyrábí",
+        "moji",
+        "zeleninu"
+      ],
+      "confidence": 0.4033085107803345,
+      "severity": "major",
+      "start": 95,
+      "end": 116,
+      "check severity": [
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major"
+      ]
+    },
+    {
+      "text": [
+        "mám",
+        "zelí,"
+      ],
+      "confidence": 0.43002766370773315,
+      "severity": "major",
+      "start": 132,
+      "end": 142,
+      "check severity": [
+        "major",
+        "major",
+        "major"
+      ]
+    },
+    {
+      "text": [
+        "hrášek"
+      ],
+      "confidence": 0.3981263339519501,
+      "severity": "major",
+      "start": 150,
+      "end": 157,
+      "check severity": [
+        "major"
+      ]
+    },
+    {
+      "text": [
+        "rajčata",
+        "-",
+        "hnilobu,\""
+      ],
+      "confidence": 0.439345121383667,
+      "severity": "major",
+      "start": 159,
+      "end": 179,
+      "check severity": [
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major"
+      ]
+    },
+    {
+      "text": [
+        "malý"
+      ],
+      "confidence": 0.39933133125305176,
+      "severity": "major",
+      "start": 199,
+      "end": 204,
+      "check severity": [
+        "major"
+      ]
+    },
+    {
+      "text": [
+        "Bhimtalu"
+      ],
+      "confidence": 0.38817548751831055,
+      "severity": "major",
+      "start": 213,
+      "end": 222,
+      "check severity": [
+        "major"
+      ]
+    },
+    {
+      "text": [
+        "Uttarakhandu",
+        "."
+      ],
+      "confidence": 0.4094061851501465,
+      "severity": "major",
+      "start": 224,
+      "end": 239,
+      "check severity": [
+        "major",
+        "major"
+      ]
+    }
+  ],
+  [
+    {
+      "text": [
+        "a",
+        "nyní",
+        "opožděného",
+        "monzunu"
+      ],
+      "confidence": 0.366990327835083,
+      "severity": "critical",
+      "start": 42,
+      "end": 68,
+      "check severity": [
+        "critical",
+        "critical",
+        "critical",
+        "critical",
+        "major",
+        "major",
+        "minor",
+        "major"
+      ]
+    },
+    {
+      "text": [
+        "Dillí"
+      ],
+      "confidence": 0.3510682284832001,
+      "severity": "minor",
+      "start": 200,
+      "end": 206,
+      "check severity": [
+        "minor"
+      ]
+    }
+  ],
+  [],
+  [],
+  [
+    {
+      "text": [
+        "jít,"
+      ],
+      "confidence": 0.39557912945747375,
+      "severity": "minor",
+      "start": 100,
+      "end": 105,
+      "check severity": [
+        "minor"
+      ]
+    }
+  ],
+  [
+    {
+      "text": [
+        "vyzvaly",
+        "íránské",
+        "zneužívání"
+      ],
+      "confidence": 0.4283190965652466,
+      "severity": "major",
+      "start": 10,
+      "end": 37,
+      "check severity": [
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major"
+      ]
+    },
+    {
+      "text": [
+        "my",
+        "hledáme,",
+        "aby",
+        "přispěli",
+        "prostředky"
+      ],
+      "confidence": 0.41861990094184875,
+      "severity": "major",
+      "start": 55,
+      "end": 91,
+      "check severity": [
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major",
+        "major"
+      ]
+    }
+  ],
+  [],
+  [
+    {
+      "text": [
+        "rozmístění"
+      ],
+      "confidence": 0.34088271856307983,
+      "severity": "major",
+      "start": 15,
+      "end": 26,
+      "check severity": [
+        "major"
+      ]
+    },
+    {
+      "text": [
+        "tohoto",
+        "útoku",
+        "dronů",
+        "na",
+        "tento",
+        "měsíc"
+      ],
+      "confidence": 0.3775648772716522,
+      "severity": "critical",
+      "start": 103,
+      "end": 137,
+      "check severity": [
+        "critical",
+        "major",
+        "major",
+        "critical",
+        "critical",
+        "critical",
+        "major"
+      ]
+    },
+    {
+      "text": [
+        "saúdskoarabská"
+      ],
+      "confidence": 0.382546067237854,
+      "severity": "major",
+      "start": 140,
+      "end": 155,
+      "check severity": [
+        "major"
+      ]
+    },
+    {
+      "text": [
+        "útoky",
+        "zintenzívnily",
+        "a",
+        "odsoudily."
+      ],
+      "confidence": 0.4053467810153961,
+      "severity": "critical",
+      "start": 197,
+      "end": 230,
+      "check severity": [
+        "major",
+        "major",
+        "critical",
+        "critical",
+        "critical",
+        "critical",
+        "critical",
+        "critical",
+        "major",
+        "major",
+        "major"
+      ]
+    }
+  ],
+  [
+    {
+      "text": [
+        "reholové"
+      ],
+      "confidence": 0.4096726179122925,
+      "severity": "minor",
+      "start": 18,
+      "end": 27,
+      "check severity": [
+        "minor",
+        "minor"
+      ]
+    }
+  ],
+  [
+    {
+      "text": [
+        "vypuštěny"
+      ],
+      "confidence": 0.4160141050815582,
+      "severity": "minor",
+      "start": 65,
+      "end": 75,
+      "check severity": [
+        "minor"
+      ]
+    },
+    {
+      "text": [
+        "označení"
+      ],
+      "confidence": 0.42967963218688965,
+      "severity": "minor",
+      "start": 130,
+      "end": 139,
+      "check severity": [
+        "minor"
+      ]
+    },
+    {
+      "text": [
+        "\""
+      ],
+      "confidence": 0.4396114647388458,
+      "severity": "minor",
+      "start": 180,
+      "end": 182,
+      "check severity": [
+        "minor"
+      ]
+    }
+  ]
+]
