@@ -209,10 +209,126 @@ we take **group 1 for experiments with oracle spans and group 2 for xcomet exper
          
 2. We create:
 
-        1. "spans_all_abstracts" list which contains all the ideal spans for all the sentences in a document. Each entry is a dict with keys 'translation_id' and 'ideal_spans'.
+        1. We check which of the indices do not have any spans. Only sentence at index 16 does not have any ideal spans.
+        2. - [ ] create sentences length list of dict for source and translation docs. we will need it to create sentence alignment table. use file in point 3 in "we work with".
+        3. "spans_all_abstracts" list which contains all the ideal spans for all the sentences in a document. Each entry is a dict with keys 'translation_id' and 'ideal_spans'.
         
-        2.
+        4. - [ ]"spans_all_abstracts" list of dicts contains translation_id and ideal spans, make a json file of it and also make a json file that omits the spans which are less than 4 characters.
+         -[ ] what about very large spans? - should we discard them? how long spans we can tolerate?
+         -[ ] we can choose spans randomly to 12
+                
+        5. "updated_spans_offsets_all_documents" - in this list of dicts, we update the span offsets w.r.t. the document. we need this to show the span annotations on the website.
         
-        In this file we take the idean spans generated in the previous file and create:
+        - [ ] save this file as "updated_ideal_span_offsets_all_document_en_cz.json".
+        - [ ] also 
 
-1. 
+        6. "updated_word_offsets_all_documents" - this does the same thing but it is for updating all word offsets w.r.t. the document. 
+        - [ ] save this as "updated_word_offsets_all_documents_oracle_exps_en_cz.json"
+        - [ ] in "annotatation_table.ipynb" it is a List[List[Tuple[]]], each inner list contains the tuples of updated word offsets. check if we need to make 
+
+        
+        7. "sentences_length_of_all_abstract_indexes" List[Dict[]]- this does the same thing as step 5, and 6 for updating the sentence offsets w.r.t. the documents. Example:
+        {'translation_id': 3,
+         'updated_sentence_indexes': [(0, 227),
+          (228, 485),
+          (486, 645),
+          (646, 882),
+          (883, 1129),
+          (1130, 1312),
+          (1313, 1558),
+          (1559, 1792)]}
+          
+          8. "updated_spans_list_of_tuples_all_docs" List[Dict[]] - this creates a list of dict where each dict contains the "translation_id" and "updated_spans_list_of_tuples" which is list of tuples where each tuple is the start and end index of a updated span offset. example:
+          
+          {'translation_id': 3,
+         'updated_spans_list_of_tuples': [(32, 46),
+          (88, 92),
+          (96, 105),......
+          
+          - [ ] save this as well as "updated_spans_list_of_tuples_all_docs_oracle_exps_en_cz.json"
+          
+          9. "filtered_translations_text" List[Dict[]] - in each dict it contains the "translation_id" and the corresonding merged translation for this id. 
+          
+          - [ ] save this as well as "filtered_translations_text_oracle_exps_en_cz.json"
+          
+          10. we show the highlighting with all oracle spans
+          
+          - [ ] finalize the questions regarding annotation selection and show the highlighting with selected 12 spans.
+          
+### How to connect "##make_annotations_for_ideal_spans_en_cz.ipynb" file with "annotation_table_creation_en_cz.ipynb"
+
+"annotation_table.ipynb" was used to create the annotation table for all abstracts for en_fr experiments. "annotation_table_creation_en_cz.ipynb" is the en_cz counter part of it.
+
+**What does the [annotation_table.ipynb](https://github.com/arafat04/new-interaction-for-MT/blob/main/ipynb%20files/annotation_table.ipynb) do:**
+
+What does it use:
+
+    1. It uses "abstract_metadata_with_ideal_spans_correct_no_spans_with_min4chars.json" - so for en_cz, we use: "abstract_metadata_with_ideal_spans_correct_no_spans_with_min4chars_df_en_cz_final_with_selected_8_docs.tsv". It filters out the selected 4 texts.
+    2. "spans_ideal_translators.json"
+    3. "postedition_aligned_with_tokenized_offsets_translator.csv"
+    
+What does it do we do not need to do:
+
+    1.It gets the translation text from the db. we already stored them in json file as well saved the source texts.
+    2. It gets the sentence lengths for each abstract, we do not also need them as we have them in a json file created in last file.
+    
+    3."sentence_indices_with_spans_all_abstracts" - Here we implemented the checking of the indexes which do not have any spans or have spans less than 4 characters which we already done. - [ ] but check if it stores the info of indexes not having any spans.
+
+    4. "all_spans_all_abstracts_aligned" - it aligns abstracts with spans - we do not need it.
+    5. "updated_word_offsets_all_abstracts" - we do not need it as we already have it from last file.
+    -[ ] it is a List[List[Tuple[]]], each inner list contains the tuples of updated word offsets. check if we need to make 
+    6. "updated_sentences_offsets_all" - List[List[tuple[]]] - calculates the updated sentence offsets for each sentence in a abstract
+    - [ ] it uses translation word offsets to calculate the updated sentence offsets. we already done it in previous file. just match the data type. it stores for all four abstracts.
+    
+    7. it produces "offsets_by_translation_id.json" but it is not found anywhere. it is not later used anyway.
+    8. **It has the code for filtering out the spans less than 4 characters - use it in the last file**
+    
+    9. it calculates the noisy spans - we do not need it.
+    
+    10. it creates tuple for the filtered spans we already did it in last file.
+    
+    11. it creates the 
+    
+ What it does we need for en_cz oracle experiments:
+
+1. it creates the json file for the "annotation" table. it does it by:
+
+        1.it takes the list of tuples for the ideal spans.
+        2. shuffle it randomly.
+        3. then creates the json file in this format:
+
+        [(291, 333, 1), (241, 250, 2), (1011, 1021, 3), (67, 75, 4), (32, 39, 5), (516, 523, 6), (1154, 1171, 7), (1305, 1311, 8), (7, 17, 9), (285, 290, 10)
+        
+        where the oracle spans have the rank as the third entry.
+        
+ 2. it does the sentence alignment between source sentences and translation sentences. it does it by:
+ 
+         1.it passes source sentences length in a list for all 4 abstracts. (hardcoded list - we have it from it last file)
+         
+         2. it takes into consideration that the first line is the title, so for the sentence at the index 1 should start 2 spaces later.
+         3. then for rest of the sentences, it append one space before them.
+         
+         look for the function "def generate_offsets(lengths_list)".
+         4. Then it creates the sentence alignment json file. The format is this:
+
+            "translation_id": translation_id,
+            "source_start": source_offset[0],
+            "source_end": source_offset[1],
+            "target_start": target_offset[0],
+            "target_end": target_offset[1],
+            "target_word_offsets": word_dicts
+        
+        so it also includes updated word offsets for the translation in the "target_word_offsets" key. 
+        
+        - [ ] check the datatypes for passed arguments in the function 
+        "def get_sentence_alignment_json_file(translation_id,source_sentence_offsets,target_sentence_offsets, target_word_offsets):"
+        
+        it creates a row for each sentences for an abstract.
+        
+        
+- [ ] check where the outputs of this file is used.
+
+    
+
+          
+          
