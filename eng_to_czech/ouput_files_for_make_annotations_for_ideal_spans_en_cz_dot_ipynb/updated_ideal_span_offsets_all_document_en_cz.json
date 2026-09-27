@@ -1,0 +1,1242 @@
+[
+    {
+        "translation_id": 3,
+        "updated_spans_offsets": [
+            [
+                {
+                    "text": [
+                        "k",
+                        "vyzkoušení",
+                        "a"
+                    ],
+                    "startnew": 32,
+                    "endnew": 46
+                },
+                {
+                    "text": [
+                        "HSBC"
+                    ],
+                    "startnew": 88,
+                    "endnew": 92
+                },
+                {
+                    "text": [
+                        "vytlačení"
+                    ],
+                    "startnew": 96,
+                    "endnew": 105
+                },
+                {
+                    "text": [
+                        "z",
+                        "jeho"
+                    ],
+                    "startnew": 111,
+                    "endnew": 117
+                },
+                {
+                    "text": [
+                        "klíčová",
+                        "priorita"
+                    ],
+                    "startnew": 166,
+                    "endnew": 182
+                }
+            ],
+            [
+                {
+                    "text": [
+                        "jedno"
+                    ],
+                    "startnew": 235,
+                    "endnew": 240
+                },
+                {
+                    "text": [
+                        "je",
+                        "ze"
+                    ],
+                    "startnew": 349,
+                    "endnew": 354
+                },
+                {
+                    "text": [
+                        "podstaty"
+                    ],
+                    "startnew": 359,
+                    "endnew": 367
+                },
+                {
+                    "text": [
+                        "globální"
+                    ],
+                    "startnew": 426,
+                    "endnew": 434
+                },
+                {
+                    "text": [
+                        "klientského"
+                    ],
+                    "startnew": 443,
+                    "endnew": 454
+                },
+                {
+                    "text": [
+                        "společnosti"
+                    ],
+                    "startnew": 468,
+                    "endnew": 479
+                }
+            ],
+            [
+                {
+                    "text": [
+                        "uvedla,"
+                    ],
+                    "startnew": 553,
+                    "endnew": 560
+                },
+                {
+                    "text": [
+                        "iniciativa",
+                        "„síťový",
+                        "příjem“"
+                    ],
+                    "startnew": 570,
+                    "endnew": 596
+                },
+                {
+                    "text": [
+                        "přinesla"
+                    ],
+                    "startnew": 601,
+                    "endnew": 609
+                },
+                {
+                    "text": [
+                        "stovky"
+                    ],
+                    "startnew": 623,
+                    "endnew": 629
+                }
+            ],
+            [
+                {
+                    "text": [
+                        "Pohon"
+                    ],
+                    "startnew": 646,
+                    "endnew": 651
+                },
+                {
+                    "text": [
+                        "bránit",
+                        "svou"
+                    ],
+                    "startnew": 686,
+                    "endnew": 697
+                },
+                {
+                    "text": [
+                        "přítomnost"
+                    ],
+                    "startnew": 707,
+                    "endnew": 717
+                },
+                {
+                    "text": [
+                        "kdy"
+                    ],
+                    "startnew": 726,
+                    "endnew": 729
+                },
+                {
+                    "text": [
+                        "kde"
+                    ],
+                    "startnew": 834,
+                    "endnew": 837
+                },
+                {
+                    "text": [
+                        "návratnosti",
+                        "pod"
+                    ],
+                    "startnew": 847,
+                    "endnew": 862
+                }
+            ],
+            [
+                {
+                    "text": [
+                        "do"
+                    ],
+                    "startnew": 933,
+                    "endnew": 935
+                },
+                {
+                    "text": [
+                        "urovnání"
+                    ],
+                    "startnew": 976,
+                    "endnew": 984
+                },
+                {
+                    "text": [
+                        "miliardy"
+                    ],
+                    "startnew": 989,
+                    "endnew": 997
+                },
+                {
+                    "text": [
+                        "kvůli",
+                        "tomu,"
+                    ],
+                    "startnew": 1033,
+                    "endnew": 1044
+                },
+                {
+                    "text": [
+                        "jednotky."
+                    ],
+                    "startnew": 1120,
+                    "endnew": 1129
+                }
+            ],
+            [
+                {
+                    "text": [
+                        "zákazníky",
+                        "“a",
+                        "společnosti"
+                    ],
+                    "startnew": 1171,
+                    "endnew": 1195
+                },
+                {
+                    "text": [
+                        "navazuje"
+                    ],
+                    "startnew": 1204,
+                    "endnew": 1212
+                },
+                {
+                    "text": [
+                        "transakcí"
+                    ],
+                    "startnew": 1243,
+                    "endnew": 1252
+                },
+                {
+                    "text": [
+                        "dříve"
+                    ],
+                    "startnew": 1267,
+                    "endnew": 1272
+                },
+                {
+                    "text": [
+                        "spojení"
+                    ],
+                    "startnew": 1283,
+                    "endnew": 1290
+                }
+            ],
+            [
+                {
+                    "text": [
+                        "uvolnil"
+                    ],
+                    "startnew": 1330,
+                    "endnew": 1337
+                },
+                {
+                    "text": [
+                        "zaměstnanců,",
+                        "kteří",
+                        "by",
+                        "mohli",
+                        "přecházet",
+                        "z",
+                        "ručních",
+                        "kontrol"
+                    ],
+                    "startnew": 1351,
+                    "endnew": 1406
+                },
+                {
+                    "text": [
+                        "do",
+                        "rolí",
+                        "zaměřených"
+                    ],
+                    "startnew": 1427,
+                    "endnew": 1445
+                },
+                {
+                    "text": [
+                        "klienta,"
+                    ],
+                    "startnew": 1449,
+                    "endnew": 1457
+                },
+                {
+                    "text": [
+                        "trávit",
+                        "čas",
+                        "pomáháním"
+                    ],
+                    "startnew": 1468,
+                    "endnew": 1488
+                },
+                {
+                    "text": [
+                        "provozní"
+                    ],
+                    "startnew": 1528,
+                    "endnew": 1536
+                },
+                {
+                    "text": [
+                        "obchodu"
+                    ],
+                    "startnew": 1545,
+                    "endnew": 1552
+                }
+            ],
+            [
+                {
+                    "text": [
+                        "Společnost"
+                    ],
+                    "startnew": 1559,
+                    "endnew": 1569
+                },
+                {
+                    "text": [
+                        "společnosti"
+                    ],
+                    "startnew": 1578,
+                    "endnew": 1589
+                },
+                {
+                    "text": [
+                        "uvedla,"
+                    ],
+                    "startnew": 1595,
+                    "endnew": 1602
+                },
+                {
+                    "text": [
+                        "okamžik",
+                        "žárovky"
+                    ],
+                    "startnew": 1606,
+                    "endnew": 1621
+                },
+                {
+                    "text": [
+                        "uvědomuje,"
+                    ],
+                    "startnew": 1625,
+                    "endnew": 1635
+                },
+                {
+                    "text": [
+                        "přemístěn"
+                    ],
+                    "startnew": 1665,
+                    "endnew": 1674
+                },
+                {
+                    "text": [
+                        "„zelené",
+                        "vlajky“",
+                        "atraktivních",
+                        "potenciálních",
+                        "klientů,",
+                        "spíše",
+                        "než",
+                        "„červené",
+                        "vlajky“",
+                        "protiprávního",
+                        "jednání."
+                    ],
+                    "startnew": 1691,
+                    "endnew": 1792
+                }
+            ]
+        ]
+    },
+    {
+        "translation_id": 7,
+        "updated_spans_offsets": [
+            [
+                {
+                    "text": [
+                        "rekordních",
+                        "výsledků"
+                    ],
+                    "startnew": 22,
+                    "endnew": 41
+                },
+                {
+                    "text": [
+                        "růst"
+                    ],
+                    "startnew": 65,
+                    "endnew": 69
+                }
+            ],
+            [
+                {
+                    "text": [
+                        "rekordně",
+                        "vysokých"
+                    ],
+                    "startnew": 149,
+                    "endnew": 166
+                }
+            ],
+            [
+                {
+                    "text": [
+                        "„Letos",
+                        "2019",
+                        "poprvé",
+                        "zlomil"
+                    ],
+                    "startnew": 271,
+                    "endnew": 296
+                },
+                {
+                    "text": [
+                        "(konečná",
+                        "investiční"
+                    ],
+                    "startnew": 313,
+                    "endnew": 332
+                },
+                {
+                    "text": [
+                        "producentů",
+                        "a",
+                        "spotřebitelů",
+                        "LNG"
+                    ],
+                    "startnew": 398,
+                    "endnew": 427
+                }
+            ],
+            [
+                {
+                    "text": [
+                        "překvapením,"
+                    ],
+                    "startnew": 471,
+                    "endnew": 483
+                },
+                {
+                    "text": [
+                        "rostoucí"
+                    ],
+                    "startnew": 524,
+                    "endnew": 532
+                },
+                {
+                    "text": [
+                        "špičkový"
+                    ],
+                    "startnew": 623,
+                    "endnew": 631
+                }
+            ],
+            [
+                {
+                    "text": [
+                        "\"Největší",
+                        "růst"
+                    ],
+                    "startnew": 645,
+                    "endnew": 659
+                },
+                {
+                    "text": [
+                        "přijde"
+                    ],
+                    "startnew": 700,
+                    "endnew": 706
+                },
+                {
+                    "text": [
+                        "Číny,\"",
+                        "uvedla"
+                    ],
+                    "startnew": 761,
+                    "endnew": 774
+                },
+                {
+                    "text": [
+                        "za",
+                        "pět"
+                    ],
+                    "startnew": 792,
+                    "endnew": 798
+                }
+            ],
+            [
+                {
+                    "text": [
+                        "neexistují"
+                    ],
+                    "startnew": 871,
+                    "endnew": 881
+                },
+                {
+                    "text": [
+                        "žádná",
+                        "překvapení.",
+                        "Většina"
+                    ],
+                    "startnew": 886,
+                    "endnew": 911
+                },
+                {
+                    "text": [
+                        "byla",
+                        "vyrobena"
+                    ],
+                    "startnew": 919,
+                    "endnew": 932
+                }
+            ],
+            [
+                {
+                    "text": [
+                        "očekává,",
+                        "že",
+                        "se"
+                    ],
+                    "startnew": 1032,
+                    "endnew": 1046
+                },
+                {
+                    "text": [
+                        "kapacita"
+                    ],
+                    "startnew": 1056,
+                    "endnew": 1064
+                },
+                {
+                    "text": [
+                        "zdvojnásobí"
+                    ],
+                    "startnew": 1114,
+                    "endnew": 1125
+                },
+                {
+                    "text": [
+                        "miliard",
+                        "cu",
+                        "ft"
+                    ],
+                    "startnew": 1133,
+                    "endnew": 1146
+                },
+                {
+                    "text": [
+                        "bude"
+                    ],
+                    "startnew": 1164,
+                    "endnew": 1168
+                },
+                {
+                    "text": [
+                        "LNG."
+                    ],
+                    "startnew": 1219,
+                    "endnew": 1223
+                },
+                {
+                    "text": [
+                        "cu",
+                        "ft"
+                    ],
+                    "startnew": 1318,
+                    "endnew": 1323
+                },
+                {
+                    "text": [
+                        "z",
+                        "přibližně"
+                    ],
+                    "startnew": 1331,
+                    "endnew": 1342
+                },
+                {
+                    "text": [
+                        "cu",
+                        "ft"
+                    ],
+                    "startnew": 1353,
+                    "endnew": 1358
+                }
+            ],
+            [
+                {
+                    "text": [
+                        "právě"
+                    ],
+                    "startnew": 1393,
+                    "endnew": 1398
+                },
+                {
+                    "text": [
+                        "-"
+                    ],
+                    "startnew": 1430,
+                    "endnew": 1431
+                },
+                {
+                    "text": [
+                        "-"
+                    ],
+                    "startnew": 1443,
+                    "endnew": 1444
+                },
+                {
+                    "text": [
+                        "mít",
+                        "konečnou",
+                        "kapacitu"
+                    ],
+                    "startnew": 1454,
+                    "endnew": 1475
+                },
+                {
+                    "text": [
+                        "je",
+                        "veden",
+                        "společností"
+                    ],
+                    "startnew": 1538,
+                    "endnew": 1558
+                },
+                {
+                    "text": [
+                        "s",
+                        "účastníky",
+                        "menšin",
+                        "včetně"
+                    ],
+                    "startnew": 1565,
+                    "endnew": 1590
+                }
+            ]
+        ]
+    },
+    {
+        "translation_id": 6,
+        "updated_spans_offsets": [
+            [],
+            [
+                {
+                    "text": [
+                        "univerzity"
+                    ],
+                    "startnew": 71,
+                    "endnew": 81
+                },
+                {
+                    "text": [
+                        "byli",
+                        "jmenováni"
+                    ],
+                    "startnew": 89,
+                    "endnew": 103
+                },
+                {
+                    "text": [
+                        "absolventi",
+                        "v",
+                        "Evropě."
+                    ],
+                    "startnew": 138,
+                    "endnew": 158
+                }
+            ],
+            [
+                {
+                    "text": [
+                        "University",
+                        "of"
+                    ],
+                    "startnew": 168,
+                    "endnew": 181
+                },
+                {
+                    "text": [
+                        "jmenováni"
+                    ],
+                    "startnew": 194,
+                    "endnew": 203
+                },
+                {
+                    "text": [
+                        "Awards,",
+                        "zatímco"
+                    ],
+                    "startnew": 288,
+                    "endnew": 303
+                },
+                {
+                    "text": [
+                        "byli",
+                        "soudci",
+                        "oceněni."
+                    ],
+                    "startnew": 346,
+                    "endnew": 366
+                }
+            ],
+            [
+                {
+                    "text": [
+                        "Evropskou"
+                    ],
+                    "startnew": 430,
+                    "endnew": 439
+                },
+                {
+                    "text": [
+                        "Life",
+                        "Sciences,"
+                    ],
+                    "startnew": 448,
+                    "endnew": 462
+                },
+                {
+                    "text": [
+                        "Mental",
+                        "Health",
+                        "Nursing"
+                    ],
+                    "startnew": 495,
+                    "endnew": 516
+                },
+                {
+                    "text": [
+                        "Nursing,",
+                        "Midwifery",
+                        "&",
+                        "Allied",
+                        "Healthcare,",
+                        "zatímco"
+                    ],
+                    "startnew": 531,
+                    "endnew": 578
+                },
+                {
+                    "text": [
+                        "Knibb"
+                    ],
+                    "startnew": 584,
+                    "endnew": 589
+                },
+                {
+                    "text": [
+                        "Visual",
+                        "Arts."
+                    ],
+                    "startnew": 603,
+                    "endnew": 615
+                }
+            ],
+            [
+                {
+                    "text": [
+                        "globálního"
+                    ],
+                    "startnew": 651,
+                    "endnew": 661
+                },
+                {
+                    "text": [
+                        "ve",
+                        "finále"
+                    ],
+                    "startnew": 670,
+                    "endnew": 679
+                },
+                {
+                    "text": [
+                        "některých",
+                        "z"
+                    ],
+                    "startnew": 710,
+                    "endnew": 721
+                }
+            ],
+            [
+                {
+                    "text": [
+                        "vzdělávání",
+                        "na",
+                        "univerzitě,"
+                    ],
+                    "startnew": 798,
+                    "endnew": 823
+                },
+                {
+                    "text": [
+                        "čelili"
+                    ],
+                    "startnew": 892,
+                    "endnew": 898
+                },
+                {
+                    "text": [
+                        "ze",
+                        "strany"
+                    ],
+                    "startnew": 910,
+                    "endnew": 919
+                },
+                {
+                    "text": [
+                        "navštěvují",
+                        "některé",
+                        "z"
+                    ],
+                    "startnew": 938,
+                    "endnew": 958
+                },
+                {
+                    "text": [
+                        "univerzit."
+                    ],
+                    "startnew": 980,
+                    "endnew": 990
+                }
+            ],
+            [
+                {
+                    "text": [
+                        "„Ceny",
+                        "bakalářského"
+                    ],
+                    "startnew": 991,
+                    "endnew": 1009
+                },
+                {
+                    "text": [
+                        "jsou",
+                        "ostře",
+                        "zpochybňovány",
+                        "tisíci",
+                        "studenty",
+                        "po",
+                        "celém",
+                        "světě"
+                    ],
+                    "startnew": 1017,
+                    "endnew": 1072
+                },
+                {
+                    "text": [
+                        "to",
+                        "velká",
+                        "reflexe",
+                        "kvality"
+                    ],
+                    "startnew": 1078,
+                    "endnew": 1102
+                },
+                {
+                    "text": [
+                        "získávají,",
+                        "že",
+                        "Dundee",
+                        "je",
+                        "tak",
+                        "silně",
+                        "zastoupen",
+                        "mezi",
+                        "výherci",
+                        "cen."
+                    ],
+                    "startnew": 1141,
+                    "endnew": 1202
+                }
+            ],
+            [
+                {
+                    "text": [
+                        "\"Chtěl"
+                    ],
+                    "startnew": 1203,
+                    "endnew": 1209
+                },
+                {
+                    "text": [
+                        "svým",
+                        "nejteplejším",
+                        "gratulacím"
+                    ],
+                    "startnew": 1225,
+                    "endnew": 1253
+                },
+                {
+                    "text": [
+                        "Lolovi"
+                    ],
+                    "startnew": 1277,
+                    "endnew": 1283
+                },
+                {
+                    "text": [
+                        "spolu",
+                        "s",
+                        "dalšími",
+                        "zástupci"
+                    ],
+                    "startnew": 1315,
+                    "endnew": 1339
+                },
+                {
+                    "text": [
+                        "velmi",
+                        "oceněni.\""
+                    ],
+                    "startnew": 1359,
+                    "endnew": 1374
+                }
+            ]
+        ]
+    },
+    {
+        "translation_id": 19,
+        "updated_spans_offsets": [
+            [
+                {
+                    "text": [
+                        "vysílají"
+                    ],
+                    "startnew": 4,
+                    "endnew": 12
+                },
+                {
+                    "text": [
+                        "vojáky,"
+                    ],
+                    "startnew": 31,
+                    "endnew": 38
+                },
+                {
+                    "text": [
+                        "íránské"
+                    ],
+                    "startnew": 81,
+                    "endnew": 88
+                }
+            ],
+            [
+                {
+                    "text": [
+                        "odesílají"
+                    ],
+                    "startnew": 99,
+                    "endnew": 108
+                },
+                {
+                    "text": [
+                        "jednotek",
+                        "do",
+                        "Saúdské",
+                        "Arábie,"
+                    ],
+                    "startnew": 184,
+                    "endnew": 211
+                },
+                {
+                    "text": [
+                        "odrazily"
+                    ],
+                    "startnew": 216,
+                    "endnew": 224
+                },
+                {
+                    "text": [
+                        "agresivnější"
+                    ],
+                    "startnew": 231,
+                    "endnew": 243
+                },
+                {
+                    "text": [
+                        "Íránu."
+                    ],
+                    "startnew": 252,
+                    "endnew": 258
+                }
+            ],
+            [
+                {
+                    "text": [
+                        "další"
+                    ],
+                    "startnew": 295,
+                    "endnew": 300
+                },
+                {
+                    "text": [
+                        "připraveny"
+                    ],
+                    "startnew": 331,
+                    "endnew": 341
+                },
+                {
+                    "text": [
+                        "jít,"
+                    ],
+                    "startnew": 360,
+                    "endnew": 364
+                }
+            ],
+            [
+                {
+                    "text": [
+                        "\"Jiné"
+                    ],
+                    "startnew": 380,
+                    "endnew": 385
+                },
+                {
+                    "text": [
+                        "íránské",
+                        "zneužívání"
+                    ],
+                    "startnew": 399,
+                    "endnew": 417
+                },
+                {
+                    "text": [
+                        "regionu"
+                    ],
+                    "startnew": 426,
+                    "endnew": 433
+                },
+                {
+                    "text": [
+                        "hledáme,"
+                    ],
+                    "startnew": 439,
+                    "endnew": 447
+                },
+                {
+                    "text": [
+                        "přispěli",
+                        "prostředky",
+                        "v",
+                        "mezinárodním",
+                        "úsilí"
+                    ],
+                    "startnew": 452,
+                    "endnew": 492
+                },
+                {
+                    "text": [
+                        "Arábie,\""
+                    ],
+                    "startnew": 519,
+                    "endnew": 527
+                }
+            ],
+            [
+                {
+                    "text": [
+                        "Minulý",
+                        "týden"
+                    ],
+                    "startnew": 568,
+                    "endnew": 580
+                },
+                {
+                    "text": [
+                        "z"
+                    ],
+                    "startnew": 710,
+                    "endnew": 711
+                }
+            ],
+            [
+                {
+                    "text": [
+                        "uvedl,"
+                    ],
+                    "startnew": 725,
+                    "endnew": 731
+                },
+                {
+                    "text": [
+                        "násilnějších",
+                        "činů"
+                    ],
+                    "startnew": 780,
+                    "endnew": 797
+                },
+                {
+                    "text": [
+                        "-"
+                    ],
+                    "startnew": 814,
+                    "endnew": 815
+                },
+                {
+                    "text": [
+                        "tohoto"
+                    ],
+                    "startnew": 823,
+                    "endnew": 829
+                },
+                {
+                    "text": [
+                        "na",
+                        "tento",
+                        "měsíc"
+                    ],
+                    "startnew": 842,
+                    "endnew": 856
+                },
+                {
+                    "text": [
+                        "-"
+                    ],
+                    "startnew": 890,
+                    "endnew": 891
+                },
+                {
+                    "text": [
+                        "útoky",
+                        "zintenzívnily"
+                    ],
+                    "startnew": 917,
+                    "endnew": 936
+                },
+                {
+                    "text": [
+                        "odsoudily."
+                    ],
+                    "startnew": 939,
+                    "endnew": 949
+                }
+            ],
+            [
+                {
+                    "text": [
+                        "reholové"
+                    ],
+                    "startnew": 969,
+                    "endnew": 977
+                },
+                {
+                    "text": [
+                        "si",
+                        "nárokovali",
+                        "odpovědnost"
+                    ],
+                    "startnew": 994,
+                    "endnew": 1019
+                },
+                {
+                    "text": [
+                        "ropnou",
+                        "továrnu",
+                        "na",
+                        "zpracování",
+                        "ropy"
+                    ],
+                    "startnew": 1052,
+                    "endnew": 1085
+                },
+                {
+                    "text": [
+                        "Irán",
+                        "přímo."
+                    ],
+                    "startnew": 1141,
+                    "endnew": 1152
+                },
+                {
+                    "text": [
+                        "odmítl",
+                        "účast"
+                    ],
+                    "startnew": 1158,
+                    "endnew": 1170
+                },
+                {
+                    "text": [
+                        "útoku."
+                    ],
+                    "startnew": 1174,
+                    "endnew": 1180
+                }
+            ],
+            [
+                {
+                    "text": [
+                        "\"Je"
+                    ],
+                    "startnew": 1181,
+                    "endnew": 1184
+                },
+                {
+                    "text": [
+                        "zbraně"
+                    ],
+                    "startnew": 1209,
+                    "endnew": 1215
+                },
+                {
+                    "text": [
+                        "vyrobeny"
+                    ],
+                    "startnew": 1221,
+                    "endnew": 1229
+                },
+                {
+                    "text": [
+                        "vypuštěny"
+                    ],
+                    "startnew": 1247,
+                    "endnew": 1256
+                },
+                {
+                    "text": [
+                        "Jemenu,\""
+                    ],
+                    "startnew": 1259,
+                    "endnew": 1267
+                },
+                {
+                    "text": [
+                        "všechna",
+                        "označení",
+                        "ukazují,"
+                    ],
+                    "startnew": 1304,
+                    "endnew": 1329
+                },
+                {
+                    "text": [
+                        "\""
+                    ],
+                    "startnew": 1362,
+                    "endnew": 1363
+                }
+            ]
+        ]
+    }
+]

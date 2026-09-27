@@ -1,0 +1,62 @@
+[
+    {
+        "translation_id": 3,
+        "translation_starting_index": 0,
+        "translation_ending_index": 7,
+        "document_length_source": [
+            217,
+            239,
+            199,
+            242,
+            247,
+            205,
+            243,
+            180
+        ]
+    },
+    {
+        "translation_id": 7,
+        "translation_starting_index": 24,
+        "translation_ending_index": 31,
+        "document_length_source": [
+            76,
+            188,
+            200,
+            176,
+            224,
+            136,
+            404,
+            284
+        ]
+    },
+    {
+        "translation_id": 6,
+        "translation_starting_index": 16,
+        "translation_ending_index": 23,
+        "document_length_source": [
+            49,
+            96,
+            219,
+            255,
+            165,
+            201,
+            254,
+            178
+        ]
+    },
+    {
+        "translation_id": 19,
+        "translation_starting_index": 56,
+        "translation_ending_index": 63,
+        "document_length_source": [
+            74,
+            198,
+            124,
+            218,
+            156,
+            248,
+            243,
+            186
+        ]
+    }
+]
