@@ -1,4 +1,4 @@
-# The workflow of en_cz experiment
+# 1. The workflow of en_cz experiment with oracle spans
 
 ## i. test_run_eng_czech.ipynb
 
@@ -421,4 +421,25 @@ How does it do it:
        Files it generate where they should be used.
        
            1.translation_sentences_length_all_4_docs_en_cz.json - use it to calculate sentence alignments
-          
+           
+           
+ 
+# 2. The workflow of en_cz experiment with xcomet spans
+
+1. We already selected texts for experiments with oracle spans. And that automatically gives us the remaining 4 texts for experiments with xcomet spans. 
+
+The texts are for xcomet spans are:
+Group 2: [5, 13, 18, 17] mean: 1523.75 translation doc length.
+
+2. step v in #1 is implemented for xcomet annotations in this file: [create annotations table for xcomet results.ipynb](https://github.com/arafat04/new-interaction-for-MT/blob/main/ipynb%20files/create%20annotations%20table%20for%20xcomet%20results.ipynb)
+
+- [ ] rename the file as "make_annotations_for_xcomet_spans_en_cz.ipynb" to make the naming consistent as the file in step v.
+3. Works to do:
+-[ ]1. update this file to support annotation table population like step 5.
+-[ ]2.  update to support sentence alignment table
+    - [ ]2.1. for this we need updated word offsets
+    - [ ]2.2. one json file for updated translation sentence offsets
+        - [ ] 2.2.1. saved the translation sententences as "translation_sentences_length_all_4_xcomet_docs_en_cz.json"
+    - [ ]2.3. one json file for updated source sentence offsets
+    - [ ]2.4. json file for merged source and translated texts.
+
